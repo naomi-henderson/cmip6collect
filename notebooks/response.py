@@ -45,7 +45,6 @@ def dict_to_dfcat(zdict):
 
 def response(df_req,dfcat):
     mails = df_req['E-mail'].unique()
-    
     for mail in mails:
         dfn = df_req.loc[df_req['E-mail'] == mail]
 
@@ -59,6 +58,7 @@ def response(df_req,dfcat):
             experiment_ids = row['experiments']
             source_ids = row['models']
             variable_ids = row['variables']
+            member_ids = row['members']
             table_id = row['table']
 
             if '3hr' in table_id:
@@ -67,9 +67,12 @@ def response(df_req,dfcat):
             else:
                 dc = dfcat[dfcat.table_id == table_id]
             dcat = []
-            for experiment_id in experiment_ids:
-                dcat += [dc[dc.experiment_id == experiment_id]]
-            dc = pd.concat(dcat,sort=False)
+            
+            if experiment_ids != ['All']:
+                for experiment_id in experiment_ids:
+                    dcat += [dc[dc.experiment_id == experiment_id]]
+                dc = pd.concat(dcat,sort=False)
+                
             dcat = []
             for variable_id in variable_ids:
                 dcat += [dc[dc.variable_id == variable_id]]
@@ -84,22 +87,33 @@ def response(df_req,dfcat):
                 dm = dc[['experiment_id','source_id','variable_id','member_id']].groupby([
                          'experiment_id','source_id','variable_id']).nunique()[['member_id']]
 
-                table = pd.DataFrame.pivot_table(dm, values='member_id', index=['experiment_id','source_id'],
-                                                 columns=['variable_id'], aggfunc=np.sum, fill_value=0)
+                table = pd.DataFrame.pivot_table(dm,
+                                                 values='member_id',
+                                                 index=['experiment_id','source_id'],
+                                                 columns=['variable_id'],
+                                                 aggfunc=np.sum,
+                                                 fill_value=0)
             elif table_type == 'medium':
                 dm = dc[['experiment_id','source_id','variable_id','member_id','grid_label','zstore']].groupby([
                          'experiment_id','source_id','variable_id','grid_label']).nunique()[['member_id']]
 
-                table = pd.DataFrame.pivot_table(dm, values='member_id', index=['experiment_id','source_id','grid_label'],
-                                                 columns=['variable_id'], aggfunc=np.sum, fill_value=0)
+                table = pd.DataFrame.pivot_table(dm,
+                                                 values='member_id',
+                                                 index=['experiment_id','source_id','grid_label'],
+                                                 columns=['variable_id'],
+                                                 aggfunc=np.sum,
+                                                 fill_value=0)
 
 
             else:
                 dm = dc[['experiment_id','source_id','variable_id','member_id','grid_label','zstore']].groupby([
                          'experiment_id','source_id','variable_id','member_id','grid_label']).nunique()[['zstore']]
 
-                table = pd.DataFrame.pivot_table(dm, values='zstore', index=['experiment_id','source_id','member_id','grid_label'],
-                                                 columns=['variable_id'], aggfunc=np.sum, fill_value=0)
+                table = pd.DataFrame.pivot_table(dm, values='zstore',
+                                                 index=['experiment_id','source_id','member_id','grid_label'],
+                                                 columns=['variable_id'],
+                                                 aggfunc=np.sum,
+                                                 fill_value=0)
 
             print('GCS request for:',email,'; table_id=',table_id)
             print('(number of member_ids)*(number of grid_labels)')
