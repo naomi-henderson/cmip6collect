@@ -12,14 +12,14 @@ This repository contains notebooks for two purposes - to handle new data request
    - searches current Collection to see if data is already in GCS
    - searches ESGF for availability 
    - for each new zarr object:
-         - download needed netcdf files from ESGF nodes or modeling centers to temporary location
-         - opens netcdf files, concatenating in time, if necessary  (metadata is combined, concatenating 'tracking_id')
-         - saves zarr in temporary location
-         - checks zarr object for time grid integrity, etc
-         - uploads to GCS
-         - update the collection catalog for successes
-         - update the exception catalog for failures
-         - cleanup - remove netcdf and zarr temporary files
+      - download needed netcdf files from ESGF nodes or modeling centers to temporary location
+      - opens netcdf files, concatenating in time, if necessary  (metadata is combined, concatenating 'tracking_id')
+      - saves zarr in temporary location
+      - checks zarr object for time grid integrity, etc
+      - uploads to GCS
+      - update the collection catalog for successes
+      - update the exception catalog for failures
+      - cleanup - remove netcdf and zarr temporary files
          
 - Response is sent to requestor's email address
 
