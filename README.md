@@ -5,7 +5,8 @@ This repository contains notebooks for two purposes - to handle new data request
 ### New Data Requests
 - Data Request is made at [Google Form](https://docs.google.com/forms/d/1g3rfuLBG6eOdoeN1hnGo2H_yB_aTL1MZLe3Rlx3eUNg/edit?usp=sharing) which triggers and Email notification
 
-- Jupyter notebook [nb1-HandleDataRequest.ipynb]():
+- Jupyter notebook
+[nb1-HandleDataRequest.ipynb](notebooks/nb1-HandleDataRequest.ipynb):
    - checks for new request(s)
    - searches current Collection to see if data is already in GCS
    - searches ESGF for availability 
