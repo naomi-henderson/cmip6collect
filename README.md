@@ -1,4 +1,4 @@
-# The Pangeo CMIP6 Google Cloud Collection Methods
+# The Pangeo CMIP6 Google Cloud Data - New Requests and Data Cleaning
 
 This repository contains notebooks for two purposes - to handle new data requests and to handle the crowd-sourced data issues
 
