@@ -1,0 +1,70 @@
+Timestamp,E-mail,experiments,models,variables,table,requester
+9/9/2019 14:13:56,rpa@ldeo.columbia.edu,"['1pctCO2', '1pctCO2-4xext', 'esm-ssp585', 'historical', 'omip1', 'piControl']",['All'],[''],Oclim,Test
+9/10/2019 16:51:18,naomi@ldeo.columbia.edu,"['ssp585', 'historical']","['BCC-CSM2-MR', 'BNU-ESM-1-1', 'CAMS-CSM1-0', 'GFDL-CM4']","['ps', 'ua', 'va', 'hus']",Amon,Test
+9/11/2019 15:21:35,ryan.abernathey@gmail.com,"['esm-ssp585', 'historical', 'piControl']",['All'],"['bigthetao', 'hfx', 'hfy', 'umo', 'uo', 'vmo', 'vo', 'volcello']",Omon,Test
+9/11/2019 18:25:47,nhn2@columbia.edu,['historical'],['All'],"['ps', 'hus', 'ua', 'va', 'ta']",6hrLev,Test
+9/12/2019 17:38:54,mclong@ucar.edu,"['ssp126', 'ssp245', 'ssp585']",['All'],"['o2', 'o2sat']",Oyr,Matt Long
+9/12/2019 17:44:16,mclong@ucar.edu,"['ssp245', 'ssp585']",['All'],['thetao'],Omon,Matthew Long
+9/13/2019 12:18:31,islas@ucar.edu,"['historical', 'ssp370', 'ssp585']",['All'],"['ua', 'va', 'ts', 'pr']",Amon,Isla Simpson
+9/16/2019 13:36:55,afahad@gmu.edu,"['abrupt-4xCO2', 'historical']",['All'],"['psl', 'ts', 'ua', 'va', 'pr', 'hfls', 'rlds', 'zg']",Amon,Abdullah al Fahad
+9/16/2019 14:29:37,sridge@ldeo.columbia.edu,['historical'],['All'],"['thetao', 'so', 'dissic', 'no3', 'cfc11', 'sf6', 'po4', 'talk']",Omon,Sean Ridge
+9/16/2019 16:28:13,jhamman@ucar.edu,"['historical', 'ssp245', 'ssp585']",['All'],"['pr', 'prc', 'rlds', 'rsds', 'sfcWind', 'hur', 'hus', 'psl', 'ua', 'va', 'zg', 'ps', 'wap']",day,Joe Hamman
+9/16/2019 16:30:01,*jhamman@ucar.edu,"['historical', 'ssp245', 'ssp585']",['All'],"['hus', 'psl', 'ua', 'va', 'zg']",6hrPlev,Test
+9/16/2019 18:48:04,bolliger@berkeley.edu,['highresSST-present'],['All'],"['psl', 'pr', 'prc']",CF3hr,Ian Bolliger
+9/16/2019 20:41:45,henrifdrake@gmail.com,"['1pctCO2', 'historical', 'piControl']",['All'],"['ta', 'ua', 'va', 'tas', 'pr', 'psl', 'hus']",Amon,Henri Drake
+9/16/2019 20:43:24,henrifdrake@gmail.com,"['1pctCO2', 'historical', 'piControl']",['All'],['siconc'],SImon,Henri Drake
+9/17/2019 15:17:17,riley.brady@colorado.edu,"['dcppA-hindcast', 'dcppA-assim']",['MIROC6'],['tos'],Omon,Riley Brady
+9/17/2019 19:10:50,riley.brady@colorado.edu,"['dcppA-assim', 'dcppA-hindcast', 'dcppC-hindcast-noPinatubo', 'dcppC-hindcast-noAgung', 'dcppC-hindcast-noElChichon']",['CanESM5'],['tas'],Amon,Riley Brady
+9/17/2019 19:16:38,riley.brady@colorado.edu,"['dcppA-assim', 'dcppA-hindcast']",['CanESM5'],['tas'],day,Riley Brady
+9/17/2019 21:26:10,bolliger@berkeley.edu,['highresSST-present'],['All'],"['pr', 'prc', 'tas', 'uas', 'vas']",3hr,Ian Bolliger
+9/22/2019 6:17:48,nhn2@columbia.edu,['historical'],['CNRM-CM6-1'],"['clt', 'hfls', 'hfss', 'hur', 'hurs', 'hursmax', 'hursmin', 'hus', 'huss', 'prc', 'pr', 'prsn', 'psl', 'rlds', 'rlus', 'rlut', 'rsds', 'rsus', 'sfcWind', 'sfcWindmax', 'ta', 'tas', 'tasmax', 'tasmin', 'ua', 'uas', 'va', 'vas', 'wap', 'zg']",day,Naomi Henderson
+9/23/2019 19:21:22,yifanc6@uw.edu,"['historical', 'piControl', 'ssp245', 'ssp585']",['All'],"['pr', 'tasmax', 'tasmin']",day,Yifan Cheng
+9/25/2019 10:45:50,spencerj@ldeo.columbia.edu,['historical'],['All'],"['thetao', 'so', 'vmo', 'msftmrho', 'hfy']",Omon,Spencer Jones
+9/25/2019 10:49:59,spencerj@ldeo.columbia.edu,['historical'],['All'],"['diftrblo', 'diftrelo']",Oyr,Spencer Jones
+9/26/2019 5:29:20,bolliger@berkeley.edu,"['highresSST-present', 'hist-1950', 'control-1950']",['All'],['pr'],day,Ian Bolliger
+9/26/2019 5:31:08,bolliger@berkeley.edu,"['highresSST-present', 'hist-1950', 'control-1950']",['All'],"['psl', 'uas', 'vas', 'tas']",6hrPlevPt,Ian Bolliger
+9/26/2019 12:17:32,bolliger@berkeley.edu,"['highresSST-present', 'hist-1950', 'control-1950']",['All'],"['psl', 'uas', 'vas', 'tas']",6hrPlev,Ian Bolliger
+9/27/2019 4:06:54,yeddebba@ucsd.edu,"['historical', 'omip1', 'piControl', 'ssp126', 'ssp245', 'ssp585']",['All'],"['thetao', 'so', 'agessc', 'uo', 'vo', 'wo', 'mlotst', 'msftmz', 'obvfsq', 'hfds', 'o2', 'o2sat', 'dpco2', 'fgco2', 'fgo2', 'chl', 'dissic', 'spco2', 'intdic', 'intpp', 'pp', 'no3', 'po4', 'ph', 'phos', 'zsatarag', 'talk', 'tauuo', 'tauvo', 'tos']",Omon,Yassir Eddebbar
+9/27/2019 4:15:52,yeddebba@ucsd.edu,"['historical', 'omip1', 'piControl', 'ssp126', 'ssp245', 'ssp585']",['All'],"['basin', 'thkcello', 'volcello', 'sftof', 'areacello']",Ofx,Yassir Eddebbar
+9/27/2019 4:28:34,yeddebba@ucsd.edu,"['historical', 'omip1', 'piControl', 'ssp126', 'ssp245', 'ssp585']",['All'],"['psl', 'ts', 'uas', 'vas']",Amon,Yassir Eddebbar
+9/27/2019 8:55:38,spencerj@ldeo.columbia.edu,['historical'],['All'],['msftmz'],Omon,Spencer Jones
+9/27/2019 12:12:53,jim.christian@canada.ca,"['historical', 'piControl', 'ssp245', 'ssp585']",['All'],"['dissic', 'talk', 'no3', 'po4', 'si', 'o2', 'thetao', 'so', 'epc100', 'epcalc100']",Oyr,Jim Christian
+9/27/2019 15:30:03,berner@ucar.edu,['piControl'],"['CESM2', 'GFDL-CM4']",['tas'],Amon,Judith Berner
+9/27/2019 16:03:48,clepore@ldeo.columbia.edu,['historical'],['CNRM-CM6-1'],"['ua', 'va', 'hus', 'ta', 'zg', 'hus', 'ps']",6hrLev,Chiara Lepore
+9/27/2019 16:04:54,clepore@ldeo.columbia.edu,['historical'],['CNRM-CM6-1'],"['uas', 'vas', 'tas']",3hr,Chiara Lepore
+9/27/2019 16:51:08,jml1@mit.edu,"['1pctCO2', '1pctCO2-bgc', 'abrupt-4xCO2', 'esm-hist', 'esm-piControl', 'historical', 'lgm', 'past1000', 'piControl', 'ssp126', 'ssp245', 'ssp370', 'ssp585']",['All'],"['agessc', 'bacc', 'bfe', 'bigthetao', 'bsi', 'calc', 'chl', 'chlcalc', 'chldiat', 'chldiaz', 'chlmisc', 'chlpico', 'co3', 'co3nat', 'co3satarag', 'co3satcalc', 'detoc', 'dfe', 'dissic', 'dissicabio', 'dissicnat', 'dissoc', 'dmso', 'dpco2', 'dpco2abio', 'dpco2nat', 'dpo2', 'eparag100', 'epc100', 'epcalc100', 'epfe100', 'epn100', 'epp100', 'epsi100', 'evs', 'expc', 'fbddtalk', 'fbddtdic', 'fbddtdife', 'fbddtdin', 'fbddtdip', 'fbddtdisi', 'fddtalk', 'fddtdic', 'fddtdife', 'fddtdin', 'fddtdip', 'fddtdisi', 'fgco2', 'fgco2abio', 'fgco2nat', 'fgo2', 'frfe', 'fric', 'frn', 'froc', 'fsfe', 'fsitherm', 'fsn', 'graz', 'icfriver', 'masscello', 'mlotst', 'nh4', 'no3', 'o2', 'o2min', 'o2sat', 'ocfriver', 'pbfe', 'pbo', 'pbsi', 'ph', 'phabioos', 'phnatos', 'phos', 'phyc', 'phycalc', 'phydiat', 'phydiaz', 'phyfe', 'phymisc', 'phyn', 'phyp', 'phypico', 'physi', 'po4', 'pon', 'pop', 'pp', 'prra', 'prsn', 'rlntds', 'rsdo', 'rsntds', 'si', 'so', 'spco2', 'spco2abio', 'spco2nat', 'talk', 'talknat', 'thetao', 'thkcello', 'umo', 'uo', 'vmo', 'vo', 'volcello', 'volo', 'wmo', 'wo', 'zmeso', 'zmicro', 'zo2min', 'zooc']",Omon,Jonathan Lauderdale
+9/27/2019 17:00:07,jml1@mit.edu,"['1pctCO2', '1pctCO2-bgc', 'abrupt-4xCO2', 'esm-hist', 'esm-piControl', 'historical', 'lgm', 'past1000', 'piControl', 'ssp126', 'ssp245', 'ssp370', 'ssp585']",['All'],"['arag', 'bacc', 'bddtalk', 'bddtdic', 'bddtdife', 'bddtdin', 'bddtdip', 'bddtdisi', 'bfe', 'bsi', 'calc', 'chl', 'chldiat', 'chldiaz', 'chlmisc', 'chlpico', 'co3', 'detoc', 'dfe', 'diftrblo', 'diftrelo', 'difvho', 'difvso', 'dissic', 'dissicabio', 'dissicnat', 'dissoc', 'expc', 'expfe', 'expn', 'expp', 'expsi', 'fediss', 'fescav', 'fgco2', 'fgco2abio', 'fgco2nat', 'graz', 'nh4', 'no3', 'o2', 'o2sat', 'parag', 'pbfe', 'pbsi', 'pcalc', 'ph', 'phyc', 'phydiat', 'phydiaz', 'phyfe', 'phymisc', 'phyn', 'phyp', 'phypico', 'physi', 'pnitrate', 'po4', 'pon', 'pop', 'pp', 'ppdiat', 'ppdiaz', 'ppmisc', 'pppico', 'remoc', 'si', 'talk', 'talknat', 'volcello', 'zmeso', 'zmicro', 'zooc']",Oyr,Jonathan Lauderdale
+9/27/2019 19:15:20,chiangf@uci.edu,"['historical', 'piControl', 'ssp126', 'ssp245', 'ssp370', 'ssp585']",['All'],"['tas', 'tasmax', 'tasmin', 'pr']",Amon,Felicia Chiang
+9/27/2019 19:27:06,ariannav@ldeo.columbia.edu,"['amip', 'esm-hist', 'esm-piControl', 'histSST', 'past1000', 'piControl']",['CESM2'],"['zg', 'psl', 'ps', 'pr', 'prc']",Amon,Arianna Varuolo-Clarke
+9/30/2019 3:48:08,ariannav@ldeo.columbia.edu,"['amip', 'esm-hist', 'esm-piControl', 'histSST', 'past1000', 'piControl']",['CESM2'],"['mrsos', 'mrso']",Lmon,Arianna Varuolo-Clarke
+9/30/2019 5:27:47,ariannav@ldeo.columbia.edu,"['amip', 'esm-hist', 'esm-piControl', 'histSST', 'past1000', 'piControl']",['CESM2'],['tos'],Omon,Arianna Varuolo-Clarke
+10/2/2019 17:31:41,diamond2@uw.edu,['deforest-globe'],['All'],"['ua', 'va', 'rsds', 'rsus', 'rlus', 'rlds', 'rlut', 'rsut', 'tas', 'pr', 'wap', 'hfss', 'hfls']",Amon,Michael Diamond
+10/2/2019 17:36:36,diamond2@uw.edu,['deforest-globe'],['All'],"['treeFrac', 'cVeg']",Lmon,Michael Diamond
+10/2/2019 17:56:19,czarakas@uw.edu,"['historical', 'ssp126', 'ssp245', 'ssp370', 'ssp585']",['All'],"['tas', 'pr', 'prsn', 'tasmax', 'tasmin']",Amon,Claire Zarakas
+10/3/2019 13:33:40,lroach@uw.edu,"['historical', 'piControl']",['All'],"['thetao', 'so', 'rhopoto', 'uo', 'vo', 'umo', 'vmo', 'mlotst', 'msftmrho', 'msftmrhompa', 'msftmyz', 'msftmz', 'msftmzmpa', 'msftmzsmpa']",Omon,Lettie Roach
+10/3/2019 13:34:35,lroach@uw.edu,"['historical', 'piControl']",['All'],"['siconc', 'sithick']",SImon,Lettie Roach
+10/3/2019 16:17:03,bolliger@berkeley.edu,"['highresSST-present', 'hist-1950', 'control-1950']",['All'],['ta'],6hrPlevPt,Ian Bolliger
+10/3/2019 21:39:07,yeddebba@ucsd.edu,"['historical', 'piControl', 'ssp126', 'ssp585']",['All'],"['[agessc', 'wo', 'msftmz', 'obvfsq', 'fgco2', 'spco2', 'chl', 'dissic', 'dissoc', 'pp', 'expc', 'no3', 'po4', 'phyc', 'remoc]']",Oyr,Yassir Eddebbar
+10/4/2019 0:40:58,stephens@ucar.edu,"['historical', 'hist-bgc']",['All'],"['fgo2', 'fgco2', 'fgco2abio', 'fgco2nat', 'tos', 'sos', 'hfds']",Omon,Britt Stephens
+10/4/2019 9:43:34,jim.christian@canada.ca,"['historical', 'piControl', 'ssp245', 'ssp585']",['All'],"['epc100', 'epcalc100']",Omon,Jim Christian
+10/4/2019 18:06:57,mclaret@uw.edu,"['1pctCO2', 'historical', 'omip1', 'piControl']","['CNRM-CM6-1-HR', 'CNRM-ESM2-1-HR', 'EC-Earth3P-HR', 'EC-Earth3P-VHR', 'GFDL-CM4', 'GFDL-CM4C192', 'GFDL-ESM4', 'GFDL-OM4p5B', 'HadGEM3-GC31-HH', 'HadGEM3-GC31-HM', 'HadGEM3-GC31-LM', 'HadGEM3-GC31-MH', 'NorESM2-HH']","['o2', 'o2sat', 'fgco2', 'fgco2nat']",Oyr,Mariona Claret
+10/9/2019 9:57:43,ariannav@ldeo.columbia.edu,['piControl'],['All'],"['pr', 'prc', 'ps', 'psl', 'zg']",Amon,Arianna Varuolo-Clarke
+10/9/2019 9:58:46,ariannav@ldeo.columbia.edu,['piControl'],['All'],"['mrso', 'mrsos']",Lmon,Arianna Varuolo-Clarke
+10/9/2019 9:59:52,ariannav@ldeo.columbia.edu,"['esm-piControl', 'piControl']",['All'],['tos'],Omon,Arianna Varuolo-Clarke
+10/10/2019 14:49:58,mmsmith@uw.edu,"['1pctCO2', 'abrupt-4xCO2', 'historical', 'piControl', 'ssp585']",['All'],"['siarean', 'siareas', 'siconc', 'siconca', 'sithick', 'sivol', 'sivols', 'sivoln']",SImon,Madison Smith
+10/10/2019 14:52:53,mmsmith@uw.edu,"['1pctCO2', 'abrupt-4xCO2', 'historical', 'piControl', 'ssp585']",['All'],['rld-no'],CFmon,Madison Smith
+10/10/2019 14:54:23,mmsmith@uw.edu,"['1pctCO2', 'abrupt-4xCO2', 'historical', 'piControl', 'ssp585']",['All'],['tas'],Amon,Madison Smith
+10/10/2019 14:56:27,mmsmith@uw.edu,"['1pctCO2', 'abrupt-4xCO2', 'historical', 'piControl', 'ssp585']",['All'],['tos'],Omon,Madison Smith
+10/10/2019 14:58:02,mmsmith@uw.edu,"['1pctCO2', 'abrupt-4xCO2', 'historical', 'piControl', 'ssp585']",['All'],['areacello'],Ofx,Madison Smith
+10/11/2019 9:23:23,apgrass@ucar.edu,"['1pctCO2', 'abrupt-4xCO2', 'historical', 'piControl', 'ssp245', 'ssp370', 'ssp585']",['All'],['pr'],day,Angie Pendergrass
+10/11/2019 9:26:59,apgrass@ucar.edu,"['1pctCO2', 'abrupt-4xCO2', 'historical', 'piControl', 'ssp245', 'ssp585']",['All'],"['pr', 'tas', 'huss', 'ts']",Amon,Angie Pendergrass
+10/11/2019 13:00:29,kdagon@ucar.edu,"['esm-ssp585', 'esm-ssp585-ssp126Lu', 'ssp585']",['All'],"['cLeaf', 'cVeg', 'gpp', 'lai', 'nbp', 'npp', 'ra', 'tran']",Lmon,Katie Dagon
+10/11/2019 19:03:28,rcwills@uw.edu,"['hist-GHG', 'hist-aer']",['All'],"['ts', 'tas', 'psl', 'pr', 'ta', 'ua', 'va', 'wap', 'hfls', 'hfss', 'rlds', 'rlus', 'rsds', 'rsus', 'rlut', 'rsdt', 'rsut']",Amon,Robert Jnglin Wills
+10/11/2019 19:04:45,rcwills@uw.edu,"['hist-GHG', 'hist-aer']",['All'],['tos'],Omon,Robert Jnglin Wills
+10/14/2019 10:51:40,spencerj@ldeo.columbia.edu,['historical'],['All'],"['diftrelo', 'diftrblo']",Oclim,Spencer Jones
+10/15/2019 23:45:29,dbalwada@uw.edu,"['historical', 'piControl']",['All'],['vsf'],Omon,Dhruv Balwada
+10/17/2019 18:09:18,jiacan.yuan@gmail.com,"['1pctCO2', 'abrupt-4xCO2', 'ssp126', 'ssp245', 'ssp585']",['All'],['zos'],Omon,Jiacan Yuan
+,,[''],[''],[''],,
+2019-10-02,sridge@ldeo.columbia.edu,['historical'],['CESM2'],"['thetao', 'so', 'dissic', 'no3', 'cfc11', 'sf6', 'po4', 'talk']",Omon,Sean Ridge
+9/27/2019 15:30:03,berner@ucar.edu,['piControl'],"['CESM2', 'GFDL-CM4']","['ua', 'rlut']",day,Judith Berner
+10/10/2019 14:52:53,mmsmith@uw.edu,"['1pctCO2', 'abrupt-4xCO2', 'historical', 'piControl', 'ssp585']",['All'],"['rlus', 'rlds']",Amon,Madison Smith

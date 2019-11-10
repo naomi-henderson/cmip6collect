@@ -1,0 +1,3 @@
+experiment_id,experiment,start_year,end_year,activity_id,tier,min_number_yrs_per_sim
+dcppA-hindcast-niff,hindcast initialized based on observations but without using knowledge of subsequent historical forcing,a year in the range 1960-2019,5 - 10 years after start year,DCPP,4,5
+dcppA-historical-niff,hindcast initialized from historical climate simulation but without using knowledge of subsequent historical forcing,a year in the range 1960-2019,5 - 10 years after start year,DCPP,4,5
