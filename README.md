@@ -1,6 +1,15 @@
-# The Pangeo CMIP6 Google Cloud Data - New Requests and Data Cleaning
+# The Pangeo CMIP6 Google Cloud Data - New Requests
 
-This repository contains notebooks for two purposes - to handle new data requests and to handle the crowd-sourced data issues
+This `project` repository (not a proper `package`) is work-in-progress for developing methods to handle new data requests automatically as much as possible. I am also trying to make a first attempt at handling data issues which will hopefully be added by the users.  
+
+I am just starting to use the 'First Pass' notebook, `nb1-HandleDataRequest.ipynb` for responding to post-Hackathon requests. It seems to be operational and I welcome data requests at this point to test it out.    
+
+At the same time, I am still adding to our CMIP6 cloud collection with my original notebooks. These 3 original notebooks (not in this repository) allow me to:
+1. download a basic set of data for popular experiment_id, table_id and variable_id choices 
+2. respond to the original hackathon data requests
+3. convert our large local netcdf collection to zarrs and upload to GCS
+
+But once these tasks are finished, we will focus on public data requests. Hopefully there will be enough pointers here to help anyone else willing to help with this effort!
 
 ## New Data Requests 
 ### Part I. First Pass - data with no issues
