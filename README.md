@@ -15,10 +15,10 @@ But once these tasks are finished, we will focus on public data requests. Hopefu
 ### Part I. First Pass - data with no issues
 - Data Request is made at [Google Form](https://docs.google.com/forms/d/1g3rfuLBG6eOdoeN1hnGo2H_yB_aTL1MZLe3Rlx3eUNg/edit?usp=sharing) which triggers an Email notification (to Naomi, for now)
 
-- Jupyter notebook
+- Jupyter notebook:
 [nb1-HandleDataRequest.ipynb](notebooks/nb1-HandleDataRequest.ipynb):
    - checks for new request(s)
-   - searches current Collection to see if data is already in GCS
+   - searches our current Collection to see if data is already in GCS
    - searches ESGF for availability 
    - for each new zarr object:
       - download needed netcdf files from ESGF nodes or modeling centers to temporary location
@@ -33,7 +33,7 @@ But once these tasks are finished, we will focus on public data requests. Hopefu
 - Response is sent to requestor's email address
 
 ### Part II. Second Pass - data with issues
-- Jupyter notebook [nb2-HandleDataExceptions.ipynb]()
+- Jupyter notebook: [nb2-HandleDataExceptions.ipynb]()
    - reads the exception catalog for new issues
    - for each issue:
          - repeats the original request handling as above, checking for common issues (e.g., missing years, inconsistent coordinate names, etc)
