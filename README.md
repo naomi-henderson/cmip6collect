@@ -2,7 +2,8 @@
 
 This repository contains notebooks for two purposes - to handle new data requests and to handle the crowd-sourced data issues
 
-### New Data Requests - Part I. First Pass - data with no issues
+### New Data Requests 
+## Part I. First Pass - data with no issues
 - Data Request is made at [Google Form](https://docs.google.com/forms/d/1g3rfuLBG6eOdoeN1hnGo2H_yB_aTL1MZLe3Rlx3eUNg/edit?usp=sharing) which triggers and Email notification
 
 - Jupyter notebook
@@ -22,7 +23,7 @@ This repository contains notebooks for two purposes - to handle new data request
          
 - Response is sent to requestor's email address
 
-### New Data Requests - Part II. Second Pass - data with issues
+## Part II. Second Pass - data with issues
 - Jupyter notebook [nb2-HandleDataExceptions.ipynb]()
    - reads the exception catalog for new issues
    - for each issue:
