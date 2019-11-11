@@ -13,10 +13,10 @@ But once these tasks are finished, we will focus on public data requests. Hopefu
 
 ## New Data Requests 
 ### Part I. First Pass - data with no issues
+Procedure:
 - Data Request is made at [Google Form](https://docs.google.com/forms/d/1g3rfuLBG6eOdoeN1hnGo2H_yB_aTL1MZLe3Rlx3eUNg/edit?usp=sharing) which triggers an Email notification (to Naomi, for now)
 
-- Jupyter notebook:
-[nb1-HandleDataRequest.ipynb](notebooks/nb1-HandleDataRequest.ipynb):
+- Jupyter notebook: [nb1-HandleDataRequest.ipynb](notebooks/nb1-HandleDataRequest.ipynb) - start it running and leave it - after finished, check the logs
    - checks for new request(s)
    - searches our current Collection to see if data is already in GCS
    - searches ESGF for availability 
@@ -33,7 +33,8 @@ But once these tasks are finished, we will focus on public data requests. Hopefu
 - Response is sent to requestor's email address
 
 ### Part II. Second Pass - data with issues
-- Jupyter notebook: [nb2-HandleDataExceptions.ipynb]()
+Procedure:
+- Jupyter notebook: [nb2-HandleDataExceptions.ipynb]() - work through the problem cases, one by one
    - reads the exception catalog for new issues
    - for each issue:
          - repeats the original request handling as above, checking for common issues (e.g., missing years, inconsistent coordinate names, etc)
