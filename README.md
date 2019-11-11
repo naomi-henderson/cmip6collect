@@ -11,6 +11,8 @@ At the same time, I am still adding to our CMIP6 cloud collection with my origin
 
 But once these tasks are finished, we will focus on public data requests. Hopefully there will be enough pointers here to help anyone else willing to help with this effort!
 
+[![progress](assets/history.png)](assets/history.png)
+
 ## New Data Requests 
 ### Part I. First Pass - data with no issues
 Procedure:
