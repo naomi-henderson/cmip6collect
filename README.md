@@ -34,7 +34,7 @@ Procedure:
 
 ### Part II. Second Pass - data with issues
 Procedure:
-- Jupyter notebook: [nb2-HandleDataExceptions.ipynb]() - work through the problem cases, one by one
+- Jupyter notebook: [nb2-HandleDataExceptions.ipynb](notebooks/nb2-HandelDataExceptions.ipynb) - work through the problem cases, one by one
    - reads the exception catalog for new issues
    - for each issue:
          - repeats the original request handling as above, checking for common issues (e.g., missing years, inconsistent coordinate names, etc)
