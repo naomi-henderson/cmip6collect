@@ -69,7 +69,7 @@ done",[''],"['dcppA-assim', 'dcppA-hindcast']",['CanESM5'],['tas'],day,Riley Bra
 10/17/2019 18:09:18,jiacan.yuan@gmail.com,,[''],"['1pctCO2', 'abrupt-4xCO2', 'ssp126', 'ssp245', 'ssp585']",['All'],['zos'],Omon,Jiacan Yuan
 11/8/2019 11:44:12,naominaik@gmail.com,,['2'],['abrupt-2xCO2'],['All'],"['co3', 'detoc', 'dfe', 'diftrblo']",Omon,Test
 11/9/2019 10:34:23,naominaik@gmail.com,,"['r1i1p1f1', 'r1i1p1f2']",['ssp222'],"['BCC-ESM1', 'CESM2']","['huss', 'pr']",3hr,Test
-11/10/2019 11:05:14,naomi@ldeo.columbia.edu,,['One'],['All'],['All'],['orog'],Emon,Naomi Henderson 
+11/10/2019 11:05:14,naomi@ldeo.columbia.edu,,['All'],['All'],['All'],"['hfgeoubed', 'lithk', 'topg']",IfxGre,Naomi Henderson
 2019-10-02,sridge@ldeo.columbia.edu,,[''],['historical'],['CESM2'],"['thetao', 'so', 'dissic', 'no3', 'cfc11', 'sf6', 'po4', 'talk']",Omon,Sean Ridge
 9/27/2019 15:30:03,berner@ucar.edu,,[''],['piControl'],"['CESM2', 'GFDL-CM4']","['ua', 'rlut']",day,Judith Berner
 10/10/2019 14:52:53,mmsmith@uw.edu,,[''],"['1pctCO2', 'abrupt-4xCO2', 'historical', 'piControl', 'ssp585']",['All'],"['rlus', 'rlds']",Amon,Madison Smith

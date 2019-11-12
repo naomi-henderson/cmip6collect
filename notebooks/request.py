@@ -33,29 +33,46 @@ def getsheet(json_keyfile,sheet_name):
                   'variable_ids (comma separated list)', 'Questions and comments'],1) 
     return df
 
-def requests(): 
+def requests(df_prior,rows=[],emails=[]): 
     json_keyfile = '/home/naomi/cmip6-zarr/json/Pangeo Hackathon-e48a41b13c91.json'
     sheet_name = "CMIP6 GCS Data Request (Responses)"
 
-    df_all = getsheet(json_keyfile, sheet_name)
-    df_all.to_csv('csv/dummy.csv',index=False)
-    df_all = pd.read_csv('csv/dummy.csv')
-      
-    df_prior = pd.read_csv('csv/requests.csv')
+    df = df_prior.copy()
     
+    if len(rows)+len(emails) == 0:
+        df = df[df['requester']=='nutter']
+        
+    if len(rows) > 0:
+        df = df.iloc[rows]
+
+    if len(emails) > 0:
+        dk = []
+        for email in emails:
+            dk += [df[df['E-mail']==email]]
+        df = pd.concat(dk)
+
+    df_req = df[df['requester']!='Test']    
+    
+    df_all = getsheet(json_keyfile, sheet_name)
+    # save and read back in order to look like df_prior
+    df_all.to_csv('csv/request_new.csv',index=False)
+    df_all = pd.read_csv('csv/request_new.csv')
+      
     df_new = df_all.merge(df_prior, how='left', indicator=True)
     df_new = df_new[df_new['_merge']=='left_only'].drop('_merge',1)
 
+    df_new = pd.concat([df_req,df_new],sort=False)
+    
     # convert strings back to lists
     for key in ['experiments','models','variables','members']:
         df_new.loc[:,key] = df_new.loc[:,key].apply(literal_eval)
     
-    request_clean(df_new)
+    dtrouble = request_clean(df_new)
     
-    return df_new
+    return df_new, dtrouble
 
 def set_request_id():
-    return datetime.now().strftime('%Y%m-%d%H-%M%S')
+    return datetime.now().strftime('%Y%m%d-%H%M')
 
 def request_clean(df):
     experiments = list(pd.read_csv('csv/Experiments_tier1.csv').experiment_id.unique())
@@ -69,7 +86,7 @@ def request_clean(df):
     df_source = pd.read_csv('csv/Models.csv')
     sources = list(df_source.source_id.unique())
     
-    trouble_list = {}
+    dtrouble = {}
     for item,row in df.iterrows():
         troubles = []
         email = row['E-mail']
@@ -92,11 +109,8 @@ def request_clean(df):
                 tables = list(df_var[df_var.variable_id == variable_id].table_id.unique())
                 if not (table_id in tables):
                     troubles += [f"Warning: variable_id={variable_id} is not available in table_id={table_id}"]
+        
+        if len(troubles)>=1:
+            dtrouble[email+'_'+str(item)] = troubles
 
-        trouble_list[email+'_'+str(item)] = troubles
-
-    for key in trouble_list.keys():
-        [email,row] = key.split('_')
-        print(row, email, trouble_list[key])
-
-    return trouble_list
+    return dtrouble

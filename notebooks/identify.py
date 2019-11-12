@@ -19,6 +19,9 @@ def needed(dfm, df_req, dESGF):
         member_ids = row['members']
         table_id = row['table']
 
+        if len(member_ids[0]) == 0:
+            member_ids = ['All']
+            
         for variable_id in variable_ids:
             if experiment_ids == ['All']:
                 experiments = dESGF[(dESGF.table_id==table_id)&(dESGF.variable_id==variable_id)].experiment_id.unique()

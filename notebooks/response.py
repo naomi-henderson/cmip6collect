@@ -31,7 +31,7 @@ def get_details(ds,zbdir,zarr):
     vlist = zarr.split('/')[1:]
     gsurl = 'gs://cmip6' + zarr
     vlist += [gsurl, start, stop, nt, sizeG]
-    return gsurl, vlist
+    return vlist
 
 def dict_to_dfcat(zdict):
     dz = pd.DataFrame.from_dict(zdict, orient='index')

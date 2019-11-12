@@ -157,11 +157,11 @@ def search(server, df_req):
         source_ids = row['models']
         variable_ids = row['variables']
         table_id = row['table']
-        print(email)
+        print('\n'+email)
         if experiment_ids[0] == 'All':
-            for variable_id in variable_ids:
-                print(table_id,variable_id,source_ids,experiment_ids)
+            for variable_id in variable_ids:        
                 if source_ids[0] == 'All':
+                    print(table_id,variable_id,source_ids,experiment_ids)
                     try:
                         files= esgf_search(server=server, mip_era='CMIP6', variable_id=variable_id,
                                 table_id=table_id, page_size=500, verbose=False)
@@ -176,6 +176,7 @@ def search(server, df_req):
                     df_list += [files.drop_duplicates(subset =["file_name","version","checksum"]) ]
                 else:
                     for source_id in source_ids:
+                        print(table_id,variable_id,source_id,experiment_ids)
                         try:
                             files= esgf_search(server=server, mip_era='CMIP6', variable_id=variable_id,
                                     table_id=table_id, source_id = source_id, page_size=500, verbose=False)
@@ -191,8 +192,8 @@ def search(server, df_req):
         else:
             for experiment_id in experiment_ids:
                 for variable_id in variable_ids:
-                    print(table_id,variable_id,source_ids,experiment_ids)
                     if source_ids[0] == 'All':
+                        print(table_id,variable_id,source_ids,experiment_id)
                         try:
                             files= esgf_search(server=server, mip_era='CMIP6', variable_id=variable_id,
                                     table_id=table_id, experiment_id=experiment_id, page_size=500, verbose=False)
@@ -207,6 +208,7 @@ def search(server, df_req):
                         df_list += [files.drop_duplicates(subset =["file_name","version","checksum"]) ]
                     else:
                         for source_id in source_ids:
+                            print(table_id,variable_id,source_id,experiment_id)
                             try:
                                 files= esgf_search(server=server, mip_era='CMIP6', variable_id=variable_id,
                                         table_id=table_id, experiment_id=experiment_id, source_id = source_id, page_size=500, verbose=False)

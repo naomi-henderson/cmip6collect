@@ -12,11 +12,19 @@ def get_ncfiles(zarr,df,skip_sites):
     # download any files needed for this zarr store (or abort the attempt)
     tmp = 'nctemp'
     
+    institution_id = zarr.split('/')[-7]
+    v_short = zarr.split(institution_id+'/')[1]
+
+    codes = read_codes(v_short)
+    if 'noUse' in codes:
+        return [], 'noUse in codes'
+    
     okay = True
     files = df[df.zstore == zarr].file_name.unique()
-    print(files)
+    #print(files)
     gfiles = []
     #urls = []
+    trouble = ''
     for file in files:
         if okay:
             save_file = tmp + '/'+file
@@ -32,7 +40,7 @@ def get_ncfiles(zarr,df,skip_sites):
             for site in skip_sites:
                 if site in url:
                     #print('skip ',site,'domain for now')
-                    trouble[zarr] = 'skipping ' + site + ' domain'
+                    trouble += '\nskipping ' + site + ' domain'
                     okay = False
             
             if not okay:
@@ -47,26 +55,25 @@ def get_ncfiles(zarr,df,skip_sites):
                 os.system(command)
                 if os.path.getsize(save_file) != expected_size:
                     #print('second download did not fix issue - skipping file:',file)
-                    trouble[zarr] = 'netcdf download not complete'
+                    trouble += '\nnetcdf download not complete'
                     okay = False
             if os.path.getsize(save_file) == 0:
                 os.system("rm -f "+save_file)
             if okay:
                 gfiles += [save_file]
-    return gfiles
+    return gfiles, trouble
 
 def concatenate(zarr,gfiles):
 
     institution_id = zarr.split('/')[-7]
     v_short = zarr.split(institution_id+'/')[1]
 
-    ddict = ''
+    dstr = ''
     codes = read_codes(v_short)
-
-    #print('checking ',item,'/',len(new_zarrs),zbdir,'codes:', codes)
-    if 'noUse' in codes:
-        ddict[zarr] = 'code is noUse'
-        return 'failure', None, ddict
+    if len(codes) > 0:
+        #print('special treatment needed:',dd['reason_code'])
+        for code in codes:
+            dstr += '\ncodes = ' + code
 
     # guess chunk size by looking a first file: (not always a good choice - e.g. cfc11)
     nc_size = os.path.getsize(gfiles[0])
@@ -111,16 +118,16 @@ def concatenate(zarr,gfiles):
         #print(np.diff(year).sum(), len(year))
         if '3hr' in table_id:
             if not (np.diff(year).sum() == len(year)-1) | (np.diff(year).sum() == len(year)-2):
-                ddict += '\n trouble with 3hr time grid'
-                return 'failure', df7, ddict
+                dstr += '\ntrouble with 3hr time grid'
+                return 'failure', df7, dstr
         elif 'dec' in table_id:
             if not (np.diff(year).sum()/10 == len(year)) | (np.diff(year).sum()/10 == len(year)-1):
-                ddict += '\ntrouble with dec time grid'
-                return 'failure',df7, ddict
+                dstr += '\ntrouble with dec time grid'
+                return 'failure',df7, dstr
         else:
             if not np.diff(year).sum() == len(year)-1:
-                ddict += '\ntrouble with grid'
-                return 'failure',df7, ddict
+                dstr += '\ntrouble with grid'
+                return 'failure',df7, dstr
 
     dsl = xr.open_dataset(gfiles[0])
     tracking_id = dsl.tracking_id
@@ -133,7 +140,7 @@ def concatenate(zarr,gfiles):
     if 'time' in dsl.coords:
         df7 = df7.chunk(chunks={'time' : chunksize})   # yes, do it again
 
-    return 'success', df7, ddict
+    return 'success', df7, dstr
 
 def read_codes(zarr):
     dex = pd.read_csv('csv/exceptions.csv',skipinitialspace=True)
@@ -148,6 +155,6 @@ def read_codes(zarr):
                         if dd['variable_id'] == variable_id or dd['variable_id'] == 'all':
                             if dd['grid_label'] == grid_label or dd['grid_label'] == 'all':                                 
                                 codes += [dd['reason_code']]
-                                print('special treatment needed:',dd['reason_code'])
+                                
     return codes
 
