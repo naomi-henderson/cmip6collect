@@ -2,7 +2,7 @@
 
 This `project` repository (not a proper `package` yet) is work-in-progress for developing methods to handle new data requests automatically - at least as much as possible. I am also trying to make a first attempt at setting up a system to crowd-source the data problems/issues and solutions.  
 
-I am just starting to use the 'First Pass' notebook, `nb1-HandleDataRequest.ipynb` for responding to post-Hackathon requests. It seems to be operational and I welcome data requests at this point to test it out.    
+I am just starting to use the 'First Pass' notebook, `nb1-DataRequests.ipynb` for responding to post-Hackathon requests. It seems to be operational and I welcome data requests at this point to test it out.    
 
 At the same time, I am still adding to our CMIP6 cloud collection with my original notebooks. These 3 original notebooks (not in this repository) allow me to:
 1. download a basic set of data for popular experiment_id, table_id and variable_id choices 
@@ -18,7 +18,7 @@ But once these tasks are finished, we will focus on public data requests. Hopefu
 Procedure:
 - Data Request is made at [Google Form](https://docs.google.com/forms/d/1g3rfuLBG6eOdoeN1hnGo2H_yB_aTL1MZLe3Rlx3eUNg/edit?usp=sharing) which triggers an Email notification (to Naomi, for now)
 
-- Jupyter notebook: [nb1-HandleDataRequest.ipynb](notebooks/nb1-HandleDataRequest.ipynb) - start it running and leave it - after finished, check the logs
+- Jupyter notebook: [nb1-DataRequests.ipynb](notebooks/nb1-DataRequests.ipynb) - start it running and leave it - after finished, check the logs
    - checks for new request(s)
    - searches our current Collection to see if data is already in GCS
    - searches ESGF for availability 
@@ -36,7 +36,7 @@ Procedure:
 
 ### Part II. Second Pass - data with issues
 Procedure:
-- Jupyter notebook: [nb2-HandleDataExceptions.ipynb](notebooks/nb2-HandelDataExceptions.ipynb) - work through the problem cases, one by one
+- Jupyter notebook: [nb2-DataExceptions.ipynb](notebooks/nb2-DataExceptions.ipynb) - work through the problem cases, one by one
    - reads the exception catalog for new issues
    - for each issue:
          - repeats the original request handling as above, checking for common issues (e.g., missing years, inconsistent coordinate names, etc)
