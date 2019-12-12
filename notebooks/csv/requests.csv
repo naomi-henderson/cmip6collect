@@ -70,6 +70,13 @@ done",[''],"['dcppA-assim', 'dcppA-hindcast']",['CanESM5'],['tas'],day,Riley Bra
 11/8/2019 11:44:12,naominaik@gmail.com,,['2'],['abrupt-2xCO2'],['All'],"['co3', 'detoc', 'dfe', 'diftrblo']",Omon,Test
 11/9/2019 10:34:23,naominaik@gmail.com,,"['r1i1p1f1', 'r1i1p1f2']",['ssp222'],"['BCC-ESM1', 'CESM2']","['huss', 'pr']",3hr,Test
 11/10/2019 11:05:14,naomi@ldeo.columbia.edu,,['All'],['All'],['All'],"['hfgeoubed', 'lithk', 'topg']",IfxGre,Naomi Henderson
+11/16/2019 7:59:19,nhn2@columbia.edu,,['r1i1p1f1'],['historical'],['GFDL-CM4'],"['tas', 'uas', 'vas']",day,Naomi Henderson
+11/25/2019 21:23:24,nhn2@columbia.edu,,['All'],"['1pctCO2', 'abrupt-4xCO2', 'hist-GHG', 'historical', 'piControl', 'ssp126', 'ssp245', 'ssp370', 'ssp585', 'abrupt-2xCO2']",['All'],"['tas', 'uas', 'vas', 'pr', 'psl', 'rlut', 'rsdt', 'rsut']",Amon,Naomi Henderson
+11/25/2019 21:24:57,nhn2@columbia.edu,,['All'],"['1pctCO2', 'abrupt-4xCO2', 'hist-GHG', 'historical', 'piControl', 'ssp126', 'ssp245', 'ssp370', 'ssp585', 'abrupt-2xCO2']",['All'],['siconc'],SImon,Naomi Henderson
+12/10/2019 9:37:31,schupfner@dkrz.de,,['All'],['ssp585'],['MPI-ESM1-2-HR'],"['tas', 'ps', 'ta']",Amon,Martin Schupfner
+12/10/2019 14:50:11,nandi.pritam007@gmail.com,,['All'],"['historical', 'ssp245', 'ssp585']",['All'],"['tasmax', 'tasmin', 'prra', 'sfcWind']",Esubhr,Saswata Nandi
+12/10/2019 20:35:53,1047071113@qq.com,,['All'],"['1pctCO2', 'ssp245']",['All'],['pr'],Amon,yang xianke
+12/11/2019 3:51:36,bbronselaer@email.arizona.edu,,['All'],['1pctCO2'],['All'],['tos'],Omon,Ben Bronselaer
 2019-10-02,sridge@ldeo.columbia.edu,,[''],['historical'],['CESM2'],"['thetao', 'so', 'dissic', 'no3', 'cfc11', 'sf6', 'po4', 'talk']",Omon,Sean Ridge
 9/27/2019 15:30:03,berner@ucar.edu,,[''],['piControl'],"['CESM2', 'GFDL-CM4']","['ua', 'rlut']",day,Judith Berner
 10/10/2019 14:52:53,mmsmith@uw.edu,,[''],"['1pctCO2', 'abrupt-4xCO2', 'historical', 'piControl', 'ssp585']",['All'],"['rlus', 'rlds']",Amon,Madison Smith

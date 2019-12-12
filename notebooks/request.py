@@ -6,9 +6,10 @@ from ast import literal_eval
 import os
 import xarray as xr
 import numpy as np
+import os
 
 def getsheet(json_keyfile,sheet_name):
-    scope = ['https://spreadsheets.google.com/feeds', 'https://www.googleapis.com/auth/drive']
+    scope = ['https://spreadsheets.google.com/feeds',           'https://www.googleapis.com/auth/drive']
 
     credentials = ServiceAccountCredentials.from_json_keyfile_name(json_keyfile, scope)
 
@@ -53,6 +54,7 @@ def requests(df_prior,rows=[],emails=[]):
 
     df_req = df[df['requester']!='Test']    
     
+    os.system("/bin/rm -f csv/request_new.csv")
     df_all = getsheet(json_keyfile, sheet_name)
     # save and read back in order to look like df_prior
     df_all.to_csv('csv/request_new.csv',index=False)
@@ -91,7 +93,6 @@ def request_clean(df):
         troubles = []
         email = row['E-mail']
         table_id = row['table']  
-        
         experiment_ids = row['experiments']
         for experiment_id in experiment_ids:
             if not ((experiment_id in experiments)or(experiment_id=='All')):

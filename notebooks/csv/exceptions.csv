@@ -1,27 +1,28 @@
 source_id,experiment_id,member_id,table_id,variable_id,grid_label,reason_code,reason_txt
-HadGEM3-GC31-MM,piControl,r1i1p1f1,Amon,rsdt,gn, noUse, to_zarr ValueError: Codec does not support buffers of > 2147483647 bytes
-EC-Earth3, historical, r2i1p1f1, Omon, tos, gr, noUse, half of files are gr- the other are still gn
-EC-Earth3, historical, r2i1p1f1, Amon, all, gr, noUse, half of files are gr- the other are still gn
-EC-Earth3,historical,r24i1p1f1,Amon,uas,gr, noUse, after 2008 the files do not concatenate
-EC-Earth3,historical,r24i1p1f1,Amon,vas,gr, noUse, after 2008 the files do not concatenate
-EC-Earth3, historical, r2i1p1f1, LImon, snw, gr, noUse, half of files are gr- the other are still gn
-EC-Earth3, historical, r2i1p1f1, LImon, snc, gr, noUse, half of files are gr- the other are still gn
-EC-Earth3, historical, r2i1p1f1, SImon, siconca, gr, noUse, half of files are gr- the other are still gn
-EC-Earth3, historical, r2i1p1f1, Lmon, all, gr, noUse, half of files are gr- the other are still gn
-EC-Earth3, historical, r2i1p1f1, Omon, uo, gn, noUse, some of the files are on a different vertical grid
-EC-Earth3, historical, r2i1p1f1, Omon, vo, gn, noUse, some of the files are on a different vertical grid
-EC-Earth3, historical, r2i1p1f1, Omon, umo, gn, noUse, some of the files are on a different vertical grid
-EC-Earth3, historical, r2i1p1f1, Omon, vmo, gn, noUse, some of the files are on a different vertical grid
-EC-Earth3, historical, r2i1p1f1, Omon, thetao, gn, noUse, some of the files are on a different vertical grid
-EC-Earth3, historical, r2i1p1f1, Omon, bigthetao, gn, noUse, some of the files are on a different vertical grid
-EC-Earth3, historical, r2i1p1f1, Omon, masscello, gn, noUse, some of the files are on a different vertical grid
-EC-Earth3, historical, r2i1p1f1, Omon, so, gn, noUse, some of the files are on a different vertical grid
-EC-Earth3, historical, r2i1p1f1, Omon, wo, gn, noUse, some of the files are on a different vertical grid
-EC-Earth3, historical, r2i1p1f1, Omon, agessc, gn, noUse, some of the files are on a different vertical grid
-EC-Earth3, historical, r2i1p1f1, Omon, obvfsq, gn, noUse, some of the files are on a different vertical grid
-CNRM-CM6-1, piControl, r1i1p1f2, Amon, evspsbl, gr, noUse, missing 40 years in middle of run
-GFDL-CM4,historical,r1i1p1f1,day,tas,gr1,noUse, ValueError: variables {'height'} are present in some datasets but not others. 
+HadGEM3-GC31-MM,piControl,r1i1p1f1,Amon,rsdt,gn, noUse, to_zarr ValueError: Codec does not support buffers of > 2147483647 bytesn
+HadGEM3-GC31-MM,control-1950,r1i1p1f1,Amon,rsdt,gn, noUse, to_zarr ValueError: Codec does not support buffers of > 2147483647 bytesn
+HadGEM3-GC31-HM,control-1950,r1i1p1f1,Amon,rsdt,gn, noUse, to_zarr ValueError: Codec does not support buffers of > 2147483647 bytesn
+HadGEM3-GC31-HM,hist-1950,r1i1p1f1,Amon,rsdt,gn, noUse, to_zarr ValueError: Codec does not support buffers of > 2147483647 bytes
+GFDL-CM4,piControl,r1i1p1f1,Omon,spco2,gr, noUse, MergeError: conflicting values for variable 'geolon' on objects to be combined
+GFDL-CM4,piControl,r1i1p1f1,Omon,intpp,gr, noUse, MergeError: conflicting values for variable 'geolon' on objects to be combined
+GFDL-CM4,historical,r1i1p1f1,day,sfcWind,gr2, drop_height, one (last) ncfile contains an extra height dimension to indicate it is at 10m
+GFDL-CM4,historical,r1i1p1f1,day,sfcWind,gr1, drop_height, one (last) ncfile contains an extra height dimension to indicate it is at 10m
+GFDL-CM4,historical,r1i1p1f1,day,tasmax,gr1, drop_height, one (last) ncfile contains an extra height dimension to indicate it is at 10m
+GFDL-CM4,historical,r1i1p1f1,day,tasmax,gr2, drop_height, one (last) ncfile contains an extra height dimension to indicate it is at 10m
+GFDL-CM4,historical,r1i1p1f1,day,tasmin,gr1, drop_height, one (last) ncfile contains an extra height dimension to indicate it is at 10m
+GFDL-CM4,historical,r1i1p1f1,day,tasmin,gr2, drop_height, one (last) ncfile contains an extra height dimension to indicate it is at 10m
+GFDL-CM4,historical,r1i1p1f1,day,tas,gr1, drop_height, one (last) ncfile contains an extra height dimension to indicate it is at 10m
+GFDL-CM4,historical,r1i1p1f1,day,uas,gr1,noUse, ValueError: variables {'height'} are present in some datasets but not others. 
+GFDL-CM4,historical,r1i1p1f1,day,vas,gr1,noUse, ValueError: variables {'height'} are present in some datasets but not others. 
+GFDL-CM4,historical,r1i1p1f1,day,hurs,gr1,noUse, ValueError: variables {'height'} are present in some datasets but not others. 
+GFDL-CM4,historical,r1i1p1f1,day,huss,gr1,noUse, ValueError: variables {'height'} are present in some datasets but not others. 
+GFDL-CM4,historical,r1i1p1f1,day,sfcWindmax,gr1,noUse, ValueError: variables {'height'} are present in some datasets but not others. 
 GFDL-CM4,historical,r1i1p1f1,day,tas,gr2,noUse, ValueError: variables {'height'} are present in some datasets but not others. 
+GFDL-CM4,historical,r1i1p1f1,day,sfcWindmax,gr2,noUse, ValueError: variables {'height'} are present in some datasets but not others. 
+GFDL-CM4,historical,r1i1p1f1,day,hurs,gr2,noUse, ValueError: variables {'height'} are present in some datasets but not others. 
+GFDL-CM4,historical,r1i1p1f1,day,huss,gr2,noUse, ValueError: variables {'height'} are present in some datasets but not others. 
+GFDL-CM4,historical,r1i1p1f1,day,uas,gr2,noUse, ValueError: variables {'height'} are present in some datasets but not others. 
+GFDL-CM4,historical,r1i1p1f1,day,vas,gr2,noUse, ValueError: variables {'height'} are present in some datasets but not others. 
 GFDL-CM4,piControl,r1i1p1f1,Omon,fgco2, gr, noUse, geolat trouble  - try again with new compat='override'
 GFDL-CM4,piControl,r1i1p1f1,Omon,dpco2,gr, noUse, MergeError: conflicting values for variable 'geolon' 
 GFDL-CM4,piControl,r1i1p1f1,Omon,fgo2,gr, noUse, MergeError: conflicting values for variable 'geolon' 
@@ -30,6 +31,7 @@ GFDL-CM4,historical,r1i1p1f1,Omon,fgo2,gr, noUse, geolon trouble - try again wit
 GFDL-CM4,historical,r1i1p1f1,Omon,spco2,gr, noUse, geolon trouble - try again with new compat='override'
 GFDL-CM4,historical,r1i1p1f1,Omon,intpp,gr, noUse, geolon trouble - try again with new compat='override'
 GFDL-CM4,historical,r1i1p1f1,AERmonZ,ua,gr1z, noUse, time grid is all messed up
+GFDL-ESM4,1pctCO2-bgc,r1i1p1f1,Amon,tasmax,gr1, noUse, missing years 81-82 and 108-109
 GFDL-ESM4,1pctCO2-bgc,r1i1p1f1,Amon,hus,gr1, noUse, 8 missing years
 GFDL-ESM4,1pctCO2-bgc,r1i1p1f1,Amon,ta,gr1, noUse, 8 missing years
 GFDL-ESM4,1pctCO2-bgc,r1i1p1f1,Amon,tasmin,gr1, noUse, 8 missing years
@@ -45,7 +47,12 @@ GFDL-ESM4,esm-hist,r1i1p1f1,Amon,ua,gr1,noUse, missing random years
 GFDL-ESM4,esm-hist,r1i1p1f1,Amon,va,gr1,noUse, missing random years
 GFDL-ESM4,esm-hist,r1i1p1f1,Amon,zg,gr1,noUse, missing random years
 GFDL-ESM4,esm-piControl,r1i1p1f1,Amon,tasmax,gr1,noUse, missing random years
-CNRM-ESM2-1,historical,r3i1p1f2,AERmon,mmrss,gr, noUse, unknown to_zarr HDF error
+GFDL-ESM4,esm-piControl,r1i1p1f1,Amon,tasmin,gr1,noUse, missing random years
+GFDL-ESM4,esm-piControl,r1i1p1f1,Amon,ua,gr1,noUse, missing random years
+GFDL-ESM4,esm-piControl,r1i1p1f1,Amon,va,gr1,noUse, missing random years
+GFDL-ESM4,esm-piControl,r1i1p1f1,Amon,hus,gr1,noUse, missing random years
+GFDL-ESM4,esm-piControl,r1i1p1f1,Amon,ta,gr1,noUse, missing random years
+GFDL-ESM4,esm-piControl,r1i1p1f1,Amon,zg,gr1,noUse, missing random years
 CanESM5,hist-GHG,r7i1p1f1,Amon,huss,gn, noUse, unknown to_zarr HDF error
 CESM2, historical, r11i1p1f1, Lmon,cRoot, gn, time_1950-2014, years 1900 - 1949 not available
 CESM2,esm-hist,r1i1p1f1,Amon,rlus, gn, noUse, years 1900 - 1949 not available
@@ -114,6 +121,8 @@ MRI-ESM2-0, piControl, r1i1p1f1, Amon, all, all, 360_day, trying again
 MRI-ESM2-0,ssp119,r1i1p1f1,Amon,ua,gn, noUse, unknown HDF error?
 CNRM-CM6-1, piControl, r1i1p1f2, Amon, all, all, drop_tb, trying again
 CNRM-CM6-1, piControl, r1i1p1f2, Amon, all, all, 360_day, trying again
+CNRM-CM6-1, piControl, r1i1p1f2, Amon, evspsbl, gr, noUse, missing 40 years in middle of run
+CNRM-ESM2-1,historical,r3i1p1f2,AERmon,mmrss,gr, noUse, unknown to_zarr HDF error
 CNRM-ESM2-1, piControl, r1i1p1f2, Amon, all, all, drop_tb, trying again
 CNRM-ESM2-1, piControl, r1i1p1f2, Amon, all, all, 360_day, trying again
 CNRM-ESM2-1,piClim-2xdust,r1i1p1f2,Amon,ta,gr, noUse, unknown HDF error when creating zarr
@@ -147,15 +156,6 @@ E3SM-1-0, historical, r3i1p1f1, SImon, siconc, gr, noUse, (time_1950-2014) missi
 E3SM-1-0, piControl, r1i1p1f1, Omon, fgco2, gn, noUse, extra file must be deleted: fgco2_Omon_CanESM5_piControl_r1i1p1f1_gn_591001-591012
 E3SM-1-0,piControl,r1i1p1f1,SImon,siconc,gr, noUse, extra file Resulting object does not have monotonic global indexes along dimension time
 BCC-CSM2-MR, historical, r1i1p1f1, 6hrLev, hus, gn, noUse, all data after 2012 has zeros in the dimensions
-GFDL-CM4,piControl,r1i1p1f1,Omon,spco2,gr, noUse, MergeError: conflicting values for variable 'geolon' on objects to be combined
-GFDL-CM4,piControl,r1i1p1f1,Omon,intpp,gr, noUse, MergeError: conflicting values for variable 'geolon' on objects to be combined
-GFDL-CM4,historical,r1i1p1f1,day,sfcWind,gr2, drop_height, one (last) ncfile contains an extra height dimension to indicate it is at 10m
-GFDL-CM4,historical,r1i1p1f1,day,sfcWind,gr1, drop_height, one (last) ncfile contains an extra height dimension to indicate it is at 10m
-GFDL-CM4,historical,r1i1p1f1,day,tasmax,gr1, drop_height, one (last) ncfile contains an extra height dimension to indicate it is at 10m
-GFDL-CM4,historical,r1i1p1f1,day,tasmax,gr2, drop_height, one (last) ncfile contains an extra height dimension to indicate it is at 10m
-GFDL-CM4,historical,r1i1p1f1,day,tasmin,gr1, drop_height, one (last) ncfile contains an extra height dimension to indicate it is at 10m
-GFDL-CM4,historical,r1i1p1f1,day,tasmin,gr2, drop_height, one (last) ncfile contains an extra height dimension to indicate it is at 10m
-GFDL-ESM4,1pctCO2-bgc,r1i1p1f1,Amon,tasmax,gr1, noUse, missing years 81-82 and 108-109
 NorESM2-LM,abrupt-4xCO2,r1i1p1f1,day,pr,gn, noUse,  there are 3 damaged files in the middle - from 01231020 - 01501019
 SAM0-UNICON,piControl,r1i1p1f1,SImon,siconc,gn, noUse, they skip year 0290 in the middle of the run!
 SAM0-UNICON,piControl,r1i1p1f1,Lmon,mrsos,gn, noUse, they skip year 0290 in the middle of the run!
@@ -167,6 +167,10 @@ SAM0-UNICON,piControl,r1i1p1f1,SImon,siconca,gn, noUse, use only v20190910 versi
 SAM0-UNICON,piControl,r1i1p1f1,SImon,sithick,gn, noUse, use only v20190910 version of the files
 SAM0-UNICON,piControl,r1i1p1f1,SImon,sivol,gn, noUse, very strange file needs to be deleted: only use nctemp/sivol_SImon_SAM0-UNICON_piControl_r1i1p1f1_gn_0??1*
 SAM0-UNICON,piControl,r1i1p1f1,Omon, all, gn, noleap, time grid of first file must be fixed: thetaoga_Omon_SAM0-UNICON_piControl_r1i1p1f1_gn_000101-001012.nc
+SAM0-UNICON,piControl,r1i1p1f1,Omon,masso,gn, noUse, missing year 0290
+SAM0-UNICON,piControl,r1i1p1f1,Omon,masscello,gn, noUse, missing year 0290
+SAM0-UNICON,piControl,r1i1p1f1,Omon,zos,gn, noUse, missing year 0290
+SAM0-UNICON,piControl,r1i1p1f1,Omon,thetaoga,gn, noUse, missing year 0290
 SAM0-UNICON,piControl,r1i1p1f1,day,  pr,  gn, noUse, missing year 0020 of a 700 year run
 SAM0-UNICON,piControl,r1i1p1f1,day, tasmax,  gn, noUse, missing year 0020 of a 700 year run
 SAM0-UNICON,piControl,r1i1p1f1,day, tasmin,  gn, noUse, missing year 0020 of a 700 year run
@@ -184,10 +188,33 @@ UKESM1-0-LL,piControl,r1i1p1f2,Omon,uo,gn, noUse, conflicting values for variabl
 UKESM1-0-LL,piControl,r1i1p1f2,Omon,vo,gn, noUse, conflicting values for variable 'vertices_latitude' on objects to be combined
 UKESM1-0-LL,piControl,r1i1p1f2,Omon,agessc,gn, noUse, conflicting values for variable 'vertices_latitude' on objects to be combined
 BCC-CSM2-MR,piControl,r1i1p1f1,Amon,o3,gn, noUse, change Amon to Aclim
-EC-Earth3,historical,r2i1p1f1,day,all,gr, noUse, some are on gr and some on gn - e.g. compare snw 1935 with 1936. KeyError: 'lat'
-EC-Earth3,historical,r2i1p1f1,Oday,all,gr, noUse, same KeyError: 'lat' as for day
-EC-Earth3,historical, r2i1p1f1, Omon, masso, gn, time_1945-2007, missing files before 1945
-EC-Earth3,historical,all,Emon,orog,gr,noUse, ???  
+EC-Earth3, historical, r2i1p1f1, Omon, tos, gr, noUse, half of files are gr- the other are still gn
+EC-Earth3, historical, r2i1p1f1, Amon, all, gr, noUse, half of files are gr- the other are still gn
+EC-Earth3, historical,r24i1p1f1,Amon,uas,gr, noUse, after 2008 the files do not concatenate
+EC-Earth3, historical,r24i1p1f1,Amon,vas,gr, noUse, after 2008 the files do not concatenate
+EC-Earth3, historical, r2i1p1f1, LImon, snw, gr, noUse, half of files are gr- the other are still gn
+EC-Earth3, historical, r2i1p1f1, LImon, snc, gr, noUse, half of files are gr- the other are still gn
+EC-Earth3, historical, r2i1p1f1, SImon, siconca, gr, noUse, half of files are gr- the other are still gn
+EC-Earth3, historical, r2i1p1f1, Lmon, all, gr, noUse, half of files are gr- the other are still gn
+EC-Earth3, historical, r2i1p1f1, Omon, uo, gn, noUse, some of the files are on a different vertical grid
+EC-Earth3, historical, r2i1p1f1, Omon, vo, gn, noUse, some of the files are on a different vertical grid
+EC-Earth3, historical, r2i1p1f1, Omon, umo, gn, noUse, some of the files are on a different vertical grid
+EC-Earth3, historical, r2i1p1f1, Omon, vmo, gn, noUse, some of the files are on a different vertical grid
+EC-Earth3, historical, r2i1p1f1, Omon, thetao, gn, noUse, some of the files are on a different vertical grid
+EC-Earth3, historical, r2i1p1f1, Omon, bigthetao, gn, noUse, some of the files are on a different vertical grid
+EC-Earth3, historical, r2i1p1f1, Omon, masscello, gn, noUse, some of the files are on a different vertical grid
+EC-Earth3, historical, r2i1p1f1, Omon, so, gn, noUse, some of the files are on a different vertical grid
+EC-Earth3, historical, r2i1p1f1, Omon, wo, gn, noUse, some of the files are on a different vertical grid
+EC-Earth3, historical, r2i1p1f1, Omon, agessc, gn, noUse, some of the files are on a different vertical grid
+EC-Earth3, historical, r2i1p1f1, Omon, obvfsq, gn, noUse, some of the files are on a different vertical grid
+EC-Earth3, historical,r2i1p1f1,day,all,gr, noUse, some are on gr and some on gn - e.g. compare snw 1935 with 1936. KeyError: 'lat'
+EC-Earth3, historical,r24i1p1f1,day,hus,gr, noUse, TypeError: CFTimeIndex requires using datetime objects of all the same type.  
+EC-Earth3, historical,r24i1p1f1,day,sfcWind,gr, noUse, TypeError: CFTimeIndex requires using datetime objects of all the same type.  
+EC-Earth3, historical,r24i1p1f1,day,rlds,gr, noUse, TypeError: CFTimeIndex requires using datetime objects of all the same type.  
+EC-Earth3, historical,r24i1p1f1,day,prc,gr, noUse, TypeError: CFTimeIndex requires using datetime objects of all the same type.  
+EC-Earth3, historical,r2i1p1f1,Oday,all,gr, noUse, same KeyError: 'lat' as for day
+EC-Earth3, historical, r2i1p1f1, Omon, masso, gn, time_1945-2007, missing files before 1945
+EC-Earth3, historical,all,Emon,orog,gr,noUse, ???  
 EC-Earth3-LR,piControl,r1i1p1f1,Amon,clt,gr,noUse, change Amon to Aclim
 EC-Earth3-LR,piControl,r1i1p1f1,Amon,evspsbl,gr,noUse, change Amon to Aclim
 EC-Earth3-LR,piControl,r1i1p1f1,Amon,hfls,gr,noUse, change Amon to Aclim

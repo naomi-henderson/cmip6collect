@@ -2,10 +2,18 @@ import os
 import numpy as np
 import pandas as pd
 import xarray as xr
+import datetime
 
 def set_bnds_as_coords(ds):
     new_coords_vars = [var for var in ds.data_vars if 'bnds' in var or 'bounds' in var]
     ds = ds.set_coords(new_coords_vars)
+    return ds
+
+def set_bnds_as_coords_drop_height(ds):
+    new_coords_vars = [var for var in ds.data_vars if 'bnds' in var or 'bounds' in var]
+    ds = ds.set_coords(new_coords_vars)
+    if 'height' in ds.coords:
+        ds = ds.drop('height')
     return ds
 
 def get_ncfiles(zarr,df,skip_sites):
@@ -86,13 +94,32 @@ def concatenate(zarr,gfiles):
 
     #print('nt:',nt,'netcdf size:', nc_size/1e6, 'Mb')
     #print('suggested chunksize:', chunksize)
+    try:
+        if 'time' in ds.coords:   
+            df7 = xr.open_mfdataset(gfiles, preprocess=set_bnds_as_coords, data_vars='minimal', chunks={'time': chunksize},
+                                    use_cftime=True, combine='nested', concat_dim='time') # combine='nested'
+            
+        else: # fixed in time, no time grid
+            df7 = xr.open_mfdataset(gfiles, preprocess=set_bnds_as_coords, combine='by_coords', data_vars='minimal')
+    except:
+        print('trouble in open_mfdataset')
+        dstr += '\nerror in open_mfdataset'
 
-    if 'time' in ds.coords:   # please use cftime - piControl cannot use datetime64
-        df7 = xr.open_mfdataset(gfiles, preprocess=set_bnds_as_coords, data_vars='minimal', chunks={'time': chunksize},
-                                use_cftime=True, combine='nested', concat_dim='time') # combine='nested'
-    else: # fixed in time, no time grid
-        df7 = xr.open_mfdataset(gfiles, preprocess=set_bnds_as_coords, combine='by_coords', data_vars='minimal')
-
+        if 'drop_height' in codes: 
+            try:
+                if 'time' in ds.coords:   
+                    df7 = xr.open_mfdataset(gfiles, preprocess=set_bnds_as_coords_drop_height, data_vars='minimal', chunks={'time': chunksize},
+                                        use_cftime=True, combine='nested', concat_dim='time') # combine='nested'
+                else: # fixed in time, no time grid
+                    df7 = xr.open_mfdataset(gfiles, preprocess=set_bnds_as_coords_drop_height, combine='by_coords', data_vars='minimal')
+                    dstr += '\nerror fixed by drop_height'
+            except:
+                dstr += '\nerror not fixed by drop_height'
+                return 'failure',ds, dstr                
+        else:
+            dstr += '\nerror not fixable'
+            return 'failure',ds, dstr
+                
     for code in codes:
         if 'drop_tb' in code: # to_zarr cannot do chunking with time_bounds/time_bnds which is cftime (an object, not float)
             timeb = [var for var in df7.coords if 'time_bnds' in var or 'time_bounds' in var][0]
@@ -137,6 +164,10 @@ def concatenate(zarr,gfiles):
             tracking_id = tracking_id+'\n'+dsl.tracking_id
     df7.attrs['tracking_id'] = tracking_id
 
+    date = str(datetime.datetime.now().strftime("%Y-%m-%d"))
+    nstatus = date + ';created; by nhn2@columbia.edu'
+    df7.attrs['status'] = nstatus
+    
     if 'time' in dsl.coords:
         df7 = df7.chunk(chunks={'time' : chunksize})   # yes, do it again
 
