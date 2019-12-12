@@ -115,9 +115,4 @@ def response(df_req,dfcat):
                                                  aggfunc=np.sum,
                                                  fill_value=0)
 
-            print('GCS request for:',email,'; table_id=',table_id)
-            print('(number of member_ids)*(number of grid_labels)')
-            print('--------------------------')
-            print(table)
-            print()
-    return
+    return table
