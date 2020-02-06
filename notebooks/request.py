@@ -9,7 +9,7 @@ import numpy as np
 import os
 
 def getsheet(json_keyfile,sheet_name):
-    scope = ['https://spreadsheets.google.com/feeds',           'https://www.googleapis.com/auth/drive']
+    scope = ['https://spreadsheets.google.com/feeds','https://www.googleapis.com/auth/drive']
 
     credentials = ServiceAccountCredentials.from_json_keyfile_name(json_keyfile, scope)
 
@@ -28,8 +28,11 @@ def getsheet(json_keyfile,sheet_name):
     df['variables'] = [s.replace(' ','').split(',') for s in df['variable_ids (comma separated list)'].values]
     df['table'] = [s.replace(' ','').split(':')[0] for s in df.table_id.values]
     df['requester'] = df['Your name'] 
+    df['science'] = df['Science Question/Motivation'] 
+    df['comments'] = df['Questions and comments'] 
 
-    df = df.drop(['Your name', 'Science Question/Motivation','Have you verified the existence of the data you will request?',
+    df = df.drop(['Your name', 'Science Question/Motivation',
+                  'Have you verified the existence of the data you will request?',
                   'table_id', 'source_ids', 'experiment_ids','member_ids',
                   'variable_ids (comma separated list)', 'Questions and comments'],1) 
     return df
@@ -52,10 +55,12 @@ def requests(df_prior,rows=[],emails=[]):
             dk += [df[df['E-mail']==email]]
         df = pd.concat(dk)
 
-    df_req = df[df['requester']!='Test']    
+    df_req = df[df['requester']!='Test'] 
+    df_req = df[df['response status']!='once'] 
     
     os.system("/bin/rm -f csv/request_new.csv")
     df_all = getsheet(json_keyfile, sheet_name)
+    
     # save and read back in order to look like df_prior
     df_all.to_csv('csv/request_new.csv',index=False)
     df_all = pd.read_csv('csv/request_new.csv')

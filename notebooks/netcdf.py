@@ -3,6 +3,7 @@ import numpy as np
 import pandas as pd
 import xarray as xr
 import datetime
+import time
 
 def set_bnds_as_coords(ds):
     new_coords_vars = [var for var in ds.data_vars if 'bnds' in var or 'bounds' in var]
@@ -20,16 +21,21 @@ def get_ncfiles(zarr,df,skip_sites):
     # download any files needed for this zarr store (or abort the attempt)
     tmp = 'nctemp'
     
-    institution_id = zarr.split('/')[-7]
-    v_short = zarr.split(institution_id+'/')[1]
+    #institution_id = zarr.split('/')[-7]
+    #v_short = zarr.split(institution_id+'/')[1]
+    
+    institution_id = zarr.split('/')[-8]
+    v_short = zarr.split(institution_id+'/')[1][:-1]
 
+    #print('institution_id',institution_id,v_short)
+    
     codes = read_codes(v_short)
     if 'noUse' in codes:
         return [], 'noUse in codes'
     
     okay = True
     files = df[df.zstore == zarr].file_name.unique()
-    #print(files)
+    #print(zarr,files)
     gfiles = []
     #urls = []
     trouble = ''
@@ -57,6 +63,7 @@ def get_ncfiles(zarr,df,skip_sites):
             command = 'curl ' + url + ' -o ' + save_file
             print(command)
             os.system(command)
+            time.sleep( 2 )
 
             if os.path.getsize(save_file) != expected_size:
                 #print('trying curl command again')
@@ -73,13 +80,16 @@ def get_ncfiles(zarr,df,skip_sites):
 
 def concatenate(zarr,gfiles):
 
-    institution_id = zarr.split('/')[-7]
-    v_short = zarr.split(institution_id+'/')[1]
-
+    #institution_id = zarr.split('/')[-7]
+    #v_short = zarr.split(institution_id+'/')[1]
+    institution_id = zarr.split('/')[-8]
+    v_short = zarr.split(institution_id+'/')[1][:-1]
+    
     dstr = ''
     codes = read_codes(v_short)
+    
     if len(codes) > 0:
-        #print('special treatment needed:',dd['reason_code'])
+        print('special treatment needed:',codes)
         for code in codes:
             dstr += '\ncodes = ' + code
 
@@ -91,6 +101,13 @@ def concatenate(zarr,gfiles):
 
     chunksize_optimal = 5e7
     chunksize = max(int(nt*chunksize_optimal/nc_size),1)
+
+    for code in codes:
+        if 'deptht' in code:
+            fix_string = '/usr/bin/ncrename -d .deptht\,olevel -v .deptht\,olevel -d .deptht_bounds\,olevel_bounds -v .deptht_bounds\,olevel_bounds '
+            for gfile in gfiles:
+                print('fixing deptht trouble in ',gfile)
+                os.system(f'{fix_string} {gfile}')
 
     #print('nt:',nt,'netcdf size:', nc_size/1e6, 'Mb')
     #print('suggested chunksize:', chunksize)
@@ -137,6 +154,9 @@ def concatenate(zarr,gfiles):
             #print('encoding time as noleap from year = ',year)
         if 'missing' in code:
             del df7[svar].encoding['missing_value']
+        if 'fix_time' in code:
+            df7['time'] = xr.cftime_range(start=df7.time[0].values.tolist(), periods=df7.time.shape[0], freq='D')
+            print('changing all times to standard day calendar')
 
     #     check time grid to make sure there are no gaps in concatenated data (open_mfdataset checks for mis-ordering)
     if 'time' in ds.coords:
@@ -165,7 +185,7 @@ def concatenate(zarr,gfiles):
     df7.attrs['tracking_id'] = tracking_id
 
     date = str(datetime.datetime.now().strftime("%Y-%m-%d"))
-    nstatus = date + ';created; by nhn2@columbia.edu'
+    nstatus = date + ';created; by gcs.cmip6.ldeo@gmail.com'
     df7.attrs['status'] = nstatus
     
     if 'time' in dsl.coords:
@@ -179,13 +199,20 @@ def read_codes(zarr):
     [source_id,experiment_id,member_id,table_id,variable_id,grid_label] = zarr.split('/')
     for ex in dex.values:
         dd = dict(zip(dex.keys(),ex))
+        #print(source_id,experiment_id,member_id,table_id,variable_id,grid_label)
         if dd['source_id'] == source_id or dd['source_id'] == 'all':
+            #print(source_id)
             if dd['experiment_id'] == experiment_id or dd['experiment_id'] == 'all':
+                #print(experiment_id)
                 if dd['member_id'] == member_id or dd['member_id'] == 'all':
+                    #print(member_id)
                     if dd['table_id'] == table_id or dd['table_id'] == 'all':
+                        #print(table_id)
                         if dd['variable_id'] == variable_id or dd['variable_id'] == 'all':
-                            if dd['grid_label'] == grid_label or dd['grid_label'] == 'all':                                 
+                            #print(variable_id)
+                            if dd['grid_label'] == grid_label or dd['grid_label'] == 'all':  
+                                #print(dd['reason_code'])
                                 codes += [dd['reason_code']]
-                                
+    #print(codes)                     
     return codes
 

@@ -5,7 +5,7 @@ def needed(dfm, df_req, dESGF):
 
     ngood = 0
     zarr_format = '/%(activity_drs)s/%(institution_id)s/%(source_id)s/%(experiment_id)s/\
-%(member_id)s/%(table_id)s/%(variable_id)s/%(grid_label)s'
+%(member_id)s/%(table_id)s/%(variable_id)s/%(grid_label)s/'
     df_list = []
 
     for index, row in df_req.iterrows():
@@ -55,25 +55,39 @@ def needed(dfm, df_req, dESGF):
                        members = member_ids
                        
                     for member_id in members:
-                        #print(experiment_id,variable_id,source_id,member_id)
+                        
                         df_member = df[df.member_id==member_id]
-                        file = df_member.values[0]
-                        zarr_dir = dict(zip(df.keys(),file))
-                        zarr_file = zarr_format % zarr_dir
-   
-                        zstore = 'gs://cmip6' + zarr_file + '/'
-                        df_cloud = dfm[dfm.zstore==zstore]
-                        if len(df_cloud) >= 1:
-                            #print('store already in cloud')
-                            continue
-                        else:
-                            ngood += 1
-  
-                        with warnings.catch_warnings():
-                            warnings.filterwarnings("ignore")
-                            df_member.loc[:,'zstore'] = zarr_file
+                           
+                        grid_labels = df_member.grid_label.unique()  
+                        
+                        for grid_label in grid_labels:
+                            df_grid = df_member[df_member.grid_label==grid_label]
+                            try:
+                                file = df_grid.values[0]
+                            except:
+                                continue
+ 
+                            #print(experiment_id,variable_id,source_id,member_id,grid_label)
+                            
+                            zarr_dir = dict(zip(df.keys(),file))
+                            zarr_file = zarr_format % zarr_dir 
 
-                        df_list += [df_member]
+                            zstore = 'gs://cmip6' + zarr_file 
+                        
+                            #print(zstore)
+                            df_cloud = dfm[(dfm.zstore==zstore)]
+                            
+                            if len(df_cloud) >= 1:
+                                #print('store already in cloud')
+                                continue
+                            else:
+                                ngood += 1
+
+                            with warnings.catch_warnings():
+                                warnings.filterwarnings("ignore")
+                                df_grid.loc[:,'zstore'] = zarr_file
+
+                            df_list += [df_grid]
 
     if ngood >= 1:
         return pd.concat(df_list)

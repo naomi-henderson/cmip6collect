@@ -45,6 +45,7 @@ def dict_to_dfcat(zdict):
 
 def response(df_req,dfcat):
     mails = df_req['E-mail'].unique()
+
     for mail in mails:
         dfn = df_req.loc[df_req['E-mail'] == mail]
 
@@ -66,23 +67,23 @@ def response(df_req,dfcat):
                 table_id = '3hr'
             else:
                 dc = dfcat[dfcat.table_id == table_id]
+            print(len(dc),table_id)    
             dcat = []
-            
             if experiment_ids != ['All']:
                 for experiment_id in experiment_ids:
                     dcat += [dc[dc.experiment_id == experiment_id]]
-                dc = pd.concat(dcat,sort=False)
-                
+                dc = pd.concat(dcat,sort=False)  
+            print(len(dc),experiment_ids)    
             dcat = []
             for variable_id in variable_ids:
                 dcat += [dc[dc.variable_id == variable_id]]
             dc = pd.concat(dcat,sort=False)
+            print(len(dc),variable_ids)  
             dcat = []
             if source_ids != ['All']:
                 for source_id in source_ids:
                     dcat += [dc[dc.source_id == source_id]]
                 dc = pd.concat(dcat,sort=False)
-
             if table_type == 'simple':
                 dm = dc[['experiment_id','source_id','variable_id','member_id']].groupby([
                          'experiment_id','source_id','variable_id']).nunique()[['member_id']]
@@ -114,5 +115,4 @@ def response(df_req,dfcat):
                                                  columns=['variable_id'],
                                                  aggfunc=np.sum,
                                                  fill_value=0)
-
     return table
