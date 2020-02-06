@@ -21,23 +21,17 @@ def get_ncfiles(zarr,df,skip_sites):
     # download any files needed for this zarr store (or abort the attempt)
     tmp = 'nctemp'
     
-    #institution_id = zarr.split('/')[-7]
-    #v_short = zarr.split(institution_id+'/')[1]
-    
     institution_id = zarr.split('/')[-8]
     v_short = zarr.split(institution_id+'/')[1][:-1]
 
-    #print('institution_id',institution_id,v_short)
-    
     codes = read_codes(v_short)
     if 'noUse' in codes:
-        return [], 'noUse in codes'
+        return [], 'noUse in codes',codes
     
     okay = True
     files = df[df.zstore == zarr].file_name.unique()
-    #print(zarr,files)
+
     gfiles = []
-    #urls = []
     trouble = ''
     for file in files:
         if okay:
@@ -45,7 +39,6 @@ def get_ncfiles(zarr,df,skip_sites):
             expected_size = df[df.file_name == file]['size'].values[0]
             if os.path.isfile(save_file):
                 if abs(os.path.getsize(save_file) - expected_size) <= 1000 :
-                    #print('already have: ',save_file)
                     gfiles += [save_file]
                     continue
 
@@ -53,7 +46,6 @@ def get_ncfiles(zarr,df,skip_sites):
             
             for site in skip_sites:
                 if site in url:
-                    #print('skip ',site,'domain for now')
                     trouble += '\tskipping ' + site + ' domain'
                     okay = False
             
@@ -66,30 +58,20 @@ def get_ncfiles(zarr,df,skip_sites):
             time.sleep( 2 )
 
             if os.path.getsize(save_file) != expected_size:
-                #print('trying curl command again')
                 os.system(command)
                 if os.path.getsize(save_file) != expected_size:
-                    #print('second download did not fix issue - skipping file:',file)
                     trouble += '\nnetcdf download not complete'
                     okay = False
             if os.path.getsize(save_file) == 0:
                 os.system("rm -f "+save_file)
             if okay:
                 gfiles += [save_file]
-    return gfiles, trouble
+    return gfiles, trouble, codes
 
-def concatenate(zarr,gfiles):
-
-    #institution_id = zarr.split('/')[-7]
-    #v_short = zarr.split(institution_id+'/')[1]
-    institution_id = zarr.split('/')[-8]
-    v_short = zarr.split(institution_id+'/')[1][:-1]
-    
-    dstr = ''
-    codes = read_codes(v_short)
+def concatenate(zarr,gfiles,codes):
     
     if len(codes) > 0:
-        print('special treatment needed:',codes)
+        write_log(log_file,f'special treatment needed: {codes}',verbose=verbose)
         for code in codes:
             dstr += '\ncodes = ' + code
 
@@ -106,11 +88,9 @@ def concatenate(zarr,gfiles):
         if 'deptht' in code:
             fix_string = '/usr/bin/ncrename -d .deptht\,olevel -v .deptht\,olevel -d .deptht_bounds\,olevel_bounds -v .deptht_bounds\,olevel_bounds '
             for gfile in gfiles:
-                print('fixing deptht trouble in ',gfile)
+                write_log(log_file,f'fixing deptht trouble in gfile:{gfile}',verbose=verbose)
                 os.system(f'{fix_string} {gfile}')
 
-    #print('nt:',nt,'netcdf size:', nc_size/1e6, 'Mb')
-    #print('suggested chunksize:', chunksize)
     try:
         if 'time' in ds.coords:   
             df7 = xr.open_mfdataset(gfiles, preprocess=set_bnds_as_coords, data_vars='minimal', chunks={'time': chunksize},
@@ -156,7 +136,7 @@ def concatenate(zarr,gfiles):
             del df7[svar].encoding['missing_value']
         if 'fix_time' in code:
             df7['time'] = xr.cftime_range(start=df7.time[0].values.tolist(), periods=df7.time.shape[0], freq='D')
-            print('changing all times to standard day calendar')
+            #print('changing all times to standard day calendar')
 
     #     check time grid to make sure there are no gaps in concatenated data (open_mfdataset checks for mis-ordering)
     if 'time' in ds.coords:

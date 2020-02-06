@@ -243,6 +243,7 @@ MIROC6,historical,r10i1p1f1,day,hur,gn,noUse,most of files must come from esgf-d
 MRI-ESM2-0,piControl,r1i1p1f1,Amon,all,all,360_day,trying again
 MRI-ESM2-0,piControl,r1i1p1f1,Amon,all,all,drop_tb,drop('time_bnds') before to_zarr
 MRI-ESM2-0,ssp119,r1i1p1f1,Amon,ua,gn,noUse,unknown HDF error?
+MRI-ESM2-0,ssp245,r1i1p1f1,CFmon,albisccp,gn,noUse,big gap in time grid
 NESM3,piControl,r1i1p1f1,Amon,pr,gn,noUse,missing 2 files
 NESM3,piControl,r1i1p1f1,Amon,rlus,gn,noUse,missing 070001-079912
 NICAM16-9S,highresSST-present,r1i1p1f1,3hr,all,gr,noUse,no time
