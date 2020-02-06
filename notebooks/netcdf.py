@@ -54,7 +54,7 @@ def get_ncfiles(zarr,df,skip_sites):
             for site in skip_sites:
                 if site in url:
                     #print('skip ',site,'domain for now')
-                    trouble += '\nskipping ' + site + ' domain'
+                    trouble += '\tskipping ' + site + ' domain'
                     okay = False
             
             if not okay:
