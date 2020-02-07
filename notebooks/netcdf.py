@@ -70,8 +70,9 @@ def get_ncfiles(zarr,df,skip_sites):
 
 def concatenate(zarr,gfiles,codes):
     
+    dstr = ''
     if len(codes) > 0:
-        write_log(log_file,f'special treatment needed: {codes}',verbose=verbose)
+        dstr += f'special treatment needed: {codes}'
         for code in codes:
             dstr += '\ncodes = ' + code
 
@@ -88,7 +89,7 @@ def concatenate(zarr,gfiles,codes):
         if 'deptht' in code:
             fix_string = '/usr/bin/ncrename -d .deptht\,olevel -v .deptht\,olevel -d .deptht_bounds\,olevel_bounds -v .deptht_bounds\,olevel_bounds '
             for gfile in gfiles:
-                write_log(log_file,f'fixing deptht trouble in gfile:{gfile}',verbose=verbose)
+                dstr += f'fixing deptht trouble in gfile:{gfile}'
                 os.system(f'{fix_string} {gfile}')
 
     try:
@@ -99,7 +100,6 @@ def concatenate(zarr,gfiles,codes):
         else: # fixed in time, no time grid
             df7 = xr.open_mfdataset(gfiles, preprocess=set_bnds_as_coords, combine='by_coords', data_vars='minimal')
     except:
-        print('trouble in open_mfdataset')
         dstr += '\nerror in open_mfdataset'
 
         if 'drop_height' in codes: 
