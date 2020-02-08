@@ -37,13 +37,13 @@ Procedure:
 ### Part II. Second Pass - data with issues
 Procedure:
 - Jupyter notebook: [nb2-DataExceptions.ipynb](notebooks/nb2-DataExceptions.ipynb) - work through the problem cases, one by one
-   - reads the exception catalog for new issues
-   - for each issue:
-         - repeats the original request handling as above, checking for common issues (e.g., missing years, inconsistent coordinate names, etc)
+   - reads the exception catalog for known issues (see [Processing Issues](https://docs.google.com/spreadsheets/d/e/2PACX-1vRxKgz1xCH7zhUoDnl_llgEvbj2ssxoJiTUdbkHkkfWiCKU8EfZtPerar3ELjoIzAda5giR06QvbWGE/pubhtml?gid=128595157&single=true)
+   - for each new issue:
+         - repeat the original request handling as above, checking for common issues (e.g., missing years, inconsistent coordinate names, etc)
          - very interactive, but standardized
          - fixable issues are identified and then dealt with by one of two methods:
-              - add to list of pre-processing directives made available to catalog users   
               - fix manually and then upload zarr to cloud. this will only involve superficial changes such as modifying the  calendar, or choosing a subset of the netcdf files to use
+              - add to list of pre-processing directives made available to catalog users   
          - fatal issues are marked as 'noUse' and added to known issues
    - fatal issues are reported to the 'contact' listed in the global metadata for netcdf file(s), including the tracking_id(s)
 
