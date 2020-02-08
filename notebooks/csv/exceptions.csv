@@ -98,6 +98,8 @@ E3SM-1-0,historical,r2i1p1f1,SImon,siconc,gr,noUse,(time_1950-2014) missing one 
 E3SM-1-0,historical,r3i1p1f1,SImon,siconc,gr,noUse,(time_1950-2014) missing one file 1945-1950 
 E3SM-1-0,piControl,r1i1p1f1,Omon,fgco2,gn,noUse,extra file must be deleted: fgco2_Omon_CanESM5_piControl_r1i1p1f1_gn_591001-591012
 E3SM-1-0,piControl,r1i1p1f1,SImon,siconc,gr,noUse,extra file Resulting object does not have monotonic global indexes along dimension time
+E3SM-1-1,piControl,r1i1p1f1,Lmon,mrsos,gr,noUse, missing decade 2000-2009
+E3SM-1-1,piControl,r1i1p1f1,Lmon,mrso,gr,noUse, missing decade 2000-2009
 EC-Earth3,historical,all,Emon,orog,gr,noUse,???  
 EC-Earth3,historical,r24i1p1f1,Amon,hfls,gr,noUse,after 2008 the files do not concatenate
 EC-Earth3,historical,r24i1p1f1,Amon,uas,gr,noUse,after 2008 the files do not concatenate
@@ -248,6 +250,7 @@ NESM3,piControl,r1i1p1f1,Amon,pr,gn,noUse,missing 2 files
 NESM3,piControl,r1i1p1f1,Amon,rlus,gn,noUse,missing 070001-079912
 NICAM16-9S,highresSST-present,r1i1p1f1,3hr,all,gr,noUse,no time
 NorESM2-LM,abrupt-4xCO2,r1i1p1f1,day,pr,gn,noUse, there are 3 damaged files in the middle - from 01231020 - 01501019
+NorESM2-MM,historical,r1i1p1f1,SImon,siconc,gn,noUse,conflicting values for variable 'vertices_longitude'
 SAM0-UNICON,piControl,r1i1p1f1,day,all,gn,noUse,they skip year 0290 in the middle of the run!
 SAM0-UNICON,piControl,r1i1p1f1,day, pr, gn,noUse,missing year 0020 of a 700 year run
 SAM0-UNICON,piControl,r1i1p1f1,day,tasmax, gn,noUse,missing year 0020 of a 700 year run
