@@ -43,7 +43,7 @@ Procedure:
          - very interactive, but standardized
          - fixable issues are identified and then dealt with by one of two methods:
               - fix manually and then upload zarr to cloud. this will only involve superficial changes such as modifying the  calendar, or choosing a subset of the netcdf files to use
-              - add to list of pre-processing directives made available to catalog users   
+              - add preprocessing code to be used in the First Pass
          - fatal issues are marked as 'noUse' and added to known issues
    - fatal issues are reported to the 'contact' listed in the global metadata for netcdf file(s), including the tracking_id(s)
 
