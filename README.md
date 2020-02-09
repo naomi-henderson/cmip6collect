@@ -24,13 +24,13 @@ Procedure:
    - searches ESGF for availability 
    - for each new zarr object:
       - download needed netcdf files from ESGF nodes or modeling centers to temporary location
-      - opens netcdf files, concatenating in time, if necessary  (metadata is combined, concatenating 'tracking_id')
+      - opens netcdf files, concatenating in time, if necessary/possible  (metadata is combined, concatenating 'tracking_id')
       - saves zarr in temporary location
       - checks zarr object for time grid integrity, etc
       - uploads to GCS
-      - update the collection catalog for successes
-      - update the exception catalog for failures
-      - cleanup - remove netcdf and zarr temporary files
+      - updates the collection catalog for successes
+      - updates the exception catalog for failures, see [Processing Issues](https://docs.google.com/spreadsheets/d/e/2PACX-1vRxKgz1xCH7zhUoDnl_llgEvbj2ssxoJiTUdbkHkkfWiCKU8EfZtPerar3ELjoIzAda5giR06QvbWGE/pubhtml?gid=128595157&single=true)
+      - cleanup - removes netcdf and zarr temporary files
          
 - Response is sent to requestor's email address
 
