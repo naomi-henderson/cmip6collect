@@ -294,4 +294,4 @@ CESM2,ssp126,r2i1p1f1,day,tasmin,gn,noUse,some data missing,2020-02-10,CESM2/ssp
 CESM2,ssp370,r2i1p1f1,day,tasmax,gn,noUse,multiple time gaps,2020-02-10,CESM2/ssp370/r2i1p1f1/day/tasmax/gn/noUse
 MRI-ESM2-0,ssp585,r1i1p1f1,CFmon,albisccp,gn,noUse,multiple time gaps,2020-02-10,MRI-ESM2-0/ssp585/r1i1p1f1/CFmon/albisccp/gn/noUse
 ACCESS-ESM1-5,piControl,r1i1p1f1,Omon,umo,gn,noUse,HDF error,2020-02-16,ACCESS-ESM1-5/piControl/r1i1p1f1/Omon/umo/gn/noUse
-CESM2-WACCM,piControl,r1i1p1f1,Oyr,bddtalk,gn,noUse,trouble with grid - missing_value,2020-03-01,CESM2-WACCM/piControl/r1i1p1f1/Oyr/bddtalk/gn/noUse
+CNRM-CM6-1,historical,r22i1p1f2,Omon,wo,gn,noUse,missing files,2020-03-01,CNRM-CM6-1/historical/r22i1p1f2/Omon/wo/gn/noUse
