@@ -37,22 +37,31 @@ def getsheet(json_keyfile,sheet_name):
                   'variable_ids (comma separated list)', 'Questions and comments'],1) 
     return df
 
-def requests(df_prior,rows=[],emails=[]): 
+def requests(df_prior,rows=[],emails=[],tables=[]): 
+    json_keyfile = '/home/naomi/cmip6-zarr/json/Pangeo Hackathon-e48a41b13c91.json'
+    sheet_name = "CMIP6 GCS Data Request (Responses)"
 
     df = df_prior.copy()
     
-    if len(rows)+len(emails) == 0:
+    if len(rows)+len(emails)+len(tables) == 0:
         df = df[df['requester']=='nutter']
-        
+    
     if len(rows) > 0:
-        df = df.iloc[rows]
-
+        df = df.iloc[rows]  
+        
     if len(emails) > 0:
         dk = []
         for email in emails:
-            dk += [df[df['E-mail']==email]]
+            dk += [df[df['E-mail']==email]]     
+        df = pd.concat(dk)    
+        
+    if len(tables) > 0:
+        dk = []
+        for table in tables:
+            print('table',table)
+            dk += [df[df['table']==table]]
         df = pd.concat(dk)
-
+        
     df_req = df[df['requester']!='Test'] 
     df_req = df[df['response status']!='once'] 
     

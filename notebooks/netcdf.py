@@ -50,6 +50,7 @@ def get_ncfiles(zarr,df,skip_sites):
                     okay = False
             
             if not okay:
+                gfiles = []
                 continue
                 
             command = 'curl ' + url + ' -o ' + save_file

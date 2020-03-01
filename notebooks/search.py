@@ -97,7 +97,6 @@ def esgf_search(server="https://esgf-node.llnl.gov/esg-search/search",
     payload = search
     #payload["project"] = project
     payload["type"]= "File"
-
     if local_node:
         payload["distrib"] = "false"
 
@@ -105,6 +104,8 @@ def esgf_search(server="https://esgf-node.llnl.gov/esg-search/search",
         payload["csrfmiddlewaretoken"] = _get_csrf_token(server)
 
     payload["format"] = format
+    payload["latest"] = "true"
+    #payload["distrib"]= "true"
 
     init_resp = _get_request(server, offset=0, limit=page_size,
                             verbose=verbose, **payload)
