@@ -169,7 +169,9 @@ def concatenate(zarr,gfiles,codes):
     nstatus = date + ';created; by gcs.cmip6.ldeo@gmail.com'
     df7.attrs['status'] = nstatus
     
-    if 'time' in dsl.coords:
+    if 'time' in df7.coords:
+        nt = len(df7.time.values)
+        chunksize = min(chunksize,int(nt/2))
         df7 = df7.chunk(chunks={'time' : chunksize})   # yes, do it again
 
     return 'success', df7, dstr
