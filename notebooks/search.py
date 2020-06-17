@@ -62,6 +62,7 @@ def _get_page_dataframe(server, expected_size, offset=0,
         item.update(_maybe_squeze_values(d))
         for f in target_urls:
             access_url, mime_type, service_type = f.split("|")
+
             if service_type == 'OPENDAP':
                 access_url = access_url.replace('.html', '')
             if filter_server_url is None or filter_server_url in access_url:
@@ -89,7 +90,7 @@ def _get_csrf_token(server):
 def esgf_search(server="https://esgf-node.llnl.gov/esg-search/search",
                 project="CMIP6", page_size=10,
                 # this option should not be necessary with local_node=True
-                filter_server_url=None, local_node=True,
+                filter_server_url=None, local_node=False,
                 verbose=False, format="application%2Fsolr%2Bjson",
                 use_csrf=False, delayed=False, **search):
 
@@ -105,7 +106,7 @@ def esgf_search(server="https://esgf-node.llnl.gov/esg-search/search",
 
     payload["format"] = format
     payload["latest"] = "true"
-    #payload["distrib"]= "true"
+#    payload["distrib"]= "true"
 
     init_resp = _get_request(server, offset=0, limit=page_size,
                             verbose=verbose, **payload)
@@ -148,7 +149,7 @@ def esgf_search_sites():
     dtype['dkrz'] =  "https://esgf-data.dkrz.de/esg-search/search"        # no historical
     return dtype
 
-def search(server, df_req):
+def search(server, df_req, local_node=False):
     df_list = []
     for index, row in df_req.iterrows():
         timestamp = row['Timestamp']
@@ -165,7 +166,7 @@ def search(server, df_req):
                     print(table_id,variable_id,source_ids,experiment_ids)
                     try:
                         files= esgf_search(server=server, mip_era='CMIP6', variable_id=variable_id,
-                                table_id=table_id, page_size=500, verbose=False)
+                                table_id=table_id, page_size=500, verbose=False, local_node=False)
                     except:
                         continue
 
@@ -180,7 +181,7 @@ def search(server, df_req):
                         print(table_id,variable_id,source_id,experiment_ids)
                         try:
                             files= esgf_search(server=server, mip_era='CMIP6', variable_id=variable_id,
-                                    table_id=table_id, source_id = source_id, page_size=500, verbose=False)
+                                    table_id=table_id, source_id = source_id, page_size=500, verbose=False, local_node=False)
                         except:
                             continue
 
@@ -197,7 +198,7 @@ def search(server, df_req):
                         print(table_id,variable_id,source_ids,experiment_id)
                         try:
                             files= esgf_search(server=server, mip_era='CMIP6', variable_id=variable_id,
-                                    table_id=table_id, experiment_id=experiment_id, page_size=500, verbose=False)
+                                    table_id=table_id, experiment_id=experiment_id, page_size=500, verbose=False, local_node=False,)
                         except:
                             continue
     
@@ -212,7 +213,7 @@ def search(server, df_req):
                             print(table_id,variable_id,source_id,experiment_id)
                             try:
                                 files= esgf_search(server=server, mip_era='CMIP6', variable_id=variable_id,
-                                        table_id=table_id, experiment_id=experiment_id, source_id = source_id, page_size=500, verbose=False)
+                                        table_id=table_id, experiment_id=experiment_id, source_id = source_id, page_size=500, verbose=False, local_node=False,)
                             except:
                                 continue
     
@@ -226,6 +227,91 @@ def search(server, df_req):
     dESGF = pd.concat(df_list,sort=False)
     dESGF = dESGF.drop_duplicates(subset =["file_name","version","checksum"])
     keys_all = list(dESGF.keys())
-    keys_show = ['activity_drs','institution_id',"source_id","experiment_id","member_id","table_id","variable_id",'grid_label',"file_name",'HTTPServer_url','size']
+    keys_show = ['activity_drs','institution_id',"source_id","experiment_id","member_id","table_id","variable_id",'grid_label']
+    keys_show += ["file_name",'HTTPServer_url','OPENDAP_url','tracking_id','size']
+    keys_drop = list(set(keys_all) - set(keys_show))
+    return dESGF.drop(keys_drop,1)
+
+def search_new(server, df_req, local_node=False):
+    df_list = []
+    for index, row in df_req.iterrows():
+        timestamp = row['Timestamp']
+        name = row['requester']
+        email = row['E-mail']
+        experiment_ids = row['experiments']
+        source_ids = row['models']
+        variable_ids = row['variables']
+        table_id = row['table']
+        print('\n'+email)
+        if experiment_ids[0] == 'All':
+            for variable_id in variable_ids:        
+                if source_ids[0] == 'All':
+                    print(table_id,variable_id,source_ids,experiment_ids)
+                    try:
+                        files= esgf_search(server=server, mip_era='CMIP6', variable_id=variable_id,
+                                table_id=table_id, page_size=500, verbose=False, local_node=False)
+                    except:
+                        continue
+
+                    files.loc[:,'version'] = [str.split('/')[-2] for str in files['HTTPServer_url']]
+                    files.loc[:,'file_name'] = [str.split('/')[-1] for str in files['HTTPServer_url']]
+                    # might need to set activity_id to activity_drs for some files (see old versions)
+                    files.loc[:,'activity_id'] = files.activity_drs
+
+                    df_list += [files.drop_duplicates(subset =["file_name","version","checksum"]) ]
+                else:
+                    for source_id in source_ids:
+                        print(table_id,variable_id,source_id,experiment_ids)
+                        try:
+                            files= esgf_search(server=server, mip_era='CMIP6', variable_id=variable_id,
+                                    table_id=table_id, source_id = source_id, page_size=500, verbose=False, local_node=False)
+                        except:
+                            continue
+
+                        files.loc[:,'version'] = [str.split('/')[-2] for str in files['HTTPServer_url']]
+                        files.loc[:,'file_name'] = [str.split('/')[-1] for str in files['HTTPServer_url']]
+                        # might need to set activity_id to activity_drs for some files (see old versions)
+                        files.loc[:,'activity_id'] = files.activity_drs
+
+                        df_list += [files.drop_duplicates(subset =["file_name","version","checksum"]) ]
+        else:
+            for experiment_id in experiment_ids:
+                for variable_id in variable_ids:
+                    if source_ids[0] == 'All':
+                        print(table_id,variable_id,source_ids,experiment_id)
+                        try:
+                            files= esgf_search(server=server, mip_era='CMIP6', variable_id=variable_id,
+                                    table_id=table_id, experiment_id=experiment_id, page_size=500, verbose=False, local_node=False,)
+                        except:
+                            continue
+    
+                        files.loc[:,'version'] = [str.split('/')[-2] for str in files['HTTPServer_url']]
+                        files.loc[:,'file_name'] = [str.split('/')[-1] for str in files['HTTPServer_url']]
+                        # might need to set activity_id to activity_drs for some files (see old versions)
+                        files.loc[:,'activity_id'] = files.activity_drs
+    
+                        df_list += [files.drop_duplicates(subset =["file_name","version","checksum"]) ]
+                    else:
+                        for source_id in source_ids:
+                            print(table_id,variable_id,source_id,experiment_id)
+                            try:
+                                files= esgf_search(server=server, mip_era='CMIP6', variable_id=variable_id,
+                                        table_id=table_id, experiment_id=experiment_id, source_id = source_id, page_size=500, verbose=False, local_node=False,)
+                            except:
+                                continue
+    
+                            files.loc[:,'version'] = [str.split('/')[-2] for str in files['HTTPServer_url']]
+                            files.loc[:,'file_name'] = [str.split('/')[-1] for str in files['HTTPServer_url']]
+                            # might need to set activity_id to activity_drs for some files (see old versions)
+                            files.loc[:,'activity_id'] = files.activity_drs
+
+                            df_list += [files.drop_duplicates(subset =["file_name","version","checksum"]) ]
+
+    dESGF = pd.concat(df_list,sort=False)
+    dESGF = dESGF.drop_duplicates(subset =["file_name","version","checksum"])
+    keys_all = list(dESGF.keys())
+    keys_show = ['activity_drs','institution_id',"source_id","experiment_id","member_id",
+                 "table_id","variable_id",'grid_label','version']
+    keys_show += ["file_name",'HTTPServer_url','OPENDAP_url','tracking_id','size']
     keys_drop = list(set(keys_all) - set(keys_show))
     return dESGF.drop(keys_drop,1)

@@ -4,6 +4,7 @@ import pandas as pd
 import xarray as xr
 import datetime
 import time
+import cftime
 
 def set_bnds_as_coords(ds):
     new_coords_vars = [var for var in ds.data_vars if 'bnds' in var or 'bounds' in var]
@@ -17,23 +18,46 @@ def set_bnds_as_coords_drop_height(ds):
         ds = ds.drop('height')
     return ds
 
-def get_ncfiles(zarr,df,skip_sites):
+def get_ncfiles(zarr,df,skip_sites,skip_string='serendipity'):
     # download any files needed for this zarr store (or abort the attempt)
+    okay = True
+    gfiles = []
+    trouble = ''
+    check_size = True
+    
+    files = df[df.zstore == zarr].file_name.unique()
+
     tmp = 'nctemp'
     
     institution_id = zarr.split('/')[-8]
     v_short = zarr.split(institution_id+'/')[1][:-1]
 
     codes = read_codes(v_short)
-    if 'noUse' in codes:
-        return [], 'noUse in codes',codes
     
-    okay = True
-    files = df[df.zstore == zarr].file_name.unique()
+    if 'noUse' in codes:
+        return [], 'noUse in codes',codes, okay
+    
+    if 'noSizeCheck' in codes:
+        check_size = False
 
-    gfiles = []
-    trouble = ''
     for file in files:
+        #print(file)
+        skip=False
+        if skip_string == 'from 1950':
+            if 'gn_18' in file:
+                skip=True
+            if 'gn_190' in file:
+                skip=True
+            if 'gn_191' in file:
+                skip=True
+            if 'gn_192' in file:
+                skip=True
+            if 'gn_193' in file:
+                skip=True
+            if 'gn_194' in file:
+                skip=True
+        if skip:
+            continue
         if okay:
             save_file = tmp + '/'+file
             expected_size = df[df.file_name == file]['size'].values[0]
@@ -54,20 +78,23 @@ def get_ncfiles(zarr,df,skip_sites):
                 continue
                 
             command = 'curl ' + url + ' -o ' + save_file
-            print(command)
+            print(command,' expected size: ',expected_size)
             os.system(command)
-            time.sleep( 2 )
+            time.sleep( 2 )  # needed when downloading many, many small files 
 
-            if os.path.getsize(save_file) != expected_size:
-                os.system(command)
+            if check_size:
                 if os.path.getsize(save_file) != expected_size:
-                    trouble += '\nnetcdf download not complete'
-                    okay = False
+                    os.system(command)
+                    actual_size = os.path.getsize(save_file)
+                    if actual_size != expected_size:
+                        trouble += '\nnetcdf download not complete for: ' + url + ' expected/actual size: ' + str(expected_size) + '/' + str(actual_size)
+                        okay = False
             if os.path.getsize(save_file) == 0:
                 os.system("rm -f "+save_file)
             if okay:
                 gfiles += [save_file]
-    return gfiles, trouble, codes
+                
+    return gfiles, trouble, codes, okay
 
 def concatenate(zarr,gfiles,codes):
     
@@ -143,7 +170,7 @@ def concatenate(zarr,gfiles,codes):
     if 'time' in ds.coords:
         table_id = zarr.split('/')[-3]
         year = sorted(list(set(df7.time.dt.year.values)))
-        #print(np.diff(year).sum(), len(year))
+        print(np.diff(year).sum(), len(year))
         if '3hr' in table_id:
             if not (np.diff(year).sum() == len(year)-1) | (np.diff(year).sum() == len(year)-2):
                 dstr += '\ntrouble with 3hr time grid'
@@ -182,20 +209,13 @@ def read_codes(zarr):
     [source_id,experiment_id,member_id,table_id,variable_id,grid_label] = zarr.split('/')
     for ex in dex.values:
         dd = dict(zip(dex.keys(),ex))
-        #print(source_id,experiment_id,member_id,table_id,variable_id,grid_label)
         if dd['source_id'] == source_id or dd['source_id'] == 'all':
-            #print(source_id)
             if dd['experiment_id'] == experiment_id or dd['experiment_id'] == 'all':
-                #print(experiment_id)
                 if dd['member_id'] == member_id or dd['member_id'] == 'all':
-                    #print(member_id)
                     if dd['table_id'] == table_id or dd['table_id'] == 'all':
-                        #print(table_id)
                         if dd['variable_id'] == variable_id or dd['variable_id'] == 'all':
-                            #print(variable_id)
                             if dd['grid_label'] == grid_label or dd['grid_label'] == 'all':  
-                                #print(dd['reason_code'])
                                 codes += [dd['reason_code']]
-    #print(codes)                     
+                                print('special treatment needed:',dd['reason_code'])
     return codes
 
