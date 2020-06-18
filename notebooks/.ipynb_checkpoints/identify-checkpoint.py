@@ -15,13 +15,11 @@ def get_version(zstore):
     versions = []
     datasets = []
     for file_tracking_id in tracking_ids.split('\n')[0:1]:
-        #print('file tracking_id = ',file_tracking_id)
         url = baseurl+file_tracking_id[4:]+query1
         r = client.get(url)
         r.raise_for_status()
         dataset_tracking_id = r.json()['values'][0]['data']['value']
         datasets += [dataset_tracking_id]
-        #print('dataset tracking_id = ',dataset_tracking_id)
         if ';' in dataset_tracking_id:
             # multiple dataset_ids erroneously reported
             dtracks = dataset_tracking_id.split(';')
@@ -33,8 +31,6 @@ def get_version(zstore):
                 r.json()['values'][0]['data']['value']
                 vs += [r.json()['values'][0]['data']['value']]
             v = sorted(vs)[-1]    
-            #versions += ['ambiguous']
-            #continue
         else:
             url2 = baseurl + dataset_tracking_id[4:] + query2
             r = client.get(url2)
@@ -47,7 +43,6 @@ def get_version(zstore):
 
     assert len(version_id)==1
     
-    #print('dataset_id, version_id = ',dataset_id, version_id,'\n')
     return dataset_id[0], version_id[0]
 
 def needed(dfm, df_req, dESGF):
