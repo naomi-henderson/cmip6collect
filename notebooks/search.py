@@ -143,8 +143,7 @@ def esgf_search_sites():
     dtype['llnl'] = "https://esgf-node.llnl.gov/esg-search/search"
     dtype['ipsl'] = "https://esgf-node.ipsl.upmc.fr/esg-search/search"
     dtype['nci']  = "https://esgf.nci.org.au/esg-search/search"
-    dtype['ceda'] = "https://esgf-index1.ceda.ac.uk/esg-search/search"   # nothing yet
-    dtype['jpl'] = "https://esgf-node.jpl.nasa.gov/esg-search/search"   # connection refused
+    dtype['ceda'] = "https://esgf-index1.ceda.ac.uk/esg-search/search"    # nothing yet
     dtype['gfdl'] =  "https://esgdata.gfdl.noaa.gov/esg-search/search"    # only amip and piControl
     dtype['dkrz'] =  "https://esgf-data.dkrz.de/esg-search/search"        # no historical
     return dtype
