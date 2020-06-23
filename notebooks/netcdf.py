@@ -86,7 +86,7 @@ def get_ncfiles(zarr,df,skip_sites,skip_string='serendipity'):
                 if os.path.getsize(save_file) != expected_size:
                     os.system(command)
                     actual_size = os.path.getsize(save_file)
-                    if actual_size != expected_size:
+                    if abs(actual_size - expected_size) > 200:
                         trouble += '\nnetcdf download not complete for: ' + url + ' expected/actual size: ' + str(expected_size) + '/' + str(actual_size)
                         okay = False
             if os.path.getsize(save_file) == 0:

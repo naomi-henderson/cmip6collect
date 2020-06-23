@@ -39,7 +39,7 @@ CESM2-FV2,piControl,r1i1p1f1,Lmon,mrsos,gn, noUse, missing chunks of data,,CESM2
 CESM2,hist-aer,r1i1p1f1,Amon,ta,gn,noUse,chunks missing,,CESM2/hist-aer/r1i1p1f1/Amon/ta/gn/nUse
 CESM2,hist-aer,r1i1p1f1,Amon,ua,gn,noUse,missing chunk 1950-2000,2020-02-10,CESM2/hist-aer/r1i1p1f1/Amon/ua/gn/noUse
 CESM2,hist-aer,r1i1p1f1,Amon,va,gn,noUse,missing chunk 1950-2000,2020-02-10,CESM2/hist-aer/r1i1p1f1/Amon/va/gn/noUse
-CESM2,hist-aer,r1i1p1f1,Amon,wap,gn,noUse,missing chunk 1950-2000,2020-02-10,CESM2/hist-aer/r1i1p1f1/Amon/wap/gn/noUse
+#CESM2,hist-aer,r1i1p1f1,Amon,wap,gn,noUse,missing chunk 1950-2000,2020-02-10,CESM2/hist-aer/r1i1p1f1/Amon/wap/gn/noUse
 CESM2,historical,r10i1p1f1,day,hur,gn,noUse,crazy times,,CESM2/historical/r10i1p1f1/day/hur/gn/noUse
 CESM2,historical,r10i1p1f1,day,hus,gn,noUse,crazy times,,CESM2/historical/r10i1p1f1/day/hus/gn/noUse
 CESM2,historical,r10i1p1f1,day,ua,gn,noUse,crazy times,,CESM2/historical/r10i1p1f1/day/ua/gn/noUse
@@ -97,7 +97,7 @@ CNRM-CM6-1,piControl,r1i1p1f2,Amon,evspsbl,gr,noUse,missing 40 years in middle o
 CNRM-CM6-1,piControl,r1i1p1f2,Omon,bigthetao,gn,noUse, missing chunk,,CNRM-CM6-1/piControl/r1i1p1f2/Omon/bigthetao/gn/noUse
 CNRM-CM6-1-HR,ssp126,r1i1p1f2,Omon,uo,gn,noUse,HDF errpr,2020-03-02,CNRM-CM6-1-HR/ssp126/r1i1p1f2/Omon/uo/gn/noUse
 CNRM-CM6-1-HR,ssp126,r1i1p1f2,Omon,umo,gn,noUse,HDF errpr,2020-03-02,CNRM-CM6-1-HR/ssp126/r1i1p1f2/Omon/uo/gn/noUse
-CNRM-CM6-1-HR,piControl,r1i1p1f2,Amon,rsut,gr,local,,CNRM-CM6-1-HR/piControl/r1i1p1f2/Amon/rsut/gr/local
+#CNRM-CM6-1-HR,piControl,r1i1p1f2,Amon,rsut,gr,local,,CNRM-CM6-1-HR/piControl/r1i1p1f2/Amon/rsut/gr/local
 CNRM-CM6-1-HR,piControl,r1i1p1f2,Omon,bigthetao,gn,noUse,missing 1870-1875,,CNRM-CM6-1-HR/piControl/r1i1p1f2/Omon/bigthetao/gn/noUse
 CanESM5-CanOE,piControl,r1i1p2f1,Omon,vmo,gn,noUse,KeyError: 'missing_value': OverflowError: Python int too large to convert to C
 CNRM-ESM2-1,historical,r1i1p1f2,AERmon,ch4,gr,noUse,cannot to_zarr: HDF error? - even ncview cannot handle,,CNRM-ESM2-1/historical/r1i1p1f2/AERmon/ch4/gr/noUse
@@ -125,7 +125,7 @@ CNRM-ESM2-1,historical,r3i1p1f2,AERmon,zg,gr,noUse,cannot to_zarr: HDF error? - 
 CNRM-ESM2-1,piClim-2xDMS,r1i1p1f2,Amon,va,gr,noUse,unknown HDF error when creating zarr,,CNRM-ESM2-1/piClim-2xDMS/r1i1p1f2/Amon/va/gr/noUse
 CNRM-ESM2-1,piClim-2xdust,r1i1p1f2,Amon,ta,gr,noUse,unknown HDF error when creating zarr,,CNRM-ESM2-1/piClim-2xdust/r1i1p1f2/Amon/ta/gr/noUse
 CNRM-ESM2-1,piClim-HC,r1i1p1f2,Amon,o3,gr,noUse,unknown HDF error when creating zarr,,CNRM-ESM2-1/piClim-HC/r1i1p1f2/Amon/o3/gr/noUse
-CNRM-ESM2-1,piClim-HC,r1i1p1f2,Amon,rlut,gr,noUse,unknown HDF error when creating zarr,,CNRM-ESM2-1/piClim-HC/r1i1p1f2/Amon/rlut/gr/noUse
+#CNRM-ESM2-1,piClim-HC,r1i1p1f2,Amon,rlut,gr,noUse,unknown HDF error when creating zarr,,CNRM-ESM2-1/piClim-HC/r1i1p1f2/Amon/rlut/gr/noUse
 CNRM-ESM2-1,piClim-NTCF,r1i1p1f2,Amon,ua,gr,noUse,unknown HDF error when creating zarr,,CNRM-ESM2-1/piClim-NTCF/r1i1p1f2/Amon/ua/gr/noUse
 CNRM-ESM2-1,piControl,r1i1p1f2,Amon,all,all,360_day,trying again,,CNRM-ESM2-1/piControl/r1i1p1f2/Amon/all/all/360_day
 CNRM-ESM2-1,piControl,r1i1p1f2,Amon,all,all,drop_tb,trying again,,CNRM-ESM2-1/piControl/r1i1p1f2/Amon/all/all/drop_tb
@@ -140,10 +140,9 @@ E3SM-1-1,piControl,r1i1p1f1,Lmon,mrso,gr,noUse, missing decade 2000-2009,,E3SM-1
 E3SM-1-1,piControl,r1i1p1f1,Lmon,mrsos,gr,noUse, missing decade 2000-2009,,E3SM-1-1/piControl/r1i1p1f1/Lmon/mrsos/gr/noUse
 EC-Earth3,historical,all,Emon,orog,gr,noUse,???  ,,EC-Earth3/historical/all/Emon/orog/gr/noUse
 EC-Earth3,historical,r20i1p1f1,Amon,pr,gr,noUse,some sort of HDF error,,EC-Earth3/historical/r20i1p1f1/Amon/pr/gr/noUse
-EC-Earth3,historical,r20i1p1f1,day,prsn,gr,noUse,some sort of HDF error,,EC-Earth3/historical/r20i1p1f1/day/prsn/gr/noUse
 EC-Earth3,historical,r20i1p1f1,day,pr,gr,noUse,some sort of HDF error,,EC-Earth3/historical/r20i1p1f1/day/prsn/gr/noUse
 EC-Earth3,historical,r3i1p1f1,Amon,ps,gr,noUse,some sort of HDF error,,EC-Earth3/historical/r3i1p1f1/Amon/ps/gr/noUse
-EC-Earth3,historical,r3i1p1f1,Amon,rlut,gr,noUse,some sort of HDF error,,EC-Earth3/historical/r3i1p1f1/Amon/ps/gr/noUse
+#EC-Earth3,historical,r3i1p1f1,Amon,rlut,gr,noUse,some sort of HDF error,,EC-Earth3/historical/r3i1p1f1/Amon/ps/gr/noUse
 EC-Earth3,historical,r24i1p1f1,Amon,clivi,gr,fix_time,TypeError: CFTimeIndex requires using datetime objects of all the same type.  ,,EC-Earth3/historical/r24i1p1f1/Amon/clivi/gr/fix_time
 EC-Earth3,historical,r24i1p1f1,Amon,clwvi,gr,fix_time,TypeError: CFTimeIndex requires using datetime objects of all the same type.  ,,EC-Earth3/historical/r24i1p1f1/Amon/clwvi/gr/fix_time
 EC-Earth3,historical,r24i1p1f1,Amon,hfls,gr,noUse,after 2008 the files do not concatenate,,EC-Earth3/historical/r24i1p1f1/Amon/hfls/gr/noUse
@@ -179,23 +178,25 @@ EC-Earth3,historical,r2i1p1f1,Omon,vo,gn,noUse,some of the files are on a differ
 EC-Earth3,historical,r2i1p1f1,Omon,wo,gn,noUse,some of the files are on a different vertical grid,,EC-Earth3/historical/r2i1p1f1/Omon/wo/gn/noUse
 EC-Earth3,historical,r2i1p1f1,SImon,siconca,gr,noUse,half of files are gr- the other are still gn,,EC-Earth3/historical/r2i1p1f1/SImon/siconca/gr/noUse
 EC-Earth3,piControl,r1i1p1f1,Amon,rsutcs,gr,local,NetCDF: I/O failure,,EC-Earth3/piControl/r1i1p1f1/Amon/rsutcs/gr/local
-EC-Earth3,piControl,r2i1p1f1,Amon,tas,gr,fix_time,CFTimeIndex requires using datetime objects of all the same type,,
+#EC-Earth3,piControl,r2i1p1f1,Amon,tas,gr,fix_time,CFTimeIndex requires using datetime objects of all the same type,,
 EC-Earth3,piControl,r2i1p1f1,Amon,all,gr,fix_time,CFTimeIndex requires using datetime objects of all the same type,,
-EC-Earth3,historical,r3i1p1f1,day,tas,gr,noUse, RuntimeError: NetCDF: HDF error,,
-EC-Earth3,historical,r15i1p1f1,Amon,tas,gr,noSizeCheck,incorrect expected size,,
-EC-Earth3,historical,r13i1p1f1,Amon,tas,gr,noSizeCheck,incorrect expected size,,
-EC-Earth3,ssp126,r13i1p1f1,Amon,tas,gr,noSizeCheck,incorrect expected size,,
-EC-Earth3,ssp126,r6i1p1f1,Amon,tas,gr,noSizeCheck,incorrect expected size,,
-EC-Earth3,ssp126,r9i1p1f1,Amon,tas,gr,noSizeCheck,incorrect expected size,,
-EC-Earth3,ssp126,r15i1p1f1,Amon,tas,gr,noSizeCheck,incorrect expected size,,
-EC-Earth3,ssp370,r9i1p1f1,Amon,tas,gr,noSizeCheck,incorrect expected size,,
-EC-Earth3,ssp370,r6i1p1f1,Amon,tas,gr,noSizeCheck,incorrect expected size,,
-EC-Earth3,ssp585,r9i1p1f1,Amon,tas,gr,noSizeCheck,incorrect expected size,,
-EC-Earth3,ssp585,r6i1p1f1,Amon,tas,gr,noSizeCheck,incorrect expected size,,
-EC-Earth3,ssp585,r15i1p1f1,Amon,tas,gr,noSizeCheck,incorrect expected size,,
+#EC-Earth3,historical,r3i1p1f1,day,tas,gr,noUse, RuntimeError: NetCDF: HDF error,,
+#EC-Earth3,historical,r15i1p1f1,Amon,tas,gr,noSizeCheck,incorrect expected size,,
+#EC-Earth3,historical,r13i1p1f1,Amon,tas,gr,noSizeCheck,incorrect expected size,,
+#EC-Earth3,ssp126,r13i1p1f1,Amon,tas,gr,noSizeCheck,incorrect expected size,,
+#EC-Earth3,ssp126,r6i1p1f1,Amon,tas,gr,noSizeCheck,incorrect expected size,,
+#EC-Earth3,ssp126,r9i1p1f1,Amon,tas,gr,noSizeCheck,incorrect expected size,,
+#EC-Earth3,ssp126,r15i1p1f1,Amon,tas,gr,noSizeCheck,incorrect expected size,,
+EC-Earth3,ssp245,r20i1p1f1,Amon,rsut,gr,noUse,some sort of HDF error,,
+EC-Earth3,ssp245,r20i1p1f1,Amon,rlut,gr,noUse,some sort of HDF error,,
+#EC-Earth3,ssp370,r9i1p1f1,Amon,tas,gr,noSizeCheck,incorrect expected size,,
+#EC-Earth3,ssp370,r6i1p1f1,Amon,tas,gr,noSizeCheck,incorrect expected size,,
+#EC-Earth3,ssp585,r9i1p1f1,Amon,tas,gr,noSizeCheck,incorrect expected size,,
+#EC-Earth3,ssp585,r6i1p1f1,Amon,tas,gr,noSizeCheck,incorrect expected size,,
+#EC-Earth3,ssp585,r15i1p1f1,Amon,tas,gr,noSizeCheck,incorrect expected size,,
 FGOALS-f3-L,piControl,r1i1p1f1,Omon,thetao,gn,noUse,missing time chunks,2020-03-07,FGOALS-f3-L/piControl/r1i1p1f1/Omon/thetao/gn/noUse
-FGOALS-f3-L,historical,r3i1p1f1,Amon,tas,gr,noSizeCheck,incorrect expected size,,
-FGOALS-f3-L,piControl,r1i1p1f1,Amon,tas,gr,noSizeCheck,incorrect expected size,,
+#FGOALS-f3-L,historical,r3i1p1f1,Amon,tas,gr,noSizeCheck,incorrect expected size,,
+#FGOALS-f3-L,piControl,r1i1p1f1,Amon,tas,gr,noSizeCheck,incorrect expected size,,
 FGOALS-g3,piControl,r1i1p1f1,Amon,cli,gn,360_day,dates from Feb 321 to Dec 329 are bad,,FGOALS-g3/piControl/r1i1p1f1/Amon/cli/gn/360_day
 GFDL-CM4,historical,r1i1p1f1,AERmonZ,ua,gr1z,noUse,time grid is all messed up,,GFDL-CM4/historical/r1i1p1f1/AERmonZ/ua/gr1z/noUse
 GFDL-CM4,historical,r1i1p1f1,day,hurs,gr1,noUse,ValueError: variables {'height'} are present in some datasets but not others. ,,GFDL-CM4/historical/r1i1p1f1/day/hurs/gr1/noUse
@@ -279,11 +280,11 @@ GISS-E2-2-G,1pctCO2,r1i1p1f1,day,pr,gn,noUse,missing chunk of data in middle,,GI
 GISS-E2-1-G,1pctCO2,r1i1p1f1,Omon,all,gn,noUse,TypeError: '<' not supported between instances of 'float' and 'str',, GISS-E2-1-G/1pctCO2/r1i1p1f1/Omon/fsitherm/gn
 GISS-E2-2-G,abrupt-4xCO2,r1i1p1f1,day,pr,gn,noUse,missing chunk of data in middle,,GISS-E2-2-G/abrupt-4xCO2/r1i1p1f1/day/pr/gn/noUse
 GISS-E2-2-G,piControl,r1i1p1f1,day,pr,gn,noUse,missing chunk of data in middle,,GISS-E2-2-G/piControl/r1i1p1f1/day/pr/gn/noUse
-HadGEM3-GC31-HM,control-1950,r1i1p1f1,Amon,rsdt,gn,noUse,to_zarr ValueError: Codec does not support buffers of > 2147483647 bytesn,,HadGEM3-GC31-HM/control-1950/r1i1p1f1/Amon/rsdt/gn/noUse
-HadGEM3-GC31-HM,hist-1950,r1i1p1f1,Amon,rsdt,gn,noUse,to_zarr ValueError: Codec does not support buffers of > 2147483647 bytes,,HadGEM3-GC31-HM/hist-1950/r1i1p1f1/Amon/rsdt/gn/noUse
+#HadGEM3-GC31-HM,control-1950,r1i1p1f1,Amon,rsdt,gn,noUse,to_zarr ValueError: Codec does not support buffers of > 2147483647 bytesn,,HadGEM3-GC31-HM/control-1950/r1i1p1f1/Amon/rsdt/gn/noUse
+#HadGEM3-GC31-HM,hist-1950,r1i1p1f1,Amon,rsdt,gn,noUse,to_zarr ValueError: Codec does not support buffers of > 2147483647 bytes,,HadGEM3-GC31-HM/hist-1950/r1i1p1f1/Amon/rsdt/gn/noUse
 HadGEM3-GC31-LL,abrupt-4xCO2,r1i1p1f3,CFmon,clisccp,gn,local,NetCDF: Access failure,2020-03-06,HadGEM3-GC31-LL/abrupt-4xCO2/r1i1p1f3/CFmon/clisccp/gn/local
-HadGEM3-GC31-MM,control-1950,r1i1p1f1,Amon,rsdt,gn,noUse,to_zarr ValueError: Codec does not support buffers of > 2147483647 bytesn,,HadGEM3-GC31-MM/control-1950/r1i1p1f1/Amon/rsdt/gn/noUse
-HadGEM3-GC31-MM,piControl,r1i1p1f1,Amon,rsdt,gn,noUse,to_zarr ValueError: Codec does not support buffers of > 2147483647 bytesn,,HadGEM3-GC31-MM/piControl/r1i1p1f1/Amon/rsdt/gn/noUse
+#HadGEM3-GC31-MM,control-1950,r1i1p1f1,Amon,rsdt,gn,noUse,to_zarr ValueError: Codec does not support buffers of > 2147483647 bytesn,,HadGEM3-GC31-MM/control-1950/r1i1p1f1/Amon/rsdt/gn/noUse
+#HadGEM3-GC31-MM,piControl,r1i1p1f1,Amon,rsdt,gn,noUse,to_zarr ValueError: Codec does not support buffers of > 2147483647 bytesn,,HadGEM3-GC31-MM/piControl/r1i1p1f1/Amon/rsdt/gn/noUse
 HadGEM3-GC31-MM,historical,r1i1p1f3,Omon,vmo,gn,noUse,coordinate trouble?,,HadGEM3-GC31-MM/historical/r1i1p1f3/Omon/vmo/gn/noUse
 HadGEM3-GC31-LL,historical,r1i1p1f3,CFday,clisccp,gn,noUse,saving zarr kills process,,HadGEM3-GC31-LL/historical/r1i1p1f3/CFday/clisccp/gn/noUse
 IPSL-CM6A-LR,abrupt-4xCO2,r1i1p1f1,Omon,all,gn,noUse,depth coord name change deptht to olevel,2020-03-07,IPSL-CM6A-LR/abrupt-4xCO2/r1i1p1f1/Omon/vmo/gn/noUse
@@ -296,7 +297,7 @@ IPSL-CM6A-LR,historical,r2i1p1f1,Omon,phymisc,gn,noUse,Memory Error - Unable to 
 IPSL-CM6A-LR,piControl,r1i1p1f1,Amon,all,gr,drop_tb,drop('time_bounds') before to_zarr,,IPSL-CM6A-LR/piControl/r1i1p1f1/Amon/all/gr/drop_tb
 IPSL-CM6A-LR,piControl,r1i1p1f1,Omon,all,gn,noUse,depth coord name change deptht to olevel ,,IPSL-CM6A-LR/piControl/r1i1p1f1/Omon/all/gn/noUse
 IPSL-CM6A-LR,piControl,r1i1p1f1,Oyr,all,gn,noUse,depth coord name change deptht to olevel + TypeError: object of type 'datetime.timedelta' has no len(),,IPSL-CM6A-LR/piControl/r1i1p1f1/Oyr/chl/gn/noUse
-KACE-1-0-G,amip,r1i1p1f1,Amon,rsut,gr,local,no opendap urls,,KACE-1-0-G/amip/r1i1p1f1/Amon/rsut/gr/local
+#KACE-1-0-G,amip,r1i1p1f1,Amon,rsut,gr,local,no opendap urls,,KACE-1-0-G/amip/r1i1p1f1/Amon/rsut/gr/local
 MIROC6,historical,r10i1p1f1,day,hur,gn,noUse,most of files must come from esgf-data2.diasjp.net - too slow,,MIROC6/historical/r10i1p1f1/day/hur/gn/noUse
 MIROC6,historical,r2i1p1f1,day,ua,gn,noUse,many missing time chunk,2020-02-10,MIROC6/historical/r2i1p1f1/day/ua/gn/noUse
 MIROC6,historical,r2i1p1f1,day,wap,gn,noUse,most data missing,2020-02-10,MIROC6/historical/r2i1p1f1/day/wap/gn/noUse
