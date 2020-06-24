@@ -38,7 +38,7 @@ def getsheet(json_keyfile,sheet_name):
     return df
 
 def requests(df_prior,rows=[],emails=[],tables=[]): 
-    json_keyfile = 'json/Pangeo Hackathon-e48a41b13c91.json'
+    json_keyfile = '/home/naomi/cmip6-zarr/json/Pangeo Hackathon-e48a41b13c91.json'
     sheet_name = "CMIP6 GCS Data Request (Responses)"
 
     df = df_prior.copy()
@@ -66,6 +66,11 @@ def requests(df_prior,rows=[],emails=[],tables=[]):
     df_req = df[df['response status']!='once'] 
     
     os.system("/bin/rm -f csv/request_new.csv")
+
+# with no credentials, will need to download csv file from:
+#    https://docs.google.com/spreadsheets/d/1SGTSK_h4xWX3gdgpeWeCpL_vhzf6tnGPmxetO1gOlQc/edit?usp=sharing
+#and then rename columns as in getsheet function
+
     df_all = getsheet(json_keyfile, sheet_name)
     
     # save and read back in order to look like df_prior
