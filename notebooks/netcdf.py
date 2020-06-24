@@ -28,7 +28,9 @@ def get_ncfiles(zarr,df,skip_sites,skip_string='serendipity'):
     files = df[df.zstore == zarr].file_name.unique()
 
     tmp = 'nctemp'
-    
+    if not (os.path.exists(tmp)):
+        os.system('mkdir -p ' + tmp)
+
     institution_id = zarr.split('/')[-8]
     v_short = zarr.split(institution_id+'/')[1][:-1]
 

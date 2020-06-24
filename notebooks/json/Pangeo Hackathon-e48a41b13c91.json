@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "pangeo-hackathon",
+  "private_key_id": "e48a41b13c919b88af686af1d4f0182182a29cb1",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDHBU9N1VV42vGO\nseUYEMtzYzo2wDpJZVqvhm1GP+7eLHmPF47xHXHAz8HGWfsrc7iB8yK67w8qbsCY\n7zJESsVxVurYG1st3tKvbz7oGHqOI2HawsSrrolGNVrdAvTGSqbULDzQk4XQA/7z\nRcUwfc7mzWJgKUZA9XAavxxF137cYfOkxawR+MADV+G2wqtyYAZUDq11oCOWwVaR\nA9D58uiMNpRPcTTc8bm+ZBHAa5Ihhq49Pnk61zyE9bNf6SkGvN0p6N8ecgoaU9Ak\npu2XLXN6UF4m13XfVspvAeswsC9PFomA1n5CMyDuY+z/aQNCJy1a9KV+bKsTYD8l\n9Xjug/7pAgMBAAECggEAA+IT8FbuvxgEHL6JoHgUOCQ7l3DihXPitC6hXpY49DQv\nvpdJ+zHE+lGZz5bW3AiuFQVoH14yg6eIi3nAF22fP5bGDnRhYycIIYZZ1sNCtOSp\no2nBPTMZGGBKU91oZp9ADqWHhDxOOpPklN0lVUzHGi3v5iQ4BWSkjM9yXxLiAnom\nT0GOqWAIDtcJqcV/K74CSbGj7VKNGlwykKWGzmfETfi4hNHUF/ys5bMN1y8xafMV\nGJNH+sN+T6x2V58JjwU5T8x8k/B5Pdn+BGQzeXqe8L1eoBdj4ozc9+3PaZssFiGv\nYm4eQurDMMDWNOqkx+H0D/z69IErYm5TqCL03/46AQKBgQD/KjVdVxcd5et/YwbA\nBAsRhawFYMG5+nVlu4GuImoLYVJkO71sgANgVFNaLLdR5wAE2tnd0y8mFNXJdJGt\nq+N17TG1Iog0Ki06/FL2BznV0XbQDKCPHxPinQ9xTQbwCt6v33MoUkXcW3JWXEze\nZ3N7pbsuJYypIUcOHb1cekg3aQKBgQDHrA+DYILPclm5eUe7sdgu/BYN+PHeAajU\nfxUOA69SLb/K8jgDqP6Wwvw/kUFBJBqfcVUuL11llb+IXQ+xZfGpVvuEoYLlG8Sr\nYiSgMpPlD1oXtb/TPj1bLcjitmXwtLfWPnJuxn/+0ewXQdIwexkWj+DEd/ERLlt7\nNvvoXwgbgQKBgH875cY4Ug+XgTlRAKGoonhHRkKcP51j9TwYJo7VHDm2eqX+X/MF\nVimngrSZTYPqgsjo8/A3iPAdPYkptiZ6an54GuwuXupcCZe7EAccDUvAGdWeJkWX\ngoviMzwU45u4X9gkvMBjXfCGLNpBRhc0UJJcTpyxHpWLQWoZjD3bv7zZAoGAPA6E\nm/9rWPoMAr131fyoCXnJKGq4VQ4qub9/lbeGBDG+fkxcjL1H1hDPzk7iUbWKTGrK\nNBoK/YMNGPbkwXboOQbwn/P0avTvMp1SZtzPnxX/AyKnj+IokkQzJ/20q7GvmcEu\nqiMKXJrHaDdkATEFWsPr1yw8Ve6blXP0UPBEgAECgYBogHEHz8sxrr6NZB6700Gg\nzA0aUSjm2RKhvO3mmwaYo0tbsQgZJEFS6VkECkZMUf3uBzQM7ROeE9v02zC0yhuX\nqnXmmIg1LPV5FmlKyZaANKNKDrLacHk41owsfkrbduLLYtOts17OdIU5ZTlwv0d1\nDQPZFRf5b3soc8SbNxaVuw==\n-----END PRIVATE KEY-----\n",
+  "client_email": "hackathon@pangeo-hackathon.iam.gserviceaccount.com",
+  "client_id": "114280249940759081333",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/hackathon%40pangeo-hackathon.iam.gserviceaccount.com"
+}
