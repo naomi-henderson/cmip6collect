@@ -1,5 +1,4 @@
-import gspread
-from oauth2client.service_account import ServiceAccountCredentials
+import requests as req
 import pandas as pd
 from datetime import datetime
 from ast import literal_eval
@@ -8,20 +7,19 @@ import xarray as xr
 import numpy as np
 import os
 
-def getsheet(json_keyfile,sheet_name):
-    scope = ['https://spreadsheets.google.com/feeds','https://www.googleapis.com/auth/drive']
+def getsheet(): 
+    KEY = '1SGTSK_h4xWX3gdgpeWeCpL_vhzf6tnGPmxetO1gOlQc'
+    SHEET_ID = '1506911698'
+    url = f'https://docs.google.com/spreadsheets/d/{KEY}/export?format=csv&id={KEY}&gid={SHEET_ID}'
 
-    credentials = ServiceAccountCredentials.from_json_keyfile_name(json_keyfile, scope)
+    temp_file_name = 'test_csv.csv'
+    download = req.get(url)
 
-    gc = gspread.authorize(credentials)
+    with open(temp_file_name, 'w', newline='\n') as temp_file:
+        temp_file.writelines(download.text.replace('\r\n','\n'))
 
-    wks = gc.open(sheet_name).sheet1
-
-    data = wks.get_all_values()
-    headers = data.pop(0)
-
-    df = pd.DataFrame(data, columns=headers)
-
+    df = pd.read_csv(temp_file_name, dtype='unicode',keep_default_na=False)
+    
     df['members'] = [s.replace(' ','').split(',') for s in df.member_ids.values]
     df['experiments'] = [s.replace('*','').replace(' ','').split(',') for s in df.experiment_ids.values]
     df['models'] = [s.replace('All Available','All').replace(' ','').split(',') for s in df.source_ids.values]
@@ -38,7 +36,7 @@ def getsheet(json_keyfile,sheet_name):
     return df
 
 def requests(df_prior,rows=[],emails=[],tables=[]): 
-    json_keyfile = '/home/naomi/cmip6-zarr/json/Pangeo Hackathon-e48a41b13c91.json'
+    json_keyfile = 'json/Pangeo Hackathon-e48a41b13c91.json'
     sheet_name = "CMIP6 GCS Data Request (Responses)"
 
     df = df_prior.copy()
@@ -66,12 +64,8 @@ def requests(df_prior,rows=[],emails=[],tables=[]):
     df_req = df[df['response status']!='once'] 
     
     os.system("/bin/rm -f csv/request_new.csv")
-
-# with no credentials, will need to download csv file from:
-#    https://docs.google.com/spreadsheets/d/1SGTSK_h4xWX3gdgpeWeCpL_vhzf6tnGPmxetO1gOlQc/edit?usp=sharing
-#and then rename columns as in getsheet function
-
-    df_all = getsheet(json_keyfile, sheet_name)
+    
+    df_all = getsheet()
     
     # save and read back in order to look like df_prior
     df_all.to_csv('csv/request_new.csv',index=False)
@@ -109,6 +103,8 @@ def request_clean(df):
     for item,row in df.iterrows():
         troubles = []
         email = row['E-mail']
+        if type(email)==type(0.0):
+            continue
         table_id = row['table']  
         experiment_ids = row['experiments']
         for experiment_id in experiment_ids:
@@ -129,6 +125,7 @@ def request_clean(df):
                     troubles += [f"Warning: variable_id={variable_id} is not available in table_id={table_id}"]
         
         if len(troubles)>=1:
+            print(email,item,troubles)
             dtrouble[email+'_'+str(item)] = troubles
 
     return dtrouble
