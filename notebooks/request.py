@@ -36,8 +36,6 @@ def getsheet():
     return df
 
 def requests(df_prior,rows=[],emails=[],tables=[]): 
-    json_keyfile = 'json/Pangeo Hackathon-e48a41b13c91.json'
-    sheet_name = "CMIP6 GCS Data Request (Responses)"
 
     df = df_prior.copy()
     
