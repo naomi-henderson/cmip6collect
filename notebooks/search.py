@@ -148,7 +148,7 @@ def esgf_search_sites():
     dtype['dkrz'] =  "https://esgf-data.dkrz.de/esg-search/search"        # no historical
     return dtype
 
-def search(server, df_req, local_node=False):
+def search(server, df_req, local_node=False, verbose=False):
     df_list = []
     for index, row in df_req.iterrows():
         timestamp = row['Timestamp']
@@ -165,7 +165,7 @@ def search(server, df_req, local_node=False):
                     print(table_id,variable_id,source_ids,experiment_ids)
                     try:
                         files= esgf_search(server=server, mip_era='CMIP6', variable_id=variable_id,
-                                table_id=table_id, page_size=500, verbose=False, local_node=False)
+                                table_id=table_id, page_size=500, verbose=verbose, local_node=False)
                     except:
                         continue
 
@@ -180,7 +180,7 @@ def search(server, df_req, local_node=False):
                         print(table_id,variable_id,source_id,experiment_ids)
                         try:
                             files= esgf_search(server=server, mip_era='CMIP6', variable_id=variable_id,
-                                    table_id=table_id, source_id = source_id, page_size=500, verbose=False, local_node=False)
+                                    table_id=table_id, source_id = source_id, page_size=500, verbose=verbose, local_node=False)
                         except:
                             continue
 
@@ -197,7 +197,7 @@ def search(server, df_req, local_node=False):
                         print(table_id,variable_id,source_ids,experiment_id)
                         try:
                             files= esgf_search(server=server, mip_era='CMIP6', variable_id=variable_id,
-                                    table_id=table_id, experiment_id=experiment_id, page_size=500, verbose=False, local_node=False,)
+                                    table_id=table_id, experiment_id=experiment_id, page_size=500, verbose=verbose, local_node=False,)
                         except:
                             continue
     
@@ -212,7 +212,7 @@ def search(server, df_req, local_node=False):
                             print(table_id,variable_id,source_id,experiment_id)
                             try:
                                 files= esgf_search(server=server, mip_era='CMIP6', variable_id=variable_id,
-                                        table_id=table_id, experiment_id=experiment_id, source_id = source_id, page_size=500, verbose=False, local_node=False,)
+                                        table_id=table_id, experiment_id=experiment_id, source_id = source_id, page_size=500, verbose=verbose, local_node=False,)
                             except:
                                 continue
     

@@ -161,8 +161,8 @@ ocean  ecology in the  CMIP6 models and satellite data",Thank you very much
 6/18/2020 20:37:46,joshua.studholme@yale.edu,,['One'],"['1pctCO2', 'abrupt-4xCO2', 'amip', 'historical', 'piControl', 'ssp585']",['All'],['wap'],Amon,Josh Studholme,,
 6/19/2020 3:57:29,hege-beate.fredriksen@uit.no,,['All'],"['piClim-4xCO2', 'piClim-control', 'piClim-histall']",['All'],"['tas', 'rlut', 'rsut', 'rsdt']",Amon,Hege-Beate Fredriksen,Compute forcing for CMIP6 models,"A few of these data are already available in google cloud, but most experiments are missing all or some of these variables."
 6/22/2020 21:28:52,joshua.studholme@yale.edu,,['One'],"['1pctCO2', 'abrupt-4xCO2', 'amip', 'historical', 'piControl', 'ssp585']",['All'],['prw'],Amon,Josh Studholme,,
-,null@gmail.com,,[''],[''],[''],[''],,,,
-,null@gmail.com,,[''],[''],[''],[''],,,,
+,,,[''],[''],[''],[''],,,,
+,,,[''],[''],[''],[''],,,,
 2019-10-02,sridge@ldeo.columbia.edu,,[''],['historical'],['CESM2'],"['thetao', 'so', 'dissic', 'no3', 'cfc11', 'sf6', 'po4', 'talk']",Omon,Sean Ridge,CMIP6 Ocean Atlas,as many ensemble members as possible
 9/27/2019 15:30:03,berner@ucar.edu,,[''],['piControl'],"['CESM2', 'GFDL-CM4']","['ua', 'rlut']",day,Judith Berner,ENSO,
 10/10/2019 14:52:53,mmsmith@uw.edu,,[''],"['1pctCO2', 'abrupt-4xCO2', 'historical', 'piControl', 'ssp585']",['All'],"['rlus', 'rlds']",Amon,Madison Smith,Sensitivity of sea ice to changes in air temperature,
@@ -190,6 +190,12 @@ ocean  ecology in the  CMIP6 models and satellite data",Thank you very much
 2019-10-07,rpa@ldeo.columbia.edu,,['All'],"['ssp126', 'ssp245', 'ssp370', 'ssp585', 'ssp119', 'ssp434', 'ssp460', 'ssp534-over', '1pctCO2', 'abrupt-4xCO2', 'amip', 'historical', 'piControl', 'esm-hist', 'esm-piControl', 'esm-piControl-spinup', 'piControl-spinup']",['All'],"['ua', 'va', 'hus', 'ta']",Amon,Ryan,Basics,basic
 9/9/2019 14:13:56,naomi@ldeo.columbia.edu,for testing purposes,['All'],['ssp370'],['CESM2'],['pr'],Amon,Naomi,GithubTest,special request
 2020-06-13,naomi@ldeo.columbia.edu,new version check,['All'],['historical'],['All'],"['tas', 'pr']",Amon,naomi,Basics,
-2020-06-23,naomi@ldeo.columbia.edu,,['All'],"['historical', 'ssp126', 'ssp245', 'ssp370']",['All'],['tasmax'],day,naomi,Rhodium downscaling,R1
-2020-06-23,naomi@ldeo.columbia.edu,,['All'],"['historical', 'ssp126', 'ssp245', 'ssp370']",['All'],['tasmin'],day,naomi,Rhodium downscaling,R2
-2020-06-23,naomi@ldeo.columbia.edu,,['All'],"['historical', 'ssp126', 'ssp245', 'ssp370']",['All'],['pr'],day,naomi,Rhodium downscaling,R3
+2020-06-23,naomi@ldeo.columbia.edu, ,['r1i1p1f1'],"['historical', 'ssp126', 'ssp245', 'ssp370']",['All'],['tasmax'],day,Rhodium,global downscaling,R1
+2020-06-23,naomi@ldeo.columbia.edu, ,['r1i1p1f1'],"['historical', 'ssp126', 'ssp245', 'ssp370']",['All'],['tasmin'],day,Rhodium,global downscaling,R2
+2020-06-23,naomi@ldeo.columbia.edu, ,['r1i1p1f1'],"['historical', 'ssp126', 'ssp245', 'ssp370']",['All'],['pr'],day,Rhodium,global downscaling,R3
+2020-06-23,naomi@ldeo.columbia.edu, ,['r1i1p1f2'],"['historical', 'ssp126', 'ssp245', 'ssp370']",['All'],['tasmax'],day,Rhodium,global downscaling,R12
+2020-06-23,naomi@ldeo.columbia.edu, ,['r1i1p1f2'],"['historical', 'ssp126', 'ssp245', 'ssp370']",['All'],['tasmin'],day,Rhodium,global downscaling,R22
+2020-06-23,naomi@ldeo.columbia.edu, ,['r1i1p1f2'],"['historical', 'ssp126', 'ssp245', 'ssp370']",['All'],['pr'],day,Rhodium,global downscaling,R32
+2020-06-23,naomi@ldeo.columbia.edu, ,['r1i1p1f3'],"['historical', 'ssp126', 'ssp245', 'ssp370']",['All'],['tasmax'],day,Rhodium,global downscaling,R13
+2020-06-23,naomi@ldeo.columbia.edu, ,['r1i1p1f3'],"['historical', 'ssp126', 'ssp245', 'ssp370']",['All'],['tasmin'],day,Rhodium,global downscaling,R23
+2020-06-23,naomi@ldeo.columbia.edu, ,['r1i1p1f3'],"['historical', 'ssp126', 'ssp245', 'ssp370']",['All'],['pr'],day,Rhodium,global downscaling,R33

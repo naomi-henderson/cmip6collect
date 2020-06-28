@@ -325,6 +325,9 @@ NorESM2-MM,historical,r1i1p1f1,SImon,sivol,gn,noUse,conflicting values for varia
 NorESM2-MM,historical,r1i1p1f1,SImon,sisnthick,gn,noUse,conflicting values for variable 'vertices_longitude',,NorESM2-MM/historical/r1i1p1f1/SImon/siconc/gn/noUse
 NorESM2-MM,historical,r1i1p1f1,SImon,sisnconc,gn,noUse,conflicting values for variable 'vertices_longitude',,NorESM2-MM/historical/r1i1p1f1/SImon/sisnconc/gn/noUse
 NorESM2-LM,historical,r1i1p1f1,SImon,sisnconc,gn,noUse,conflicting values for variable 'vertices_longitude',,NorESM2-MM/historical/r1i1p1f1/SImon/sisnconc/gn/noUse
+NorESM2-LM,ssp126,r1i1p1f1,day,pr,gn,remove_files,extra files making duplicate time values
+NorESM2-LM,ssp126,r1i1p1f1,day,tasmax,gn,remove_files,extra files making duplicate time values
+NorESM2-LM,ssp126,r1i1p1f1,day,tasmin,gn,remove_files,extra files making duplicate time values
 SAM0-UNICON,piControl,r1i1p1f1,day,all,gn,try-again,they skip year 0290 in the middle of the run!,,SAM0-UNICON/piControl/r1i1p1f1/day/all/gn/try-again
 SAM0-UNICON,piControl,r1i1p1f1,LImon,snw,gn,try-again,they skip year 0290 in the middle of the run!,,SAM0-UNICON/piControl/r1i1p1f1/LImon/snw/gn/try-again
 SAM0-UNICON,piControl,r1i1p1f1,Lmon,mrro,gn,try-again,they skip year 0290 in the middle of the run!,,SAM0-UNICON/piControl/r1i1p1f1/Lmon/mrro/gn/try-again

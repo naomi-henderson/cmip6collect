@@ -121,6 +121,11 @@ def concatenate(zarr,gfiles,codes):
             for gfile in gfiles:
                 dstr += f'fixing deptht trouble in gfile:{gfile}'
                 os.system(f'{fix_string} {gfile}')
+        if 'remove_files' in code:
+            command = '/bin/rm nctemp/*NorESM2-LM*1230.nc'
+            os.system(command)
+            gfiles = [file for file in gfiles if ('1231.nc' in file)]
+            
 
     try:
         if 'time' in ds.coords:   
