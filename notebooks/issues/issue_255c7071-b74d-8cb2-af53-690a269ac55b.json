@@ -1,0 +1,8 @@
+{
+    "uid": "255c7071-b74d-8cb2-af53-690a269ac55b",
+    "title": "Invalid values for the rlut, rlutcs and rsutcs variables in some experiments",
+    "description": "Invalid values for the rlut, rlutcs and rsutcs variables into the CMCC-CM2-HR4 and CMCC-CM2-VHR4 datasets for the highres-future, highresSST-future and hist-1950 experiments. Affected variables have been withdrawn and are being republished with a new version id.",
+    "project": "cmip6",
+    "severity": "critical",
+    "status": "onhold"
+}

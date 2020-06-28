@@ -1,0 +1,8 @@
+{
+    "uid": "ab0cb1e7-648b-f60e-b0ac-5363a2302db6",
+    "title": "GISS withdraw variable wtem",
+    "description": "GISS withdraw variable wtem",
+    "project": "cmip6",
+    "severity": "medium",
+    "status": "new"
+}

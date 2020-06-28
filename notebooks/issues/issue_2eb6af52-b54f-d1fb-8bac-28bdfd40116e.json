@@ -1,0 +1,8 @@
+{
+    "uid": "2eb6af52-b54f-d1fb-8bac-28bdfd40116e",
+    "title": "Latitude bounds order swapped",
+    "description": "The order of the bounds in the latitude coordinate has been swapped over. For example, they are:\n\n lat_bnds =\n  -88.8206155255893, -90,\n  -87.8906536323674, -88.8206155255893,\n\nrather than:\n\n lat_bnds =\n  -90, -88.8206155255893,\n  -88.8206155255893, -87.8906536323674,\n\nSome tools will struggle to open these files. The files will be retracted, corrected and then re-published.",
+    "project": "cmip6",
+    "severity": "low",
+    "status": "resolved"
+}

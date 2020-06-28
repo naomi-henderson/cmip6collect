@@ -1,0 +1,8 @@
+{
+    "uid": "372707ea-7f23-efff-bc8a-126fab0a7997",
+    "title": "Error in Diagnostic of variable fx_mrsofc",
+    "description": "Due to an error in the diagnostic, the values of the variable mrsofc are too small by a factor of 1.e6.",
+    "project": "cmip6",
+    "severity": "low",
+    "status": "resolved"
+}

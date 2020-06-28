@@ -1,0 +1,8 @@
+{
+    "uid": "acd51055-f7bc-3d58-b980-a6fb11ee287b",
+    "title": "Convert climatologies to monthly time serie",
+    "description": "co2mass, ch4global and n2oglobal variables have been wrongly processed as climatology files (i.e., with \"-clim.nc\" suffix). A new dataset version will replace those climatologies by the initial monthly time series.",
+    "project": "cmip6",
+    "severity": "medium",
+    "status": "resolved"
+}

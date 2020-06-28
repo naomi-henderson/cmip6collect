@@ -1,0 +1,8 @@
+{
+    "uid": "750a143a-5131-5631-a0ca-589273c817a1",
+    "title": "Incorrect calculation of COSP diagnostics in HadGEM3 model",
+    "description": "An issue has been found with the calculation of these diagnostics; within the model the in-cloud mixing ratio is internally divided by cloud fraction and then fed to the CALIPSO and Cloudsat simulators. This overestimates the cloud mixing ratio, making COSP to overestimate high-level and mid-level cloud fraction and slightly underestimate low-level cloud fraction (due to larger attenuation above). The variables affected clcalipso, clhcalipso, cllcalipso, clmcalipso, cltcalipso (in both CFmon and CFday tables) plus parasolRefl (in Emon and Eday). This issue affects all HadGEM3 simulations.\n\nThese files have now been withdrawn and won't be replaced.",
+    "project": "cmip6",
+    "severity": "critical",
+    "status": "resolved"
+}

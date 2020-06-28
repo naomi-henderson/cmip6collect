@@ -1,0 +1,8 @@
+{
+    "uid": "297205eb-28be-039c-99c9-f1ed457e2239",
+    "title": "missing months in atmospheric NorESM2-LM Emon output v20190815",
+    "description": "A bug in post-processing caused that every second month is missing in atmospheric NorESM2-LM Emon output v20190815. The affected data has been retracted and fixed data using a new dataset version will be published soon. The affected Emon fields are hus, loadbc, loaddust, loadpoa, loadss, ps, rsdsdiff, ua, va and wap.",
+    "project": "cmip6",
+    "severity": "critical",
+    "status": "resolved"
+}

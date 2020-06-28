@@ -1,0 +1,8 @@
+{
+    "uid": "e0655bc8-3ab5-9b7a-8d44-015f38271327",
+    "title": "Incorrect shift of the longitude values in SMHI data on the NSC-LIU ESGF data node (certain EC-Earth3-Veg scenarios)",
+    "description": "The longitude values of the EC-Earth atmospheric data have been accidentally shifted half a grid cell eastward, this affects lon & lon_bnds. This error applies to the EC-Earth3-Veg experiments ssp119 r2+3, ssp126 r3, ssp245 r3, ssp370 r3, ssp585 r3. The error will be corrected as soon as possible. Note that this error does not affect any global and zonal means which might have been taken from these data by scientific studies. We will unpublish all data of the affected experiments, including the ocean data, even though the latter is not affected by this error. However, doing so is the easiest and most robust approach for this major operation.",
+    "project": "cmip6",
+    "severity": "high",
+    "status": "resolved"
+}

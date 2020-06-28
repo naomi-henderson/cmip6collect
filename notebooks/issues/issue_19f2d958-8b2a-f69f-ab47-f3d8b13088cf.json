@@ -1,0 +1,8 @@
+{
+    "uid": "19f2d958-8b2a-f69f-ab47-f3d8b13088cf",
+    "title": "Instabilities which lead to erroneous values of tas also lead to erroneous values of hurs and huss",
+    "description": "The original version of tas (2m air temperature) computation contains instabilities, see details here: https://errata.es-doc.org/static/view.html?uid=fabc475c-b22f-6162-89ca-345d8fdc97ce. Those instabilites also affect the diagnostic of the relative and specific humidity at the surface. For the simulations for which hurs and huss is available, and in view of the very small number of events, an a posteriori correction will be done. Meanwhile, the affected datasets have been unpublished and ongoing publications won't include hurs and huss data at higher frequencies than monthly.",
+    "project": "cmip6",
+    "severity": "critical",
+    "status": "onhold"
+}

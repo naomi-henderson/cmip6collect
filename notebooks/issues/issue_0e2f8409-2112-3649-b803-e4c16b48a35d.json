@@ -1,0 +1,8 @@
+{
+    "uid": "0e2f8409-2112-3649-b803-e4c16b48a35d",
+    "title": "Published as wrong MIP, re-published",
+    "description": "Published as RFMIP, those must be AerChemMIP.\nAlready unpublished, and will publish again soon.",
+    "project": "cmip6",
+    "severity": "critical",
+    "status": "new"
+}

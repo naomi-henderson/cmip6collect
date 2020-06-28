@@ -1,0 +1,8 @@
+{
+    "uid": "4d7cf562-a73f-69b2-aa08-704cbafcd703",
+    "title": "License change in file metadata",
+    "description": "The license type for this dataset has been changed to the Creative Commons Attribution-ShareAlike 4.0 International License.",
+    "project": "cmip6",
+    "severity": "medium",
+    "status": "new"
+}

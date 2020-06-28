@@ -1,0 +1,8 @@
+{
+    "uid": "9f7e65c5-8856-40d5-b8d9-e85b30bc84cd",
+    "title": "Invalid values for mrsos and  mrso",
+    "description": "Something has gone wrong with the calculation of mrsos and misofor for piControl, historical 4xCO2, 1pctCO2, AMIP, ScenarioMIP, GMMIP experiments ( the ice phase was not included). These files will be replaced.",
+    "project": "cmip6",
+    "severity": "critical",
+    "status": "new"
+}

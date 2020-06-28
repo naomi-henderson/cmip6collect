@@ -1,0 +1,4 @@
+activity_id,institution_id,source_id,experiment_id,member_id,table_id,variable_id,grid_label,zstore,date_start,date_stop,time_len,sizeG,date,status,dcpp_init_year
+HighResMIP,NOAA-GFDL,GFDL-CM4C192,highresSST-present,r1i1p1f1,3hr,pr,gr3,gs://cmip6/HighResMIP/NOAA-GFDL/GFDL-CM4C192/highresSST-present/r1i1p1f1/3hr/pr/gr3/,1950-01-01,2014-12-31,189928,135,2020-01-26,created,
+HighResMIP,NOAA-GFDL,GFDL-CM4C192,highresSST-present,r1i1p1f1,day,pr,gr3,gs://cmip6/HighResMIP/NOAA-GFDL/GFDL-CM4C192/highresSST-present/r1i1p1f1/day/pr/gr3/,1950-01-01,2014-12-31,23741,16.8,2019-10-25,created,
+HighResMIP,NOAA-GFDL,GFDL-CM4C192,hist-1950,r1i1p1f1,day,pr,gr3,gs://cmip6/HighResMIP/NOAA-GFDL/GFDL-CM4C192/hist-1950/r1i1p1f1/day/pr/gr3/,1950-01-01,2014-12-31,23725,16.8,2019-10-25,created,

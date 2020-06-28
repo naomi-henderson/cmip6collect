@@ -1,0 +1,8 @@
+{
+    "uid": "8113fdfb-1a62-38d0-932b-2bce41319eea",
+    "title": "Incorrect calculation of Lmon/evspsblsoi in HadGEM3 and UKESM1",
+    "description": "The calculation of evspsblsoi in these datasets is incorrect; it does not include the contribution from sublimation, but does include transpiration. These datasets have been withdrawn",
+    "project": "cmip6",
+    "severity": "critical",
+    "status": "resolved"
+}

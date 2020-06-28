@@ -1,0 +1,8 @@
+{
+    "uid": "00f7fdab-c123-a55d-9788-bd73dfb8aa1a",
+    "title": "Error in albisccp and pctisccp variables",
+    "description": "An error in the monthly and daily averages of albisccp/pctisccp was detected in CNRM-CM6-1/CNRM-ESM2-1 output. These time-means were not weighted by the ISCCP Total Cloud Fraction (cltisccp).",
+    "project": "cmip6",
+    "severity": "critical",
+    "status": "new"
+}

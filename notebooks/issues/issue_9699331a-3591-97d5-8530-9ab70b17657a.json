@@ -1,0 +1,8 @@
+{
+    "uid": "9699331a-3591-97d5-8530-9ab70b17657a",
+    "title": "Error in variable \"comment\" metadata",
+    "description": "Area calculations formula in metadata variable \"comment\" is incorrect and should be fixed.",
+    "project": "cmip6",
+    "severity": "low",
+    "status": "resolved"
+}

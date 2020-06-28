@@ -1,0 +1,8 @@
+{
+    "uid": "61fb170e-91bb-4c64-8f1d-6f5e342ee421",
+    "title": "Wrong branch_time_in_child for GFDL-CM4 ssp245 and ssp585",
+    "description": "The GFDL-CM4 ssp245 and ssp585 experiments start in year 2015 and the time-axis is \"days since 1850\". Therefore, the branch_time_in_child is 165 years (60225 days), not zero.",
+    "project": "cmip6",
+    "severity": "medium",
+    "status": "new"
+}

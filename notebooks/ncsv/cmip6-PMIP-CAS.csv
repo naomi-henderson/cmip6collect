@@ -1,0 +1,2 @@
+activity_id,institution_id,source_id,experiment_id,member_id,table_id,variable_id,grid_label,zstore,date_start,date_stop,time_len,sizeG,date,status,dcpp_init_year
+PMIP,CAS,FGOALS-g3,lig127k,r1i1p1f1,Lmon,mrso,gn,gs://cmip6/PMIP/CAS/FGOALS-g3/lig127k/r1i1p1f1/Lmon/mrso/gn/,0750-01-16,1249-12-16,6000,0.118,2019-12-15,created,

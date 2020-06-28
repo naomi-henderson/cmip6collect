@@ -1,0 +1,8 @@
+{
+    "uid": "88b6947d-d1d3-4a0e-b1d4-efe148b3cfda",
+    "title": "Faulty datasets published from UKESM1-0-LL piControl",
+    "description": "Several datasets that were not intended for publication due to a known issue with early model simulation suites have been published due to failure of our data conversion procedures. The model code was corrected prior to all other UKESM1 simulations being run.\n\nAll affected datasets have been withdrawn from the CEDA node.",
+    "project": "cmip6",
+    "severity": "critical",
+    "status": "resolved"
+}

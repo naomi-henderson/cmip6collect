@@ -1,0 +1,8 @@
+{
+    "uid": "b9de087c-fc47-44c3-951c-16504c5f22c5",
+    "title": "Wrong ozone forcing for piClim-spAer-anthro experiment",
+    "description": "The final version of RFMIP protocol requires Present-day (year 2014) Ozone Concentrations as a forcing for piClim-spAer-antro experiment. This 4-member ensemble was run using preindustrial Ozone values (the same as in piClim-control experiment), as initially specified on ES-DOC: \"Constant pre-industrial tropospheric and stratospheric ozone climatology. Models without interactive ozone chemistry should specify the pre-industrial ozone fields from a data set produced from a pre-industrial control simulation that uses 1850 emissions and a mean solar forcing averaged over solar cycles 8-10, representative of the mean mid-19th century solar forcing.\" The simulations will be (re-)published as \"r*i1p1f2\", to indicate a different forcing than the one required by the protocol.",
+    "project": "cmip6",
+    "severity": "low",
+    "status": "resolved"
+}

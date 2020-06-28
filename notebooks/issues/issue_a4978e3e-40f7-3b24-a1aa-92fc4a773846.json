@@ -1,0 +1,8 @@
+{
+    "uid": "a4978e3e-40f7-3b24-a1aa-92fc4a773846",
+    "title": "Incorrect definition used for msftmz",
+    "description": "By definition all advective mass transport processes, resolved and parameterized should be included in msftmz. Within the conversion from the CESM variable MOC to the CMIP variable msftmz, an error was made where only the Eulerian advection was included.",
+    "project": "cmip6",
+    "severity": "critical",
+    "status": "resolved"
+}

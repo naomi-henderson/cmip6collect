@@ -1,0 +1,8 @@
+{
+    "uid": "f9fb80b8-9710-c889-b11f-20410dc319d5",
+    "title": "Incorrect branch_time metadata in EC-Earth3-Veg r4i1p1f1 historical (CNR-data)",
+    "description": "Error in branch_time_in_parent in EC-Earth3-Veg (CNR-data) r4i1p1f1 historical simulation. The error will be corrected.",
+    "project": "cmip6",
+    "severity": "low",
+    "status": "resolved"
+}

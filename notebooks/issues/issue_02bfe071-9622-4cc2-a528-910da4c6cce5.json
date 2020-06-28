@@ -1,0 +1,8 @@
+{
+    "uid": "02bfe071-9622-4cc2-a528-910da4c6cce5",
+    "title": "snd values incorrect",
+    "description": "snd output was incorrectly diagnosed. The data will be withdrawn and republished.",
+    "project": "cmip6",
+    "severity": "critical",
+    "status": "resolved"
+}

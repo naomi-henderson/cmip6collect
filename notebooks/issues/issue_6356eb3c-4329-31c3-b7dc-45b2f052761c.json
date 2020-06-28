@@ -1,0 +1,8 @@
+{
+    "uid": "6356eb3c-4329-31c3-b7dc-45b2f052761c",
+    "title": "Incorrect source_id used for 2 simulations",
+    "description": "An incorrect source_id was assigned for two AerChemMIP simulations. The simulations were tagged as CESM2, but should have been tagged as CESM2-WACCM.",
+    "project": "cmip6",
+    "severity": "high",
+    "status": "resolved"
+}

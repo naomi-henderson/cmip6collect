@@ -1,0 +1,8 @@
+{
+    "uid": "554eb2c6-b201-2ca4-a280-a4750cd7d5c1",
+    "title": "13C and 14C soil C, litter C, root C, and soil respiration are incorrect in simulations with land cover change",
+    "description": "During land cover transition, 14C and 13C root carbon that should be transferred into 14C and 13C litter pools is mistakenly transferred to the bulk C litter pool.  This has effectively no impact on bulk C or anything downstream in the coupled system. It affects 13C and 14C soil C, litter C, root C, and soil respiration in simulations where there has been land cover change.",
+    "project": "cmip6",
+    "severity": "critical",
+    "status": "wontfix"
+}

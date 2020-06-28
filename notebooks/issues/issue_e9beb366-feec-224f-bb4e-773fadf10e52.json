@@ -1,0 +1,8 @@
+{
+    "uid": "e9beb366-feec-224f-bb4e-773fadf10e52",
+    "title": "UKESM1-0-LL leaf area index ancillary issue in some atmosphere-only simulations",
+    "description": "Some atmosphere-only UKESM1-0-LL simulations use a prescribed climatology of vegetation properties; vegetation fractions, leaf area index and canopy height. These climatologies were constructed from data from the UKESM1-0-LL DECK or historical simulations, but in certain simulations the seasonal cycle of leaf area index used has been found to be incorrect and is six months out of phase. The data affected are from the UKESM1-0-LL amip, and all piClim-* experiments from AerChemMIP and RFMIP. As the impact of this issue is known to be minor, only data for the piClim-lu and piClim-anthro simulations, where the impact may be more noticable, will be withdrawn immediately. The remainder will be withdrawn shortly prior to the publication of replacement datasets. Replacement datasets will be published using a forcing index of 4, i.e. the UKESM1-0-LL amip r1i1p1f2 datasets will be withdrawn and corresponding datasets with variant label r1i1p1f4 will be published in their place.",
+    "project": "cmip6",
+    "severity": "critical",
+    "status": "wontfix"
+}

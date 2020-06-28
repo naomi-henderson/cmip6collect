@@ -1,0 +1,8 @@
+{
+    "uid": "45f9e7b9-1844-7a92-8b54-10d954e621db",
+    "title": "Time instantaneous data with time boundaries",
+    "description": "Several files with an instantaneous time axis have useless time boundaries.\nTime bounds are equivalent to time axis values. Consequently, temporal means are not affected.",
+    "project": "cmip6",
+    "severity": "low",
+    "status": "wontfix"
+}

@@ -1,0 +1,8 @@
+{
+    "uid": "12bb1a8c-2353-cfdc-9c14-14fd04d7e860",
+    "title": "abrupt-4xCO2 850 year extenstion data incorrectly published",
+    "description": "The 850 year extension was published incorrectly.  This resulted in a the new extended version missing the previously published 0-150 year files.  Further, the extension file set has considerable gaps in the time range.",
+    "project": "cmip6",
+    "severity": "critical",
+    "status": "resolved"
+}

@@ -1,0 +1,8 @@
+{
+    "uid": "1c5812df-a2f9-3a79-95df-8b0ece62b93e",
+    "title": "Unchanged PIDs for new version",
+    "description": "During correction of issues:\n- https://errata.es-doc.org/static/view.html?uid=7f680e48-6bfd-60a1-9e10-0d4acdc0fdb0\n- https://errata.es-doc.org/static/view.html?uid=54720dfd-7c8f-7a68-9986-ceac4b77ffd0\n- https://errata.es-doc.org/static/view.html?uid=6f1ce955-84de-c62b-9a62-9fb7422369f2\n- https://errata.es-doc.org/static/view.html?uid=74e3e6f3-b132-f589-b379-45959ecf4b03\nFile tracking IDS or PIDs was keep unchanged. Consequently, affected dataset version 20180717 have been unpublished, and replaced by a new version 20180720 with new PIDs in file.",
+    "project": "cmip6",
+    "severity": "high",
+    "status": "resolved"
+}

@@ -1,0 +1,8 @@
+{
+    "uid": "85b6ba97-efe6-fad1-af5e-0f0bd6d9af2f",
+    "title": "co2mass was incorrectly calculated",
+    "description": "The calculation of co2mass was done incorrectly, due to the mass of the atmosphere not being included.",
+    "project": "cmip6",
+    "severity": "critical",
+    "status": "resolved"
+}

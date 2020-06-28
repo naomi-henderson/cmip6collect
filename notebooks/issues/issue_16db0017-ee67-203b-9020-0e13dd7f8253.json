@@ -1,0 +1,8 @@
+{
+    "uid": "16db0017-ee67-203b-9020-0e13dd7f8253",
+    "title": "Wrong depth dimension name",
+    "description": "Due to an old version of dr2xml, 3D ocean files of several IPSL-CM6 simulations have a depth dimension with a wrong name that should be \"olevel\" instead of \"depth*\".",
+    "project": "cmip6",
+    "severity": "low",
+    "status": "resolved"
+}

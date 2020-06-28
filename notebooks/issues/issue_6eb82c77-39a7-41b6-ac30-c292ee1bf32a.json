@@ -1,0 +1,8 @@
+{
+    "uid": "6eb82c77-39a7-41b6-ac30-c292ee1bf32a",
+    "title": "Adding CFmon data for the priod 1850-1949 to CMIP historical and DAMIP/AerChemMIP hist* experiments",
+    "description": "CFmon data for the priod 1850-1949 have been added to CMIP historical and DAMIP/AerChemMIP hist* experiments.",
+    "project": "cmip6",
+    "severity": "low",
+    "status": "resolved"
+}

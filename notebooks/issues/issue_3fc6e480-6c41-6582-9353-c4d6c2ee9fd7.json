@@ -1,0 +1,8 @@
+{
+    "uid": "3fc6e480-6c41-6582-9353-c4d6c2ee9fd7",
+    "title": "Wrong parent_variant_label in EC-Earth3-Veg r2 members for ssp{126,245,370,585}",
+    "description": "The data sets for the r2i1p1f1ssp126, ssp245, ssp370, and ssp585 simulations (i.e. 4 data sets in total) have their parent_variant_label set to r1i1p1f1, when it correctly should be r2i1p1f1.",
+    "project": "cmip6",
+    "severity": "medium",
+    "status": "resolved"
+}

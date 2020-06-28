@@ -1,0 +1,8 @@
+{
+    "uid": "6134a1d2-e5ef-f098-af0d-b17356e9d34b",
+    "title": "Data calculated incorrectly",
+    "description": "The data for this variable was calculated incorrectly. Only the CMIP6 variable sidmasssi in table SImon was affected, and only in the ACCESS-CM2 abrupt-4xCO2 experiment.",
+    "project": "cmip6",
+    "severity": "critical",
+    "status": "new"
+}

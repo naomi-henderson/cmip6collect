@@ -1,0 +1,8 @@
+{
+    "uid": "f4f67e7f-1af9-377e-ac9a-a58b714e2b7d",
+    "title": "OMIP member change",
+    "description": "The attached datasets are republished under \"r2\" member, to ensure consistency with the realization index from other models.",
+    "project": "cmip6",
+    "severity": "low",
+    "status": "resolved"
+}

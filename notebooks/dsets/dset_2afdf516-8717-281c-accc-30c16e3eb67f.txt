@@ -1,0 +1,12 @@
+CMIP6.ScenarioMIP.NIMS-KMA.KACE-1-0-G.ssp245.r1i1p1f1.day.tasmax.gr#20191227
+CMIP6.ScenarioMIP.NIMS-KMA.KACE-1-0-G.ssp245.r1i1p1f1.day.tasmin.gr#20191227
+CMIP6.ScenarioMIP.NIMS-KMA.KACE-1-0-G.ssp245.r2i1p1f1.day.tasmax.gr#20200102
+CMIP6.ScenarioMIP.NIMS-KMA.KACE-1-0-G.ssp245.r2i1p1f1.day.tasmin.gr#20200102
+CMIP6.ScenarioMIP.NIMS-KMA.KACE-1-0-G.ssp245.r3i1p1f1.day.tasmax.gr#20200103
+CMIP6.ScenarioMIP.NIMS-KMA.KACE-1-0-G.ssp245.r3i1p1f1.day.tasmin.gr#20200103
+CMIP6.ScenarioMIP.NIMS-KMA.KACE-1-0-G.ssp370.r1i1p1f1.day.tasmax.gr#20191227
+CMIP6.ScenarioMIP.NIMS-KMA.KACE-1-0-G.ssp370.r1i1p1f1.day.tasmin.gr#20191227
+CMIP6.ScenarioMIP.NIMS-KMA.KACE-1-0-G.ssp370.r2i1p1f1.day.tasmax.gr#20200102
+CMIP6.ScenarioMIP.NIMS-KMA.KACE-1-0-G.ssp370.r2i1p1f1.day.tasmin.gr#20200102
+CMIP6.ScenarioMIP.NIMS-KMA.KACE-1-0-G.ssp370.r3i1p1f1.day.tasmax.gr#20200103
+CMIP6.ScenarioMIP.NIMS-KMA.KACE-1-0-G.ssp370.r3i1p1f1.day.tasmin.gr#20200103

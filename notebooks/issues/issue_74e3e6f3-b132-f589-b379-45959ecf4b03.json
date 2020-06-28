@@ -1,0 +1,8 @@
+{
+    "uid": "74e3e6f3-b132-f589-b379-45959ecf4b03",
+    "title": "\"area:coordinates\" attribute is missing",
+    "description": "The \"coordinates\" attribute is missing for \"area\" variable in some ocean data.",
+    "project": "cmip6",
+    "severity": "low",
+    "status": "resolved"
+}

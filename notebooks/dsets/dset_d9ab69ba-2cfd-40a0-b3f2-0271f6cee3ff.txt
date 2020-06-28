@@ -1,0 +1,14 @@
+CMIP6.HighResMIP.MOHC.HadGEM3-GC31-HM.highresSST-future.r1i1p1f1.SIday.siconc.gn#20190315
+CMIP6.HighResMIP.MOHC.HadGEM3-GC31-HM.highresSST-present.r1i1p1f1.SIday.siconc.gn#20170831
+CMIP6.HighResMIP.MOHC.HadGEM3-GC31-HM.highresSST-present.r1i2p1f1.SIday.siconc.gn#20180605
+CMIP6.HighResMIP.MOHC.HadGEM3-GC31-HM.highresSST-present.r1i3p1f1.SIday.siconc.gn#20180605
+CMIP6.HighResMIP.MOHC.HadGEM3-GC31-LM.highresSST-future.r1i1p1f1.SIday.siconc.gn#20190218
+CMIP6.HighResMIP.MOHC.HadGEM3-GC31-LM.highresSST-present.r1i14p1f1.SIday.siconc.gn#20181224
+CMIP6.HighResMIP.MOHC.HadGEM3-GC31-LM.highresSST-present.r1i15p1f1.SIday.siconc.gn#20181227
+CMIP6.HighResMIP.MOHC.HadGEM3-GC31-LM.highresSST-present.r1i1p1f1.SIday.siconc.gn#20170906
+CMIP6.HighResMIP.MOHC.HadGEM3-GC31-LM.highresSST-present.r1i2p1f1.SIday.siconc.gn#20180605
+CMIP6.HighResMIP.MOHC.HadGEM3-GC31-LM.highresSST-present.r1i3p1f1.SIday.siconc.gn#20180605
+CMIP6.HighResMIP.MOHC.HadGEM3-GC31-MM.highresSST-future.r1i1p1f1.SIday.siconc.gn#20190219
+CMIP6.HighResMIP.MOHC.HadGEM3-GC31-MM.highresSST-present.r1i1p1f1.SIday.siconc.gn#20170818
+CMIP6.HighResMIP.MOHC.HadGEM3-GC31-MM.highresSST-present.r1i2p1f1.SIday.siconc.gn#20180605
+CMIP6.HighResMIP.MOHC.HadGEM3-GC31-MM.highresSST-present.r1i3p1f1.SIday.siconc.gn#20180605

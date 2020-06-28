@@ -1,0 +1,8 @@
+{
+    "uid": "17e7ea87-f9b0-18aa-8e14-7b4ef721f232",
+    "title": "Wrong realm ocnBgChem typo",
+    "description": "realm value in netCDF attributes has to be changed from ocnBgChem to ocnBgchem to comply with the CMIP6 specifications",
+    "project": "cmip6",
+    "severity": "low",
+    "status": "resolved"
+}

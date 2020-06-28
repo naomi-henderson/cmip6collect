@@ -1,0 +1,8 @@
+{
+    "uid": "0ec4a5be-6a80-9900-af55-f5d1afeceef6",
+    "title": "Mixed up instantaneous and mean version of the variable",
+    "description": "For several 3 and 6-hourly atmospheric variables, the instantaneous and mean version of the respective variables have been accidentally swapped. This happened as for the simulations in question both versions of the variables have been written to the same output streams.\nAffected variables by MIP table:\n| E3hrPt: ua, va, wap, ta\n| E3hr: uas, vas, psl \n| CF3hr: ta, psl\n| 6hrLev: ua, va\n| 6hrPlev: uas, vas, wap, tas, psl\n| 6hrPlevPt: ua, va, ta, psl, hus, zg, zg500\n| Affected are the DECK and historical simulations of the models \"MPI-ESM1-2-LR\" and \"MPI-ESM1-2-HR\" as well as the ScenarioMIP and RFMIP simulations of the model \"MPI-ESM1-2-LR\".",
+    "project": "cmip6",
+    "severity": "high",
+    "status": "resolved"
+}

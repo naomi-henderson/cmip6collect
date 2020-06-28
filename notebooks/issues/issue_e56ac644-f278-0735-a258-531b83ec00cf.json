@@ -1,0 +1,8 @@
+{
+    "uid": "e56ac644-f278-0735-a258-531b83ec00cf",
+    "title": "Urban land unit type incorrect",
+    "description": "The 3rd land unit type dimension (urban) was computed incorrectly.",
+    "project": "cmip6",
+    "severity": "critical",
+    "status": "resolved"
+}

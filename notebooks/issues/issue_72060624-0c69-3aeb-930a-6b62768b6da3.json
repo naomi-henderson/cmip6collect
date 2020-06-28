@@ -1,0 +1,8 @@
+{
+    "uid": "72060624-0c69-3aeb-930a-6b62768b6da3",
+    "title": "Ice thickness growing to very large values",
+    "description": "Because the contribution of open water and ice dynamics to ice growth does not vanish when the ice is very thick, the ice thickness can grow to very large values, probably unrealistic, in very cold climates such as the one induced by a 4% decrease in the solar constant. Besides, an unfortunate choice of the upper ice category limit induces a leak of water for such ice thicknesses, hence the water balance is not closed in this simulation. This leads to a fast decrease in the total volume of the ocean. Part of it is due to the water leak, and the rest is due to a rebalancing of some of the water reservoirs.",
+    "project": "cmip6",
+    "severity": "high",
+    "status": "wontfix"
+}

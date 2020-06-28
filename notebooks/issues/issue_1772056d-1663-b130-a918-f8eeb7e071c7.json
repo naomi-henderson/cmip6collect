@@ -1,0 +1,8 @@
+{
+    "uid": "1772056d-1663-b130-a918-f8eeb7e071c7",
+    "title": "Incorrect calculation of freshwater fluxes from, and rainfall on, sea-ice in UKESM1 and HadGEM3",
+    "description": "An error in the calculation of the variables siflfwbot, siflfwdrain and sipr (all in mip table SImon) has been discovered in that they were incorrectly being divided by the fractional sea ice area. Data for siflfwbot and siflfwdrain can be corrected by multiplying by the corresponding siconc datasets (and dividing by 100 to account for units). Data for sipr requires multiplication by 1000 / 1026 to allow for an error in the water density used, along with multiplication by siconc / 100. \n\nWe will be reprocessing and republishing this data in due course.",
+    "project": "cmip6",
+    "severity": "critical",
+    "status": "onhold"
+}

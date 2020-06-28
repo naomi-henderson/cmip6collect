@@ -1,0 +1,8 @@
+{
+    "uid": "4e6fbba4-6f27-9c2f-906e-ef699bb68dab",
+    "title": "Incorrect calculation of COSP diagnostics in the UKESM1 model.",
+    "description": "An issue has been found with the calculation of these diagnostics; within the model the in-cloud mixing ratio is internally divided by cloud fraction and then fed to the CALIPSO and Cloudsat simulators. This overestimates the cloud mixing ratio, making COSP to overestimate high-level and mid-level cloud fraction and slightly underestimate low-level cloud fraction (due to larger attenuation above). The variables affected clcalipso, clhcalipso, cllcalipso, clmcalipso, cltcalipso in the CFmon table. The DECK simulations are also affected - this issue has been reported in a separate errata (https://errata.es-doc.org/static/view.html?uid=e76ac2f0-c75f-968a-931c-57ef8194741b)",
+    "project": "cmip6",
+    "severity": "critical",
+    "status": "new"
+}

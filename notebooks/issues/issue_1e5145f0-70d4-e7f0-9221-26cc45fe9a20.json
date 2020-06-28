@@ -1,0 +1,8 @@
+{
+    "uid": "1e5145f0-70d4-e7f0-9221-26cc45fe9a20",
+    "title": "\"Fixed\" CMIP6 variables provided by NEMO model are time-dependent",
+    "description": "Four CMIP6 variables set as \"fixed\" actually are time-dependent due to the grid of the ocean model NEMO. As the volume of ocean grid cells and sea ice cover are time dependent, the fixed variables masscello, thkcello, deptho and sftof are also time dependent hence cannot be provided as static variables. Those variables should not have been published and have been retracted.",
+    "project": "cmip6",
+    "severity": "medium",
+    "status": "resolved"
+}

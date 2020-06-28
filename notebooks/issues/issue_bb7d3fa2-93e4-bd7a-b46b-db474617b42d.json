@@ -1,0 +1,8 @@
+{
+    "uid": "bb7d3fa2-93e4-bd7a-b46b-db474617b42d",
+    "title": "Sea ice mass budget terms incorrectly calculated",
+    "description": "Some sea ice mass budget terms were calculated incorrectly. In order to correctly calculate these terms they needed to be divided by the timestep over which they were averaged (1800 sec = 30 min). Since these variables are diagnostic output they did not affect the model integration or subsequent values calculated. In later versions of the code this error was corrected, so only output from some simulations needs correcting.",
+    "project": "cmip6",
+    "severity": "critical",
+    "status": "resolved"
+}

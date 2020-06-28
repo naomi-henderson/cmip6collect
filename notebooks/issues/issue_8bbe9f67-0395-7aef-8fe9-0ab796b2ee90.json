@@ -1,0 +1,8 @@
+{
+    "uid": "8bbe9f67-0395-7aef-8fe9-0ab796b2ee90",
+    "title": "Wrong co2mass units",
+    "description": "The variable co2mass has been wrongly written using \"ppm\" instead of \"kg\". A new version of the affected datasets should be publish to conform to the CMIP6 requirement.",
+    "project": "cmip6",
+    "severity": "medium",
+    "status": "resolved"
+}

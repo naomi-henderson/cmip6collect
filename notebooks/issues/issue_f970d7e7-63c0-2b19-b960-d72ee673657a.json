@@ -1,0 +1,8 @@
+{
+    "uid": "f970d7e7-63c0-2b19-b960-d72ee673657a",
+    "title": "Discontinuity for some diagnostics related to the ocean heat content in CNRM-CM6-1.historical.r29i1p1f2 simulation (v20191004)",
+    "description": "This issue is due to a corrupted restart file used in the course of the simulation. The discontinuity is not seable in many diagnostics but impact the reproducibility of the results. This simulation will be rerun and published on ESGF as soon as posible",
+    "project": "cmip6",
+    "severity": "critical",
+    "status": "new"
+}

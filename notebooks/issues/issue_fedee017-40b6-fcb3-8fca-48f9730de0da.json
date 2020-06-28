@@ -1,0 +1,8 @@
+{
+    "uid": "fedee017-40b6-fcb3-8fca-48f9730de0da",
+    "title": "Error in cfadDbze94 variable",
+    "description": "An error in the cfadDbze94 variable (Table Emon and E3hrPt) was detected in CNRM-CM6-1/CNRM-ESM2-1 output (bug within the online coupling between the model and the COSP/CloudSat Radar simulator).  The erroneous output have been removed from the ESGF archive. The amip simulations, which have produced this diagnostic, will be rerun as soon as possible with a corrected diagnostic.",
+    "project": "cmip6",
+    "severity": "critical",
+    "status": "new"
+}

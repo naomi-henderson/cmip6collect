@@ -1,0 +1,8 @@
+{
+    "uid": "84695016-705e-9ac7-a585-e3d158e38004",
+    "title": "Sign Error of evspsb",
+    "description": "There is a sign error for variable \"evspsb\" of CAMS-CSM output data.\nThe data have a negative value of the flux, but it should be a positive evaporation flux from the surface into the atmosphere.",
+    "project": "cmip6",
+    "severity": "medium",
+    "status": "new"
+}

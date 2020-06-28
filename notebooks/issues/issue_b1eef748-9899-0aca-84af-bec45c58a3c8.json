@@ -1,0 +1,8 @@
+{
+    "uid": "b1eef748-9899-0aca-84af-bec45c58a3c8",
+    "title": "Irrelevant CFC in experiment other than historical",
+    "description": "CFC concentrations are not pertinent in experiments other than historical and not requested. Consequently, CFC variables in piControl, abrupt*, 1pctCO2 and more if needed have been unpublished.",
+    "project": "cmip6",
+    "severity": "low",
+    "status": "resolved"
+}

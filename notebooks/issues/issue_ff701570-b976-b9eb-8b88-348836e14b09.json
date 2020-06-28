@@ -1,0 +1,8 @@
+{
+    "uid": "ff701570-b976-b9eb-8b88-348836e14b09",
+    "title": "variable vt100 erroneous CNRM-CM6-1 and CNRM-ESM2-1 outputs",
+    "description": "The definition of field vt100 as requested in CMIP6 Data Request version 01.00.21 (used for all runs) is \"Northward Heat Flux due to Eddies\" ; it was overlooked, which resulted in the publication of a field which is a raw temperature advection (i.e. a raw product of temperature and northward wind component); furthermore, the units indicated is W/m*2, which is erroneous",
+    "project": "cmip6",
+    "severity": "critical",
+    "status": "resolved"
+}

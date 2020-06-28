@@ -1,0 +1,8 @@
+{
+    "uid": "ad5ca671-39d0-39ed-bf4f-6c8fb1a06047",
+    "title": "Incorrect emissions in December 2014",
+    "description": "The published data (for all variables) include an error in the natural emissions of all species during the latter half of December 2014. Thus, all model simulation results are not valid for this time period. This dataset is being retracted and replaced by corrected results.",
+    "project": "cmip6",
+    "severity": "critical",
+    "status": "resolved"
+}

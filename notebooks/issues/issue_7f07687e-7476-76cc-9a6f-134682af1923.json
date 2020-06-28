@@ -1,0 +1,8 @@
+{
+    "uid": "7f07687e-7476-76cc-9a6f-134682af1923",
+    "title": "GISS Errata No. 3",
+    "description": "these variables were wrong and they have been replaced",
+    "project": "cmip6",
+    "severity": "medium",
+    "status": "new"
+}

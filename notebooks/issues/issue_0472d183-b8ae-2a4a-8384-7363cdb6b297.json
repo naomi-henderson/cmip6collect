@@ -1,0 +1,8 @@
+{
+    "uid": "0472d183-b8ae-2a4a-8384-7363cdb6b297",
+    "title": "Issues in aqua-P4K experiment",
+    "description": "An error was detected in the aqua-p4K experiment (v20190820). It was rerun and republished on the ESGF (v20191004).",
+    "project": "cmip6",
+    "severity": "critical",
+    "status": "resolved"
+}

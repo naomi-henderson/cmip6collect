@@ -1,0 +1,8 @@
+{
+    "uid": "320a5915-961b-94cc-86ae-a9bd8c74fc02",
+    "title": "Incorrect shift of the longitude values in EC-Earth consortium ICHEC-data",
+    "description": "The longitude values of the EC-Earth atmospheric data have been accidentally shifted half a grid cell eastward, this affects lon & lon_bnds (this error applies to all EC-Earth atmospheric data published until December 1st 2019). The error will be corrected as soon as possible. Note that this error does not affect any global and zonal means which might have been taken from these data by scientific studies. We decided to unpublish all EC-Earth3 data including the ocean data which is not affected by this error, as this is the easiest and most robust approach for this major operation.",
+    "project": "cmip6",
+    "severity": "high",
+    "status": "new"
+}

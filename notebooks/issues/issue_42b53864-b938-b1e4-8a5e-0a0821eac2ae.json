@@ -1,0 +1,8 @@
+{
+    "uid": "42b53864-b938-b1e4-8a5e-0a0821eac2ae",
+    "title": "CESM2_piClim-aer run completed following the protocol described in https://www.geosci-model-dev.net/9/3447/2016/",
+    "description": "This run was originally completed using the protocol described in https://www.geosci-model-dev.net/9/3447/2016/. The protocol has been updated and replaced by https://rfmip.leeds.ac.uk. The difference between the two protocols is whether the ozone is set to present day or pre-industrial, These data will be replaced with a new simulation that follow the new protocol.",
+    "project": "cmip6",
+    "severity": "critical",
+    "status": "resolved"
+}

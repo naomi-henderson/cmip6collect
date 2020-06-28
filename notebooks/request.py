@@ -66,7 +66,7 @@ def requests(df_prior,rows=[],emails=[],tables=[]):
     df_all = getsheet()
     
     # save and read back in order to look like df_prior
-    df_all.to_csv('csv/request_new.csv',index=False)
+    df_all.to_csv('csv/request_new.csv',index=False, encoding='latin1')
     df_all = pd.read_csv('csv/request_new.csv')
       
     df_new = df_all.merge(df_prior, how='left', indicator=True)

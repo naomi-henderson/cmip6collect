@@ -1,0 +1,8 @@
+{
+    "uid": "ee4e0a5c-d1e1-a67d-8640-722e761e7da8",
+    "title": "GISS Errata No. 11-2",
+    "description": "The ozone forcing is wrong. These simulations will be reprocessed",
+    "project": "cmip6",
+    "severity": "high",
+    "status": "new"
+}

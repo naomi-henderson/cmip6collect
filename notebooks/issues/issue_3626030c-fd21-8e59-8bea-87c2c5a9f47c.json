@@ -1,0 +1,8 @@
+{
+    "uid": "3626030c-fd21-8e59-8bea-87c2c5a9f47c",
+    "title": "tasmin and tasmax have identical values at daily and monthly timescales",
+    "description": "Due to a model configuration error, tasmin and tasmax were erroneously calculated as averages instead of minima and maxima. The affected files will not be replaced.",
+    "project": "cmip6",
+    "severity": "critical",
+    "status": "wontfix"
+}

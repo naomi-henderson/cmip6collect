@@ -1,0 +1,10 @@
+activity_id,institution_id,source_id,experiment_id,member_id,table_id,variable_id,grid_label,zstore,date_start,date_stop,time_len,sizeG,date,status,dcpp_init_year
+OMIP,MIROC,MIROC6,omip1,r1i1p1f1,Ofx,areacello,gn,gs://cmip6/OMIP/MIROC/MIROC6/omip1/r1i1p1f1/Ofx/areacello/gn/,NA,NA,NA,0.000978,2019-10-25,created,
+OMIP,MIROC,MIROC6,omip1,r1i1p1f1,Ofx,basin,gn,gs://cmip6/OMIP/MIROC/MIROC6/omip1/r1i1p1f1/Ofx/basin/gn/,NA,NA,NA,0.000935,2019-10-25,created,
+OMIP,MIROC,MIROC6,omip1,r1i1p1f1,Ofx,sftof,gn,gs://cmip6/OMIP/MIROC/MIROC6/omip1/r1i1p1f1/Ofx/sftof/gn/,NA,NA,NA,0.000942,2019-10-25,created,
+OMIP,MIROC,MIROC6,omip1,r1i1p1f1,Omon,so,gn,gs://cmip6/OMIP/MIROC/MIROC6/omip1/r1i1p1f1/Omon/so/gn/,1700-01-16,2009-12-16,3720,28,2019-10-25,created,
+OMIP,MIROC,MIROC6,omip1,r1i1p1f1,Omon,thetao,gn,gs://cmip6/OMIP/MIROC/MIROC6/omip1/r1i1p1f1/Omon/thetao/gn/,1700-01-16,2009-12-16,3720,36,2019-10-25,created,
+OMIP,MIROC,MIROC6,omip1,r1i1p1f1,Omon,tos,gn,gs://cmip6/OMIP/MIROC/MIROC6/omip1/r1i1p1f1/Omon/tos/gn/,1700-01-16,2009-12-16,3720,0.685,2019-10-25,created,
+OMIP,MIROC,MIROC6,omip1,r1i1p1f1,Omon,uo,gn,gs://cmip6/OMIP/MIROC/MIROC6/omip1/r1i1p1f1/Omon/uo/gn/,1700-01-16,2009-12-16,3720,41.3,2019-10-25,created,
+OMIP,MIROC,MIROC6,omip1,r1i1p1f1,Omon,vo,gn,gs://cmip6/OMIP/MIROC/MIROC6/omip1/r1i1p1f1/Omon/vo/gn/,1700-01-16,2009-12-16,3720,42.8,2019-10-25,created,
+OMIP,MIROC,MIROC6,omip1,r1i1p1f1,Omon,wo,gn,gs://cmip6/OMIP/MIROC/MIROC6/omip1/r1i1p1f1/Omon/wo/gn/,1700-01-16,2009-12-16,3720,42,2019-10-25,created,

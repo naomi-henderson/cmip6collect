@@ -1,0 +1,8 @@
+{
+    "uid": "4f962cc0-2f5d-cd3a-b3ad-b5833bc93cfe",
+    "title": "epfy and epfz scaling not consistent with GMD paper",
+    "description": "NB: This applies to ALL simulations/datasets\nThe scaling/units of the epfluxes from CanESM5 are slightly different from that specified in the official datarequest of Gerber and Manzini 2016 (GMD). To be consistent with the GMD paper, the user has to multiply the CanESM5 fluxes by p(k) / p0, where p(k) is the output pressure levels and p0=101325 Pa, surface pressure.",
+    "project": "cmip6",
+    "severity": "low",
+    "status": "wontfix"
+}

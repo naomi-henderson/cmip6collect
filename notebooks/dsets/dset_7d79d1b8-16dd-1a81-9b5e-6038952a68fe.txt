@@ -1,0 +1,15 @@
+CMIP6.AerChemMIP.NIMS-KMA.UKESM1-0-LL.hist-piNTCF.r2i1p1f2.CFmon.clcalipso.gn#20200214
+CMIP6.AerChemMIP.NIMS-KMA.UKESM1-0-LL.hist-piNTCF.r2i1p1f2.CFmon.clhcalipso.gn#20200214
+CMIP6.AerChemMIP.NIMS-KMA.UKESM1-0-LL.hist-piNTCF.r2i1p1f2.CFmon.cllcalipso.gn#20200214
+CMIP6.AerChemMIP.NIMS-KMA.UKESM1-0-LL.hist-piNTCF.r2i1p1f2.CFmon.clmcalipso.gn#20200214
+CMIP6.AerChemMIP.NIMS-KMA.UKESM1-0-LL.hist-piNTCF.r2i1p1f2.CFmon.cltcalipso.gn#20200214
+CMIP6.AerChemMIP.NIMS-KMA.UKESM1-0-LL.hist-piNTCF.r3i1p1f2.CFmon.clcalipso.gn#20200224
+CMIP6.AerChemMIP.NIMS-KMA.UKESM1-0-LL.hist-piNTCF.r3i1p1f2.CFmon.clhcalipso.gn#20200224
+CMIP6.AerChemMIP.NIMS-KMA.UKESM1-0-LL.hist-piNTCF.r3i1p1f2.CFmon.cllcalipso.gn#20200224
+CMIP6.AerChemMIP.NIMS-KMA.UKESM1-0-LL.hist-piNTCF.r3i1p1f2.CFmon.clmcalipso.gn#20200224
+CMIP6.AerChemMIP.NIMS-KMA.UKESM1-0-LL.hist-piNTCF.r3i1p1f2.CFmon.cltcalipso.gn#20200224
+CMIP6.AerChemMIP.NIMS-KMA.UKESM1-0-LL.piClim-NTCF.r1i1p1f4.CFmon.clcalipso.gn#20200415
+CMIP6.AerChemMIP.NIMS-KMA.UKESM1-0-LL.piClim-NTCF.r1i1p1f4.CFmon.clhcalipso.gn#20200415
+CMIP6.AerChemMIP.NIMS-KMA.UKESM1-0-LL.piClim-NTCF.r1i1p1f4.CFmon.cllcalipso.gn#20200415
+CMIP6.AerChemMIP.NIMS-KMA.UKESM1-0-LL.piClim-NTCF.r1i1p1f4.CFmon.clmcalipso.gn#20200415
+CMIP6.AerChemMIP.NIMS-KMA.UKESM1-0-LL.piClim-NTCF.r1i1p1f4.CFmon.cltcalipso.gn#20200415

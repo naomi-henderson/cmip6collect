@@ -1,0 +1,8 @@
+{
+    "uid": "2afdf516-8717-281c-accc-30c16e3eb67f",
+    "title": "incorrect tasmax, tasmin variables",
+    "description": "We found that tasmax and the tasmin variables had switched. The correct file will be replaced.",
+    "project": "cmip6",
+    "severity": "critical",
+    "status": "new"
+}

@@ -1,0 +1,8 @@
+{
+    "uid": "921c6132-4f43-40c2-941b-5ac06fcc1018",
+    "title": "Inconsistency between variables sector and mfo",
+    "description": "There is a possibility  of inconsistency between variables sector and mfo in Omon/mfo datasets : in variable mfo, the 16 lines are ordered following the sequence of Griffies et al. (2016), while in variable sector, those lines are ordered following DR 01.00.21, which is different.",
+    "project": "cmip6",
+    "severity": "low",
+    "status": "onhold"
+}

@@ -1,0 +1,2 @@
+activity_id,institution_id,source_id,experiment_id,member_id,table_id,variable_id,grid_label,zstore,date_start,date_stop,time_len,sizeG,date,status,dcpp_init_year
+ScenarioMIP,THU,CIESM,ssp126,r1i1p1f1,Omon,zos,gn,gs://cmip6/ScenarioMIP/THU/CIESM/ssp126/r1i1p1f1/Omon/zos/gn/,2015-01-16,2100-12-16,1044,0.32,2020-01-03,created,

@@ -1,0 +1,8 @@
+{
+    "uid": "7d79d1b8-16dd-1a81-9b5e-6038952a68fe",
+    "title": "Error in the COSP diagnostics",
+    "description": "We submitted the wrong COSP diagnostics (clcalipso, clhcalipso, cllcalipso, clmcalipso, cltcalipso). An issue has been found with the calculation of these diagnostics; within the model the in-cloud mixing ratio is internally divided by cloud fraction and then fed to the CALIPSO and Cloudsat simulators.",
+    "project": "cmip6",
+    "severity": "critical",
+    "status": "new"
+}

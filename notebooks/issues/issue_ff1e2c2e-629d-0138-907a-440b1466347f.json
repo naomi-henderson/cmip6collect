@@ -1,0 +1,8 @@
+{
+    "uid": "ff1e2c2e-629d-0138-907a-440b1466347f",
+    "title": "epfy is incorrect",
+    "description": "To be consistent with (A13) in Gerber and Manzini (2016 GMD) epfy should be multiplied with p(k) / p0, where p(k) is the output pressure levels and p0=101325 Pa, surface pressure.\nWe won't fix this for now.",
+    "project": "cmip6",
+    "severity": "critical",
+    "status": "wontfix"
+}

@@ -1,0 +1,8 @@
+{
+    "uid": "623253b7-1cc0-5c23-9c56-ab73f522b416",
+    "title": "Missing sub-periods",
+    "description": "Due to a mistaken version upgrade, some files disappeared from one version to another.\nThe period have been republish under a new dataset version.",
+    "project": "cmip6",
+    "severity": "medium",
+    "status": "resolved"
+}

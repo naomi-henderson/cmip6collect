@@ -1,0 +1,8 @@
+{
+    "uid": "29e52dd0-8034-1002-8579-587903b1eb40",
+    "title": "Incorrect ocean oxygen data",
+    "description": "Certain ocean oxygen fields are erroneous and should not be used.",
+    "project": "cmip6",
+    "severity": "critical",
+    "status": "wontfix"
+}

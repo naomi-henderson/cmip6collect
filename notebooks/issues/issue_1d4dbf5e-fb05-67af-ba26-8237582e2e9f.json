@@ -1,0 +1,8 @@
+{
+    "uid": "1d4dbf5e-fb05-67af-ba26-8237582e2e9f",
+    "title": "Variable tslsi (3hr,day) has incorrect \"comment\" variable attribute",
+    "description": "Variable tslsi (3hr,day) has incorrect \"comment\" variable attribute. It should be completely removed.",
+    "project": "cmip6",
+    "severity": "low",
+    "status": "resolved"
+}

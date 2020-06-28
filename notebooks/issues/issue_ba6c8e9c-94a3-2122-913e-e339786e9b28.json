@@ -1,0 +1,8 @@
+{
+    "uid": "ba6c8e9c-94a3-2122-913e-e339786e9b28",
+    "title": "*4co2* diagnostics erroneous for CNRM-ESM2-1 simulations",
+    "description": "CNRM-ESM2-1 so-called *4co2* diagnostics, instantaneous radiation fields under 4*CO2 conditions, have been incorrectly produced as identical diagnostics as the corresponding fields under CO2 conditions. These diagnostics consist in 12 variables named rld4co2*, rldcs4co2*, rlu4co2*, rlucs4co2*, rlut4co2*, rlutcs4co2*,  rsd4co2*, rsdcs4co2*, rsu4co2*, rsucs4co2*, rsut4co2*, rsutcs4co2*.",
+    "project": "cmip6",
+    "severity": "critical",
+    "status": "new"
+}

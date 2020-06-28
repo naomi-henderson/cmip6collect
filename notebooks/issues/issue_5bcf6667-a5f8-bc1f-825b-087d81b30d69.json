@@ -1,0 +1,8 @@
+{
+    "uid": "5bcf6667-a5f8-bc1f-825b-087d81b30d69",
+    "title": "Wrong units for some experiments: lossch4, lossco, lossn2o, o3loss, o3prod",
+    "description": "Although the metadata says units are \"mol m-3 s-1\" as specified in the CMIP6 Data Description, the actual units are \"molecules m-3 s-1\". Divide by 6.022E+23 (Avogadro constant) to correct the units.\nUpdate: New versions of all these variables have been published with the issue resolved.",
+    "project": "cmip6",
+    "severity": "medium",
+    "status": "resolved"
+}

@@ -1,0 +1,8 @@
+{
+    "uid": "84b47664-6442-ea7c-a216-4b080936f120",
+    "title": "Unit conversion incorrect for o3prod, o3loss, oxprod, and oxloss",
+    "description": "Unit conversion was incorrectly applied twice to o3prod, o3loss, oxprod, and oxloss variables.",
+    "project": "cmip6",
+    "severity": "critical",
+    "status": "resolved"
+}

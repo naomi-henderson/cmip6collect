@@ -1,0 +1,8 @@
+{
+    "uid": "0b9d744d-be7c-0152-89fc-ca64ab2dbe40",
+    "title": "sftlf and sftgif data should be taken from abrupt-4xCO2",
+    "description": "all the sftlf and sftgif data that have version numbers v20191108 and earlier should use those from the abrupt-4xCO2 experiment of the LM and MM versions respectively.",
+    "project": "cmip6",
+    "severity": "medium",
+    "status": "new"
+}

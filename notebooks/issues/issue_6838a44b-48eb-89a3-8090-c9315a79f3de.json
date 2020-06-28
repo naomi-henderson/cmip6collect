@@ -1,0 +1,8 @@
+{
+    "uid": "6838a44b-48eb-89a3-8090-c9315a79f3de",
+    "title": "Versioning errors for 1pctCO2 and abrupt-4xCO2",
+    "description": "Several symbolic links used in the versioning architecture pointed to the wrong file versions for some datasets. To solve this and clarify several versions of corrected dataset. 1pctCO2 and abrput-4xCO2 data have been entirely republish under version 20180727.",
+    "project": "cmip6",
+    "severity": "critical",
+    "status": "resolved"
+}

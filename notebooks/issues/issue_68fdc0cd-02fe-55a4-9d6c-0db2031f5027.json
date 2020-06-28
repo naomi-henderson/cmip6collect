@@ -1,0 +1,8 @@
+{
+    "uid": "68fdc0cd-02fe-55a4-9d6c-0db2031f5027",
+    "title": "Invalid values for tos",
+    "description": "Something has gone wrong with the conversion of tos in Omon and Oday from K to degC for the HighResMIP experiments during publication. These files have now been replaced with a new version of v20191129.",
+    "project": "cmip6",
+    "severity": "medium",
+    "status": "resolved"
+}

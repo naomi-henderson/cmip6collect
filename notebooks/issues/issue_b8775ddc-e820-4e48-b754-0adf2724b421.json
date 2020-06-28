@@ -1,0 +1,8 @@
+{
+    "uid": "b8775ddc-e820-4e48-b754-0adf2724b421",
+    "title": "Numerical instability in ocean component",
+    "description": "This experiment, CMIP6 FAFMIP faf-all, was corrupted post year 58 through to its end, by a numerical instability in the ocean component. The whole experiment will be re-run given that we have changed supercomputer since the initial experiment. All data from the corrupted experiment has been retracted.",
+    "project": "cmip6",
+    "severity": "critical",
+    "status": "new"
+}

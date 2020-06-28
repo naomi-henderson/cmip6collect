@@ -1,0 +1,8 @@
+{
+    "uid": "6f1ce955-84de-c62b-9a62-9fb7422369f2",
+    "title": "Integers instead of ocean passages names",
+    "description": "The \"sector\" dimensions is a list of integers (0 to 16). It must be replaced by the \"sector\" variable with the following list of the different ocean passage names:\n- barents_opening\n- bering_strait\n- canadian_archipelago\n- denmark_strait\n- drake_passage\n- english_channel\n- pacific_equatorial_undercurrent\n- faroe_scotland_channel\n- florida_bahamas_strait\n- fram_strait\n- iceland_faroe_channel\n- indonesian_throughflow\n- mozambique_channel\n- taiwan_luzon_straits\n- windward_passage\n- gibraltar_strait",
+    "project": "cmip6",
+    "severity": "low",
+    "status": "resolved"
+}

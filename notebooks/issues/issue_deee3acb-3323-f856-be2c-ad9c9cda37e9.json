@@ -1,0 +1,8 @@
+{
+    "uid": "deee3acb-3323-f856-be2c-ad9c9cda37e9",
+    "title": "amip-hist extension not in CMIP6",
+    "description": "Some datasets should not been published as there are extension of simulations not part of CMIP6 exercise.",
+    "project": "cmip6",
+    "severity": "low",
+    "status": "resolved"
+}

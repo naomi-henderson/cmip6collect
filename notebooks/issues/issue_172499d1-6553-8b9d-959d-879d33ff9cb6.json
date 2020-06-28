@@ -1,0 +1,8 @@
+{
+    "uid": "172499d1-6553-8b9d-959d-879d33ff9cb6",
+    "title": "HadGEM3-GC31-MM wap on pressure levels from historical r1i1p1f3 & r2i1p1f3 simulations",
+    "description": "These datasets are known to have faulty wap data on pressure levels (data on model levels is unaffected) for 1850-1950, and should not have been published. Data for 1950-2015 will be republished in due course.",
+    "project": "cmip6",
+    "severity": "critical",
+    "status": "resolved"
+}

@@ -1,0 +1,8 @@
+{
+    "uid": "3ab884f0-9f49-2086-8f81-60805a0003c9",
+    "title": "Incorrect shift of the longitude values in CNR data on the CNR-CINECA ESGF data node",
+    "description": "The longitude values of the EC-Earth atmospheric data have been accidentally shifted half a grid cell eastward, this affects lon & lon_bnds (this error applies to all EC-Earth atmospheric data published until December 1st 2019). We decided to unpublish all EC-Earth3 data including the ocean data which is not affected by this error, as this is the easiest and most robust approach for this major operation. Note that this error does not affect any global and zonal means which might have been taken from these data by scientific studies. The error will be corrected as soon as possible.",
+    "project": "cmip6",
+    "severity": "high",
+    "status": "resolved"
+}

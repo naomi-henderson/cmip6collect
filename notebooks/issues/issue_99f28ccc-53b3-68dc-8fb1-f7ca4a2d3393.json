@@ -1,0 +1,8 @@
+{
+    "uid": "99f28ccc-53b3-68dc-8fb1-f7ca4a2d3393",
+    "title": "pr and prc have incorrect values at daily and monthly timescales due to an incorrect scaling factor",
+    "description": "Within the conversion from CESM's CAM precipitation units (m s-1) to CMIP's units of (kg m-2 s-1) an incorrect scaling factor was applied. The conversion should have been to multiply CAM's values by 1000 kg m-3. Instead, the values were multiplied by 1000 and then divided by 86400, resulting in values that are too small.",
+    "project": "cmip6",
+    "severity": "critical",
+    "status": "resolved"
+}

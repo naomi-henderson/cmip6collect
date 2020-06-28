@@ -1,0 +1,8 @@
+{
+    "uid": "b0e9b074-425e-0f90-9f98-bbf3be5913ea",
+    "title": "Adding CFmon data for the priod 2050-2550 to the CMIP piControl experiment",
+    "description": "CFmon data for the priod 2050-2550 have been added to the CMIP piControl experiment.",
+    "project": "cmip6",
+    "severity": "low",
+    "status": "resolved"
+}

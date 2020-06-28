@@ -1,0 +1,8 @@
+{
+    "uid": "f344e136-eddb-e0f5-b5ac-e44b3cd0dc35",
+    "title": "Incorrect shift of the longitude values in KNMI data on the NSC-LIU ESGF data node",
+    "description": "The longitude values of the EC-Earth atmospheric data have been accidentally shifted half a grid cell eastward, this affects lon & lon_bnds (this error applies to all EC-Earth atmospheric data published until December 1st 2019). The error will be corrected as soon as possible. Note that this error does not affect any global and zonal means which might have been taken from these data by scientific studies. We decided to unpublish all EC-Earth3 data including the ocean data which is not affected by this error, as this is the easiest and most robust approach for this major operation.",
+    "project": "cmip6",
+    "severity": "high",
+    "status": "resolved"
+}

@@ -1,0 +1,2 @@
+CMIP6.ScenarioMIP.IPSL.IPSL-CM6A-LR.ssp534-over.r1i1p1f1.day.tas.gr#20190614
+CMIP6.ScenarioMIP.IPSL.IPSL-CM6A-LR.ssp534-over.r1i1p1f1.day.tasmax.gr#20190614

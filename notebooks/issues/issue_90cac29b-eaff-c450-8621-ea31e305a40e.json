@@ -1,0 +1,8 @@
+{
+    "uid": "90cac29b-eaff-c450-8621-ea31e305a40e",
+    "title": "Issues in ScenarioMIP ssp585 CNRM-ESM2-1 r1i1p1f2 simulation (v20190328)",
+    "description": "Problem of reproductibility with inconsistencies between some variables (from 2047 onwards). Updated version (V20191021) of this simulation has been published on ESGF.",
+    "project": "cmip6",
+    "severity": "critical",
+    "status": "resolved"
+}

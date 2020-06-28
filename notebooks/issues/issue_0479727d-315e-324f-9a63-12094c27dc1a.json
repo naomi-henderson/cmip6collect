@@ -1,0 +1,8 @@
+{
+    "uid": "0479727d-315e-324f-9a63-12094c27dc1a",
+    "title": "The data on the equator are missing for May 1959: some monthly-mean land variables in DAMIP hist-sol r4i1p1f1",
+    "description": "For some of the Lmon, LImon, and Emon land variables in the DAMIP hist-sol r4i1p1f1 run, the data are missing for the two latitudinal bands across the equator (0.56074 degrees north and south) in May 1959 due to the accidental loss of the corresponding output file. The affected files will not be replaced.",
+    "project": "cmip6",
+    "severity": "high",
+    "status": "wontfix"
+}

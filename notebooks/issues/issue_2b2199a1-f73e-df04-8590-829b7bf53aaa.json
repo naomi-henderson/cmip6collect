@@ -1,0 +1,8 @@
+{
+    "uid": "2b2199a1-f73e-df04-8590-829b7bf53aaa",
+    "title": "Ocean flux included CO2 increase",
+    "description": "Ocean CO2 flux inadvertently included the 1pct/year increase in atmospheric CO2, instead of seeing only the pre-industrial levels. Variable fgco2nat contains the full ocean CO2 flux for this experiment.",
+    "project": "cmip6",
+    "severity": "critical",
+    "status": "new"
+}

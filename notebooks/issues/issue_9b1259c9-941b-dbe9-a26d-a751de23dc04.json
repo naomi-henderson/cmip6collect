@@ -1,0 +1,8 @@
+{
+    "uid": "9b1259c9-941b-dbe9-a26d-a751de23dc04",
+    "title": "AERmon/co2 values incorrect",
+    "description": "Incorrect co2 output were published: the AERmon/co2 from MIROC-ES2L presents predicted concentration, which is only valid for the simulations that are driven by CO2 emission. Thus, AERmon/co2 output from prescribed CO2 concentration simulations will be withdrawn.",
+    "project": "cmip6",
+    "severity": "critical",
+    "status": "resolved"
+}

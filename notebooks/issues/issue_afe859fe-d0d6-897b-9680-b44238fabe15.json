@@ -1,0 +1,8 @@
+{
+    "uid": "afe859fe-d0d6-897b-9680-b44238fabe15",
+    "title": "Incorrect calculation of Omon/fgco2 in UKESM1",
+    "description": "An error has been found in the calculation of fgco2, the \"Surface Downward Flux of Total CO2\", in that this has been reported in kg of CO2 rather than kg of carbon, i.e. the values are too large by a factor of approximately 3.67 (44/12). \n\nAll affected datasets have been retracted.",
+    "project": "cmip6",
+    "severity": "critical",
+    "status": "resolved"
+}

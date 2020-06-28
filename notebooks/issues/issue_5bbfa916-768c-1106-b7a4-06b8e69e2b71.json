@@ -1,0 +1,8 @@
+{
+    "uid": "5bbfa916-768c-1106-b7a4-06b8e69e2b71",
+    "title": "Incorrect branch_time metadata EC-Earth3 consortium CNR-data",
+    "description": "Error in branch_time_in_parent in EC-Earth3 (CNR-data) r4i1p1f1 historical, ssp126, ssp245, ssp370, ssp585 and r8i1p1f1 abrupt-4CO2 data. The error will be corrected.",
+    "project": "cmip6",
+    "severity": "low",
+    "status": "resolved"
+}

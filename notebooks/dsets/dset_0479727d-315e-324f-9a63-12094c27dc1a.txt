@@ -1,0 +1,15 @@
+CMIP6.DAMIP.MRI.MRI-ESM2-0.hist-sol.r4i1p1f1.Emon.mrsol.gn#20200327
+CMIP6.DAMIP.MRI.MRI-ESM2-0.hist-sol.r4i1p1f1.LImon.hfdsn.gn#20200327
+CMIP6.DAMIP.MRI.MRI-ESM2-0.hist-sol.r4i1p1f1.LImon.sbl.gn#20200327
+CMIP6.DAMIP.MRI.MRI-ESM2-0.hist-sol.r4i1p1f1.LImon.snc.gn#20200327
+CMIP6.DAMIP.MRI.MRI-ESM2-0.hist-sol.r4i1p1f1.LImon.snd.gn#20200327
+CMIP6.DAMIP.MRI.MRI-ESM2-0.hist-sol.r4i1p1f1.LImon.snw.gn#20200327
+CMIP6.DAMIP.MRI.MRI-ESM2-0.hist-sol.r4i1p1f1.Lmon.evspsblsoi.gn#20200327
+CMIP6.DAMIP.MRI.MRI-ESM2-0.hist-sol.r4i1p1f1.Lmon.evspsblveg.gn#20200327
+CMIP6.DAMIP.MRI.MRI-ESM2-0.hist-sol.r4i1p1f1.Lmon.mrfso.gn#20200327
+CMIP6.DAMIP.MRI.MRI-ESM2-0.hist-sol.r4i1p1f1.Lmon.mrro.gn#20200327
+CMIP6.DAMIP.MRI.MRI-ESM2-0.hist-sol.r4i1p1f1.Lmon.mrros.gn#20200327
+CMIP6.DAMIP.MRI.MRI-ESM2-0.hist-sol.r4i1p1f1.Lmon.mrso.gn#20200327
+CMIP6.DAMIP.MRI.MRI-ESM2-0.hist-sol.r4i1p1f1.Lmon.mrsos.gn#20200327
+CMIP6.DAMIP.MRI.MRI-ESM2-0.hist-sol.r4i1p1f1.Lmon.tran.gn#20200327
+CMIP6.DAMIP.MRI.MRI-ESM2-0.hist-sol.r4i1p1f1.Lmon.tsl.gn#20200327

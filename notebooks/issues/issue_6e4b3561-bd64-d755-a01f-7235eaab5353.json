@@ -1,0 +1,8 @@
+{
+    "uid": "6e4b3561-bd64-d755-a01f-7235eaab5353",
+    "title": "Specified unit for hurs_Amon and hurs_6hrPlev is incorrect",
+    "description": "Instead of \"%\" as the variable attribute suggests, the unit of the data is \"1\".",
+    "project": "cmip6",
+    "severity": "low",
+    "status": "resolved"
+}

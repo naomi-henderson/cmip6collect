@@ -1,0 +1,4 @@
+CMIP6.CMIP.CCCma.CanESM5.historical.r1i1p2f1.EdayZ.epfy.gn#20190429
+CMIP6.CMIP.CCCma.CanESM5.historical.r1i1p2f1.EdayZ.epfz.gn#20190429
+CMIP6.CMIP.CCCma.CanESM5.historical.r1i1p2f1.EmonZ.epfy.gn#20190429
+CMIP6.CMIP.CCCma.CanESM5.historical.r1i1p2f1.EmonZ.epfz.gn#20190429

@@ -1,0 +1,8 @@
+{
+    "uid": "a67396b6-bfeb-4e11-b9cf-72ddc0275aba",
+    "title": "GISS RFMIP GISS-E2-1-G piClim-4xCO2 r1i1p1f1",
+    "description": "Wrong GCM was used.  This has been corrected",
+    "project": "cmip6",
+    "severity": "medium",
+    "status": "new"
+}

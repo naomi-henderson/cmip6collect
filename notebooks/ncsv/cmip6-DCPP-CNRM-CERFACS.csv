@@ -1,0 +1,7 @@
+activity_id,institution_id,source_id,experiment_id,member_id,table_id,variable_id,grid_label,zstore,date_start,date_stop,time_len,sizeG,date,status,dcpp_init_year
+DCPP,CNRM-CERFACS,CNRM-CM6-1,dcppC-amv-neg,r10i1p1f2,Emon,orog,gr,gs://cmip6/DCPP/CNRM-CERFACS/CNRM-CM6-1/dcppC-amv-neg/r10i1p1f2/Emon/orog/gr/,1850-01-16,1859-12-16,120,0.00715,2019-11-10,created,
+DCPP,CNRM-CERFACS,CNRM-CM6-1,dcppC-amv-neg,r1i1p1f2,Ofx,areacello,gn,gs://cmip6/DCPP/CNRM-CERFACS/CNRM-CM6-1/dcppC-amv-neg/r1i1p1f2/Ofx/areacello/gn/,NA,NA,NA,0.00154,2019-11-11,created,
+DCPP,CNRM-CERFACS,CNRM-CM6-1,dcppC-amv-neg,r1i1p1f2,fx,areacella,gr,gs://cmip6/DCPP/CNRM-CERFACS/CNRM-CM6-1/dcppC-amv-neg/r1i1p1f2/fx/areacella/gr/,NA,NA,NA,1.46e-05,2019-11-11,created,
+DCPP,CNRM-CERFACS,CNRM-CM6-1,dcppC-amv-neg,r6i1p1f2,Ofx,areacello,gn,gs://cmip6/DCPP/CNRM-CERFACS/CNRM-CM6-1/dcppC-amv-neg/r6i1p1f2/Ofx/areacello/gn/,NA,NA,NA,0.00154,2019-11-11,created,
+DCPP,CNRM-CERFACS,CNRM-CM6-1,dcppC-amv-pos,r10i1p1f2,Emon,orog,gr,gs://cmip6/DCPP/CNRM-CERFACS/CNRM-CM6-1/dcppC-amv-pos/r10i1p1f2/Emon/orog/gr/,1850-01-16,1859-12-16,120,0.00715,2019-11-10,created,
+DCPP,CNRM-CERFACS,CNRM-CM6-1,dcppC-amv-pos,r1i1p1f2,Ofx,areacello,gn,gs://cmip6/DCPP/CNRM-CERFACS/CNRM-CM6-1/dcppC-amv-pos/r1i1p1f2/Ofx/areacello/gn/,NA,NA,NA,0.00154,2019-11-11,created,

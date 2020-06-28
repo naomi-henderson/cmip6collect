@@ -1,0 +1,8 @@
+{
+    "uid": "76fc661c-c7c3-19e7-9b5a-802e5f90c762",
+    "title": "cSoilLevels files are missing timesteps",
+    "description": "An incorrect definition was used to create the cSoilLevels variable, resulting in yearly timesteps being provided in a monthly file.  The values in these fields are correct, they just needed to be replicated 12 times each.",
+    "project": "cmip6",
+    "severity": "low",
+    "status": "resolved"
+}

@@ -1,0 +1,8 @@
+{
+    "uid": "c6643d12-1195-5e1f-80ba-54cf6c7f8aaa",
+    "title": "albisccp erroneous data units",
+    "description": "Variable albisccp has data in % instead of fraction though units metadata indicates fraction(=\"1\"). According to Data Request ver. 01.00.27 it should be in fraction.",
+    "project": "cmip6",
+    "severity": "low",
+    "status": "resolved"
+}

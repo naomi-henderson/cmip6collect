@@ -1,0 +1,8 @@
+{
+    "uid": "92a64dcc-5aec-3e9d-b54b-6a3e2b83a8f5",
+    "title": "Constant CO2 level at end of EC-Earth3-Veg 1pctCO2 r1i1p1f1",
+    "description": "The CO2 concentration in the 1pctCO2 experiment was increased by 1% per year but only until the CO2 concentrations reached the 4xCO2 level (141 yrs), after that it remained constant.\nThe data will be retracted and republished",
+    "project": "cmip6",
+    "severity": "critical",
+    "status": "resolved"
+}

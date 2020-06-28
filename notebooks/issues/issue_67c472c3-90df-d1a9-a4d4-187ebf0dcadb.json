@@ -1,0 +1,8 @@
+{
+    "uid": "67c472c3-90df-d1a9-a4d4-187ebf0dcadb",
+    "title": "piControl variable Amon/ccb",
+    "description": "ccb (air pressure at convective cloud base) was originally diagnosed as the level where vertical convective mass flux equaled zero.  Because the convective mass flux below cloud base can be nonzero, this diagnostic is not appropriate for ccb.",
+    "project": "cmip6",
+    "severity": "critical",
+    "status": "wontfix"
+}

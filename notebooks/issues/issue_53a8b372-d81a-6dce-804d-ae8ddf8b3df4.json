@@ -1,0 +1,8 @@
+{
+    "uid": "53a8b372-d81a-6dce-804d-ae8ddf8b3df4",
+    "title": "Erroneous amip-a4SST-4xCO2 simulation (v20190912)",
+    "description": "Erroneous simulation (v20190912) due to a wrong fixed CO2 concentration (quadrupled compared to the piControl CO2 level instead of quadrupled compared to the amip reference simulation). Revised simulation has been republished on ESGF (v20191218).",
+    "project": "cmip6",
+    "severity": "high",
+    "status": "resolved"
+}

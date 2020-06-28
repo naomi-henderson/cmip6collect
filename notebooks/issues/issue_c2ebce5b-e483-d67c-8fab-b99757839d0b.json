@@ -1,0 +1,8 @@
+{
+    "uid": "c2ebce5b-e483-d67c-8fab-b99757839d0b",
+    "title": "Wrong data: mrsoLut",
+    "description": "Data files of mrsoLut which had been made wrongly in file format conversion process were incorrectly published. The data will be withdrawn. The files include data which is not mrsoLut.",
+    "project": "cmip6",
+    "severity": "critical",
+    "status": "resolved"
+}

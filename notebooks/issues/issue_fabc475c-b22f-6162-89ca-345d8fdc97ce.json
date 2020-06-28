@@ -1,0 +1,8 @@
+{
+    "uid": "fabc475c-b22f-6162-89ca-345d8fdc97ce",
+    "title": "tas instabilities lead to erroneous values of tasmax",
+    "description": "The original version of tas (2m air temperature) computation contains instabilities. Typically, a few tens of \"events\" occur during one year over the full globe in which tas suddenly increases by ~ 50 to 100K over one physics time-step (15 minutes long). It creates occasionally erroneous values of tasmax (error of the order 50 to 100 K) and tas (errors 1/96 times smaller, 96 being the number of time steps per day). For the simulations for which tasmax is available, and in view of the very small number of events, an a posteriori correction will be done when both tas and tasmax are available. Meanwhile, the affected datasets have been unpublished and ongoing publications won't include tas and tasmax data at higher frequencies than monthly.",
+    "project": "cmip6",
+    "severity": "critical",
+    "status": "onhold"
+}

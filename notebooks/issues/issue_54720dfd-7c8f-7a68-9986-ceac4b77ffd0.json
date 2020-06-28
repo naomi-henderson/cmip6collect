@@ -1,0 +1,8 @@
+{
+    "uid": "54720dfd-7c8f-7a68-9986-ceac4b77ffd0",
+    "title": "Integers instead of PFTs names",
+    "description": "The \"veget\" coordinate is a list of integers (0 to 15). It must be replaced by the \"sector\" variable with the following list of the different PFTs names:\n- bare_ground\n- tropical_broad_leaved_evergreen\n- tropical_broad_leaved_raingreen\n- temperate_needleleaf_evergreen\n- temperate_broad_leaved_evergreen\n- temperate_broad_leaved_summergreen\n- boreal_needleleaf_evergreen\n- boreal_broad_leaved_summergreen\n- boreal_needleleaf_summergreen\n- temperate_C3_grass\n- C4_grass\n- C3_agriculture\n- C4_agriculture\n- tropical_C3_grass\n- boreal_C3_grass",
+    "project": "cmip6",
+    "severity": "low",
+    "status": "resolved"
+}

@@ -1,0 +1,8 @@
+{
+    "uid": "3ae99b6d-2635-1d83-ac29-bb197f3f8506",
+    "title": "100 years extension for ssp585 r1",
+    "description": "ssp585 r1 member has been extended adding 100 simulated years.",
+    "project": "cmip6",
+    "severity": "low",
+    "status": "resolved"
+}

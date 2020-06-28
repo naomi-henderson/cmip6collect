@@ -1,0 +1,3 @@
+CMIP6.CMIP.NCC.NorESM2-LM.historical.r1i1p1f1.Amon.ccb.gn#20190815
+CMIP6.CMIP.NCC.NorESM2-LM.historical.r1i1p1f1.Amon.cct.gn#20190815
+CMIP6.CMIP.NCC.NorESM2-LM.historical.r1i1p1f1.Amon.hurs.gn#20190815

@@ -1,0 +1,8 @@
+{
+    "uid": "5ebabff0-388f-07bc-b2cf-d44dcbb2940f",
+    "title": "wrong order of experiment_id and source_id in file names of NorESM2-LM v20190815 output",
+    "description": "The file names of NorESM2-LM v20190815 output turned out to be wrong with the oder of experiment_id and source_id mixed up. The cause for this was a bug in the CMOR-ization setup. We are now retracting all NorESM2-LM CMIP6 datasets and will republish with correct file naming as soon as possible. As there was nothing wrong with neither data nor metadata we intend to keep the old version id when republish the data.",
+    "project": "cmip6",
+    "severity": "low",
+    "status": "resolved"
+}

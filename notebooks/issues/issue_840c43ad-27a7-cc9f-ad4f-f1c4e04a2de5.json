@@ -1,0 +1,8 @@
+{
+    "uid": "840c43ad-27a7-cc9f-ad4f-f1c4e04a2de5",
+    "title": "Incorrect initial ocean condition in historical experiment",
+    "description": "This only affects the\u00a0r1i1p1f1 member of the\u00a0EC-EARTH-CONSORTIUM\u00a0ensemble (KNMI runs); the historical experiment has accidentally been started with an incorrect initial ocean condition. We will rerun the historical experiment and the scenario experiments, and publish\nthem when they are finalized.",
+    "project": "cmip6",
+    "severity": "critical",
+    "status": "resolved"
+}

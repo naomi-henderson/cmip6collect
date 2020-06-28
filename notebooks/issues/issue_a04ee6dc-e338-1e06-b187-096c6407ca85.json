@@ -1,0 +1,8 @@
+{
+    "uid": "a04ee6dc-e338-1e06-b187-096c6407ca85",
+    "title": "o3 incorrect unit attribute",
+    "description": "Ozone concentrations were first published in units of \"kg kg-1\" with a corresponding incorrect unit attribute in the netcdf files (o3:units = \"mol mol-1\")",
+    "project": "cmip6",
+    "severity": "high",
+    "status": "resolved"
+}

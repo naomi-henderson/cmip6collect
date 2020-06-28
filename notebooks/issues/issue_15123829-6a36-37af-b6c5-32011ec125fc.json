@@ -1,0 +1,8 @@
+{
+    "uid": "15123829-6a36-37af-b6c5-32011ec125fc",
+    "title": "Wrong parent variable label in ssp245 (r2i1p1f1)",
+    "description": "ssp245 simulations started from the historical r2i1p1f1 run. The \"parent_variant_label\" attribute should be corrected accordingly from \"r1i1p1f1\" to \"r2i1p1f1\".",
+    "project": "cmip6",
+    "severity": "low",
+    "status": "resolved"
+}

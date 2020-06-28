@@ -1,0 +1,8 @@
+{
+    "uid": "eb69632c-a6e2-7667-a112-a98b7745e2ea",
+    "title": "Anthropogenic and biomass burning Secondary Organic Aerosol (SOA) emissions incorrectly set",
+    "description": "A bug was found in the future scenario simulations performed with the CESM2(CAM6) version of our model. Specifically, the anthropogenic and biomass burning Secondary Organic Aerosol (SOA) emissions had been set to zero starting in 2015, while the biogenic emissions were fine. To assess the impacts of this error, we have performed a 20-member ensemble of 10-year simulations for the 2015-2024 period using the corrected emissions for the SSP-3.70 scenario. Unfortunately, there are large and significant regional \u2013 but remote from the actual SOA forcing itself \u2013 impacts in several important fields, even though some global measures show small discernable impacts. Furthermore, these regional impacts occur primarily in the Equatorial Pacific and the ITCZ region, areas of significant interest to many researchers.",
+    "project": "cmip6",
+    "severity": "critical",
+    "status": "new"
+}

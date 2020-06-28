@@ -1,0 +1,8 @@
+{
+    "uid": "d8749928-047e-642b-9c0a-a931e1e9eebc",
+    "title": "siv incorrectly defined",
+    "description": "\"siv\" was defined improperly for \"SImon\" (only) as \"siu\". All \"siv\" will be retracted and regenerated correctly.",
+    "project": "cmip6",
+    "severity": "critical",
+    "status": "resolved"
+}

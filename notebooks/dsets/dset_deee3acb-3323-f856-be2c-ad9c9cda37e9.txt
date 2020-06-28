@@ -1,0 +1,6 @@
+CMIP6.GMMIP.IPSL.IPSL-CM6A-LR.amip-hist.r1i1p1f1.day.tas.gr#20190614
+CMIP6.GMMIP.IPSL.IPSL-CM6A-LR.amip-hist.r1i1p1f1.day.tasmax.gr#20190614
+CMIP6.GMMIP.IPSL.IPSL-CM6A-LR.amip-hist.r2i1p1f1.day.tas.gr#20190614
+CMIP6.GMMIP.IPSL.IPSL-CM6A-LR.amip-hist.r2i1p1f1.day.tasmax.gr#20190614
+CMIP6.GMMIP.IPSL.IPSL-CM6A-LR.amip-hist.r3i1p1f1.day.tas.gr#20190614
+CMIP6.GMMIP.IPSL.IPSL-CM6A-LR.amip-hist.r3i1p1f1.day.tasmax.gr#20190614

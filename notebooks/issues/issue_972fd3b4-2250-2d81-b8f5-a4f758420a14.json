@@ -1,0 +1,8 @@
+{
+    "uid": "972fd3b4-2250-2d81-b8f5-a4f758420a14",
+    "title": "Invalid latitudes values in the ocean variables",
+    "description": "Due to errors in the post-processing, the latitudes values of the ocean data are invalid. Their errors were corrected and these datasets will be replaced.",
+    "project": "cmip6",
+    "severity": "critical",
+    "status": "resolved"
+}

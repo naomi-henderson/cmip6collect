@@ -1,0 +1,5 @@
+activity_id,institution_id,source_id,experiment_id,member_id,table_id,variable_id,grid_label,zstore,date_start,date_stop,time_len,sizeG,date,status,dcpp_init_year
+OMIP,NCC,NorESM2-LM,omip1,r1i1p1f1,Ofx,areacello,gn,gs://cmip6/OMIP/NCC/NorESM2-LM/omip1/r1i1p1f1/Ofx/areacello/gn/,NA,NA,NA,0.00248,2020-02-06,created,
+OMIP,NCC,NorESM2-LM,omip1,r1i1p1f1,Ofx,basin,gn,gs://cmip6/OMIP/NCC/NorESM2-LM/omip1/r1i1p1f1/Ofx/basin/gn/,NA,NA,NA,0.00244,2020-02-06,created,
+OMIP,NCC,NorESM2-LM,omip1,r1i1p1f1,Ofx,sftof,gn,gs://cmip6/OMIP/NCC/NorESM2-LM/omip1/r1i1p1f1/Ofx/sftof/gn/,NA,NA,NA,0.00241,2020-02-06,created,
+OMIP,NCC,NorESM2-LM,omip1,r1i1p1f1,Ofx,volcello,gr,gs://cmip6/OMIP/NCC/NorESM2-LM/omip1/r1i1p1f1/Ofx/volcello/gr/,NA,NA,NA,0.00975,2020-02-06,created,

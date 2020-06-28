@@ -1,0 +1,8 @@
+{
+    "uid": "71bf323e-c5e6-f1f3-a4d4-861e179c31a2",
+    "title": "Data sourced from incorrect frequency",
+    "description": "The data for this variable was mistakenly sourced from the 3 hourly frequencies, and therefore represent the correct variable but at an incorrect time stamp than requested. Only the CMIP6 variable rldscs in table Amon was affected, and only in the ACCESS-CM2 piControl experiment.",
+    "project": "cmip6",
+    "severity": "high",
+    "status": "new"
+}

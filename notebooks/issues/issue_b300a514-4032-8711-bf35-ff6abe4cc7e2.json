@@ -1,0 +1,8 @@
+{
+    "uid": "b300a514-4032-8711-bf35-ff6abe4cc7e2",
+    "title": "landCoverFrac_Lmon - error in diagnostic for several HR experiments",
+    "description": "For several experiments conducted with MPI-ESM1-2-HR there was an error in the diagnostic post processing of the variable landCoverFrac_Lmon.",
+    "project": "cmip6",
+    "severity": "medium",
+    "status": "resolved"
+}

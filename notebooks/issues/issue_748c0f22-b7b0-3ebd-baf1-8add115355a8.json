@@ -1,0 +1,8 @@
+{
+    "uid": "748c0f22-b7b0-3ebd-baf1-8add115355a8",
+    "title": "Incorrect branch_time metadata EC-Earth consortium KNMI-data",
+    "description": "Correcting branch_time_in_child & branch_time_in_parent in EC-Earth consortium KNMI r1i1p1f1 piControl data. The error will be corrected.",
+    "project": "cmip6",
+    "severity": "medium",
+    "status": "resolved"
+}

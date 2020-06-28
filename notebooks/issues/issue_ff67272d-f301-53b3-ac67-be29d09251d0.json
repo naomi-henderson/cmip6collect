@@ -1,0 +1,8 @@
+{
+    "uid": "ff67272d-f301-53b3-ac67-be29d09251d0",
+    "title": "E3SM ocean files set land mask to 0",
+    "description": "A compiler error lead to the land mask value being set to 0 instead of 1e20 for some of the E3SM ocean data. The underlying issue has been resolved, and the variables are being regenerated.\n\nUpdate: New versions of all these variables have been published with the issue resolved.",
+    "project": "cmip6",
+    "severity": "high",
+    "status": "resolved"
+}

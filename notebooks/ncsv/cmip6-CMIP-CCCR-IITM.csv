@@ -1,0 +1,12 @@
+activity_id,institution_id,source_id,experiment_id,member_id,table_id,variable_id,grid_label,zstore,date_start,date_stop,time_len,sizeG,date,status,dcpp_init_year
+CMIP,CCCR-IITM,IITM-ESM,piControl,r1i1p1f1,Amon,huss,gn,gs://cmip6/CMIP/CCCR-IITM/IITM-ESM/piControl/r1i1p1f1/Amon/huss/gn/,1926-01-16,2125-12-16,2400,0.133,2020-02-06,created,
+CMIP,CCCR-IITM,IITM-ESM,piControl,r1i1p1f1,Amon,pr,gn,gs://cmip6/CMIP/CCCR-IITM/IITM-ESM/piControl/r1i1p1f1/Amon/pr/gn/,1926-01-16,2125-12-16,2400,0.147,2020-02-06,created,
+CMIP,CCCR-IITM,IITM-ESM,piControl,r1i1p1f1,Amon,psl,gn,gs://cmip6/CMIP/CCCR-IITM/IITM-ESM/piControl/r1i1p1f1/Amon/psl/gn/,1926-01-16,2125-12-16,2400,0.098,2020-02-06,created,
+CMIP,CCCR-IITM,IITM-ESM,piControl,r1i1p1f1,Amon,rsdt,gn,gs://cmip6/CMIP/CCCR-IITM/IITM-ESM/piControl/r1i1p1f1/Amon/rsdt/gn/,1926-01-16,2125-12-16,2400,0.0826,2020-02-06,created,
+CMIP,CCCR-IITM,IITM-ESM,piControl,r1i1p1f1,Amon,rsut,gn,gs://cmip6/CMIP/CCCR-IITM/IITM-ESM/piControl/r1i1p1f1/Amon/rsut/gn/,1926-01-16,2125-12-16,2400,0.128,2020-02-06,created,
+CMIP,CCCR-IITM,IITM-ESM,piControl,r1i1p1f1,Amon,tas,gn,gs://cmip6/CMIP/CCCR-IITM/IITM-ESM/piControl/r1i1p1f1/Amon/tas/gn/,1926-01-16,2125-12-16,2400,0.106,2020-01-26,created,
+CMIP,CCCR-IITM,IITM-ESM,piControl,r1i1p1f1,Amon,ts,gn,gs://cmip6/CMIP/CCCR-IITM/IITM-ESM/piControl/r1i1p1f1/Amon/ts/gn/,1926-01-16,2125-12-16,2400,0.108,2020-02-06,created,
+CMIP,CCCR-IITM,IITM-ESM,piControl,r1i1p1f1,Amon,uas,gn,gs://cmip6/CMIP/CCCR-IITM/IITM-ESM/piControl/r1i1p1f1/Amon/uas/gn/,1926-01-16,2125-12-16,2400,0.146,2020-02-06,created,
+CMIP,CCCR-IITM,IITM-ESM,piControl,r1i1p1f1,Amon,va,gn,gs://cmip6/CMIP/CCCR-IITM/IITM-ESM/piControl/r1i1p1f1/Amon/va/gn/,1926-01-16,2125-12-16,2400,2.79,2020-02-06,created,
+CMIP,CCCR-IITM,IITM-ESM,piControl,r1i1p1f1,Amon,vas,gn,gs://cmip6/CMIP/CCCR-IITM/IITM-ESM/piControl/r1i1p1f1/Amon/vas/gn/,1926-01-16,2125-12-16,2400,0.149,2020-02-06,created,
+CMIP,CCCR-IITM,IITM-ESM,piControl,r1i1p1f1,Amon,zg,gn,gs://cmip6/CMIP/CCCR-IITM/IITM-ESM/piControl/r1i1p1f1/Amon/zg/gn/,1926-01-16,2125-12-16,2400,1.87,2020-02-06,created,

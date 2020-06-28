@@ -1,0 +1,8 @@
+{
+    "uid": "116aed1b-e732-e244-8242-db1502bc178e",
+    "title": "tdps values incorrect",
+    "description": "tdps output were incorrectly calculated. Affected output will be withdrawn.",
+    "project": "cmip6",
+    "severity": "critical",
+    "status": "resolved"
+}

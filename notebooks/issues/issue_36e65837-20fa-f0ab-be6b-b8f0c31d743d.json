@@ -1,0 +1,8 @@
+{
+    "uid": "36e65837-20fa-f0ab-be6b-b8f0c31d743d",
+    "title": "SImon siarean, siareas, siextents, siextentn: values are too high by a factor of 1e12",
+    "description": "A wrong unit has been fed to CMOR during the CMORisation of siarean, siareas, siextents, siextentn (MIP table SImon, respectively). This introduced the factor of 1e12 in the data. The units of the data, as published under v20190710, would be \"m2\" and not \"1e6 km2\" as is given in the files.\nAffected is the first realisation r1i1p1f1 of ssp245, ssp126, ssp370 and ssp585, respectively.",
+    "project": "cmip6",
+    "severity": "low",
+    "status": "resolved"
+}

@@ -1,0 +1,8 @@
+{
+    "uid": "2f6b5963-f87e-b2df-a5b0-2f12b6b68d32",
+    "title": "Wrong branch_time_in_parent attribute for GFDL-CM4 1pctCO2, abrupt-4xCO2, and historical experiments",
+    "description": "The GFDL-CM4 1pctCO2, abrupt-4xCO2, and historical experiments branched from piControl at year 251, which was 250 years (91250 days) after 0001-1-1 (piControl time-axis units). Therefore, the branch_time_in_parent is 91250, not 36500.",
+    "project": "cmip6",
+    "severity": "medium",
+    "status": "new"
+}

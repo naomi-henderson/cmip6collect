@@ -1,0 +1,16 @@
+CMIP6.ScenarioMIP.DKRZ.MPI-ESM1-2-HR.ssp126.r1i1p1f1.SImon.siarean.gn#20190710
+CMIP6.ScenarioMIP.DKRZ.MPI-ESM1-2-HR.ssp126.r1i1p1f1.SImon.siareas.gn#20190710
+CMIP6.ScenarioMIP.DKRZ.MPI-ESM1-2-HR.ssp126.r1i1p1f1.SImon.siextentn.gn#20190710
+CMIP6.ScenarioMIP.DKRZ.MPI-ESM1-2-HR.ssp126.r1i1p1f1.SImon.siextents.gn#20190710
+CMIP6.ScenarioMIP.DKRZ.MPI-ESM1-2-HR.ssp245.r1i1p1f1.SImon.siarean.gn#20190710
+CMIP6.ScenarioMIP.DKRZ.MPI-ESM1-2-HR.ssp245.r1i1p1f1.SImon.siareas.gn#20190710
+CMIP6.ScenarioMIP.DKRZ.MPI-ESM1-2-HR.ssp245.r1i1p1f1.SImon.siextentn.gn#20190710
+CMIP6.ScenarioMIP.DKRZ.MPI-ESM1-2-HR.ssp245.r1i1p1f1.SImon.siextents.gn#20190710
+CMIP6.ScenarioMIP.DKRZ.MPI-ESM1-2-HR.ssp370.r1i1p1f1.SImon.siarean.gn#20190710
+CMIP6.ScenarioMIP.DKRZ.MPI-ESM1-2-HR.ssp370.r1i1p1f1.SImon.siareas.gn#20190710
+CMIP6.ScenarioMIP.DKRZ.MPI-ESM1-2-HR.ssp370.r1i1p1f1.SImon.siextentn.gn#20190710
+CMIP6.ScenarioMIP.DKRZ.MPI-ESM1-2-HR.ssp370.r1i1p1f1.SImon.siextents.gn#20190710
+CMIP6.ScenarioMIP.DKRZ.MPI-ESM1-2-HR.ssp585.r1i1p1f1.SImon.siarean.gn#20190710
+CMIP6.ScenarioMIP.DKRZ.MPI-ESM1-2-HR.ssp585.r1i1p1f1.SImon.siareas.gn#20190710
+CMIP6.ScenarioMIP.DKRZ.MPI-ESM1-2-HR.ssp585.r1i1p1f1.SImon.siextentn.gn#20190710
+CMIP6.ScenarioMIP.DKRZ.MPI-ESM1-2-HR.ssp585.r1i1p1f1.SImon.siextents.gn#20190710

@@ -1,0 +1,8 @@
+{
+    "uid": "ce889690-1ef3-6f46-9152-ccb27fc42490",
+    "title": "Missing scaling factor from all lossch4 data.",
+    "description": "lossch4 is missing a 1.e6/6.022e23 scaling factor. It can be applied manually and the data will then be correct. lossch4 will be recalculated and the data replaced.",
+    "project": "cmip6",
+    "severity": "critical",
+    "status": "resolved"
+}

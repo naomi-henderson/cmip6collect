@@ -1,0 +1,8 @@
+{
+    "uid": "cccf0f21-69d1-6b79-bf40-53f65e388aec",
+    "title": "siitdconc values incorrect",
+    "description": "When constructing the siitdconc variable, a conversion factor(*100) was incorrectly applied twice.",
+    "project": "cmip6",
+    "severity": "critical",
+    "status": "new"
+}

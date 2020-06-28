@@ -1,0 +1,4 @@
+activity_id,institution_id,source_id,experiment_id,member_id,table_id,variable_id,grid_label,zstore,date_start,date_stop,time_len,sizeG,date,status,dcpp_init_year
+C4MIP,MIROC,MIROC-ES2L,hist-bgc,r1i1p1f2,Omon,fgco2,gn,gs://cmip6/C4MIP/MIROC/MIROC-ES2L/hist-bgc/r1i1p1f2/Omon/fgco2/gn/,1850-01-16,2014-12-16,1980,0.41,2020-02-06,created,
+C4MIP,MIROC,MIROC-ES2L,hist-bgc,r1i1p1f2,Omon,fgo2,gn,gs://cmip6/C4MIP/MIROC/MIROC-ES2L/hist-bgc/r1i1p1f2/Omon/fgo2/gn/,1850-01-16,2014-12-16,1980,0.407,2020-02-06,created,
+C4MIP,MIROC,MIROC-ES2L,hist-bgc,r1i1p1f2,Omon,sos,gn,gs://cmip6/C4MIP/MIROC/MIROC-ES2L/hist-bgc/r1i1p1f2/Omon/sos/gn/,1850-01-16,2014-12-16,1980,0.319,2020-02-06,created,

@@ -1,0 +1,8 @@
+{
+    "uid": "306c5df5-de28-9a5d-a9d3-46b41ad7a76f",
+    "title": "Incorrect latitude & longitude coordinate data in some Omon datasets",
+    "description": "Due to a processing system error the latitude and longitude data being written to the published files is incorrect and may be up to half a degree out. Data that should have been given latitudes and longitudes corresponding to the T points of the eORCA1 grid was instead given coordinate values for the U or V points (or vice-versa) depending on processing order.  Affected data has been withdrawn and replacement data sets will be published in due course.",
+    "project": "cmip6",
+    "severity": "high",
+    "status": "resolved"
+}

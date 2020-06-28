@@ -1,0 +1,8 @@
+{
+    "uid": "be61d29a-082c-a9c6-b0cb-2097874d8065",
+    "title": "eminox incorrectly defined",
+    "description": "The original calculation of 'eminox' included only surface NO emissions (anthropogenic, biomass burning, soil) in units of kg(NO)/m2/s. The corrected version will add aircraft emissions and be reported in units of kg-N/m2/s.",
+    "project": "cmip6",
+    "severity": "critical",
+    "status": "new"
+}

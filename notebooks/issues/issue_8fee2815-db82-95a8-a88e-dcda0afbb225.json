@@ -1,0 +1,8 @@
+{
+    "uid": "8fee2815-db82-95a8-a88e-dcda0afbb225",
+    "title": "500 years extension for piControl",
+    "description": "piControl run has been extended adding 500 simulated years.",
+    "project": "cmip6",
+    "severity": "low",
+    "status": "resolved"
+}

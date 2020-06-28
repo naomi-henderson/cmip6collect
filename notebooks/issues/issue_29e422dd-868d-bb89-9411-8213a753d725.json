@@ -1,0 +1,8 @@
+{
+    "uid": "29e422dd-868d-bb89-9411-8213a753d725",
+    "title": "Incorrect adjustment to data",
+    "description": "Data was accidentally converted from K to degC by CMOR, despite already being in degC, so all data is offset by -273.15K.",
+    "project": "cmip6",
+    "severity": "critical",
+    "status": "new"
+}

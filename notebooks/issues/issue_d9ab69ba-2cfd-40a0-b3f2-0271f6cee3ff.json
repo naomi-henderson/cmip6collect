@@ -1,0 +1,8 @@
+{
+    "uid": "d9ab69ba-2cfd-40a0-b3f2-0271f6cee3ff",
+    "title": "siconc should be siconca",
+    "description": "For the atmosphere only experiments siconc has been output from the atmosphere model with the name siconc when it should have been named siconca.",
+    "project": "cmip6",
+    "severity": "low",
+    "status": "wontfix"
+}

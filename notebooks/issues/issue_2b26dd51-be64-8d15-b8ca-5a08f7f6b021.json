@@ -1,0 +1,8 @@
+{
+    "uid": "2b26dd51-be64-8d15-b8ca-5a08f7f6b021",
+    "title": "Unit conversion for co2 data of AERmon",
+    "description": "All the co2 data of AERmon  should be applied with a factor of 29/(12+2*16) for unit conversion from kg kg-1 to mol mol-1.",
+    "project": "cmip6",
+    "severity": "medium",
+    "status": "new"
+}

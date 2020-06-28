@@ -1,0 +1,8 @@
+{
+    "uid": "2c679fba-9dc5-c384-8f4d-e2c37ba04886",
+    "title": "Missing time records within output files",
+    "description": "Due to data processing errors, some NetCDF files are missing time records. For example, a file containing 100 years of monthly output incorrectly contains 1116 time records rather than the expected 1200. These incorrect datasets will be retracted and republished.",
+    "project": "cmip6",
+    "severity": "critical",
+    "status": "new"
+}

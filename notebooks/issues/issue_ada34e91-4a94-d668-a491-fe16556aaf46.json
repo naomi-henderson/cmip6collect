@@ -1,0 +1,8 @@
+{
+    "uid": "ada34e91-4a94-d668-a491-fe16556aaf46",
+    "title": "Incorrect natural aerosol data",
+    "description": "The natural aerosol forcing for the model is incorrect every year between 16 November and 16 January because of a wrong time metadata of the natural aerosol data. As a result, the prescribed aerosol optical depth is greater (smaller) over the African continent north (south) of 10S by up to approx. 0.7 (0.3) compared with that which should be.",
+    "project": "cmip6",
+    "severity": "high",
+    "status": "wontfix"
+}

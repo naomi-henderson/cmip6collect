@@ -1,0 +1,8 @@
+{
+    "uid": "b9bd4608-9c2c-619c-86ff-4f7dc321ff26",
+    "title": "300 years second extension for abrupt-4xCO2",
+    "description": "abrupt-4xCO2 run has been extended adding 500 simulated years as a second extension.",
+    "project": "cmip6",
+    "severity": "low",
+    "status": "resolved"
+}

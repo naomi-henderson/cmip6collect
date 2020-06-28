@@ -1,0 +1,8 @@
+{
+    "uid": "eac2a6b3-a697-5847-be42-63f50963168f",
+    "title": "Incorrect some coordinates and cell_methods in piControl ocean, seaIce variables",
+    "description": "Incorrect some coordinates and cell_methods in piControl ocean, seaIce variables",
+    "project": "cmip6",
+    "severity": "medium",
+    "status": "resolved"
+}

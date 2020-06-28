@@ -1,0 +1,8 @@
+{
+    "uid": "efcc4278-5745-3774-8424-91c963dadd34",
+    "title": "Error in sign of \"tauv_Amon\" and \u201ctauu_Amon\u201d",
+    "description": "There is an error of sign in the \"tauv_Amon\" and \u201ctauu_Amon\u201d variables of the control-1950, hist-1950, highresSST-present, highresSST-future and highres-future simulations (both  CMCC-CM2-HR4 and CMCC-CM2-VHR4) of the CMCC-CM2 model. The affected datasets have been withdrawn and then replaced with a new version of v20200313.",
+    "project": "cmip6",
+    "severity": "high",
+    "status": "resolved"
+}

@@ -1,0 +1,8 @@
+{
+    "uid": "388c415b-5b25-7e3a-b9d4-59c90fac552c",
+    "title": "wrong information on parent simulation, missing variant information",
+    "description": "AWI/MPI atmosphere-only PAMIP simulations are not branched off from AMIP simulations but initialized on the 1st of April, 2000 with ECMWF reanalysis data. Therefore no information on parent attributes should have been present in the NetCDF header. As variant_info should have been written: \"AWI/MPI atmosphere-only PAMIP simulations are not branched off from AMIP simulations but initialized on the 1st of April, 2000 with ECMWF reanalysis data. Since the atmosphere generally has a memory of around 2 weeks and since the first two months of PAMIP simulations are regarded as spin-up, AWI/MPI atmosphere-only simulations can still be compared with PAMIP simulations performed with other models. However, in AWI/MPI atmosphere-only simulations the QBO will be for all ensemble members in the same phase - in this case in a neutral phase - at initialization which is not the case for other models.\"",
+    "project": "cmip6",
+    "severity": "low",
+    "status": "new"
+}

@@ -1,0 +1,8 @@
+{
+    "uid": "9fa7bf63-9bf7-5fbe-9930-bf35563a3fc8",
+    "title": "Wrong variable submitted as tas_6hrPlevPt",
+    "description": "Instead of near surface temperature, meridional near surface wind has been published as tas_6hrPlevPt due to a mix up of GRIB codes while standardizing the data. A temporary work around was, using tas_3hr as a substitute: \"cdo selhour,0,6,12,18 infile outfile\".",
+    "project": "cmip6",
+    "severity": "high",
+    "status": "resolved"
+}

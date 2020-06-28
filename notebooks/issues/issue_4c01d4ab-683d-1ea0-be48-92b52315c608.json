@@ -1,0 +1,8 @@
+{
+    "uid": "4c01d4ab-683d-1ea0-be48-92b52315c608",
+    "title": "Annual files of ocean output incorrectly averaged.",
+    "description": "There are 2 problems with selected annual ocean output files that were formed from monthly data.  First the annual averages were calculated from January through November instead of January through December. Second, the days of the month were not taken into account when calculating the annual average.",
+    "project": "cmip6",
+    "severity": "critical",
+    "status": "resolved"
+}

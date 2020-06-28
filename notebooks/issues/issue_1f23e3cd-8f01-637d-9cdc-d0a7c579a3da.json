@@ -1,0 +1,8 @@
+{
+    "uid": "1f23e3cd-8f01-637d-9cdc-d0a7c579a3da",
+    "title": "Incorrect masking of northern polar row in some UKESM1 and HadGEM3 sea-ice data",
+    "description": "Masking of data in the eastern half of the northern polar row of these datasets has been incorrectly applied. This has resulted in 86 points on the eORCA1 (366 on eORCA025) grid being masked when there should be good data. The values of these datasets at all other grid points are unaffected by this issue. \n\nCorrected versions of these datasets will be produced and existing datasets will be replaced in due course.\n\nUpdate: Most datasets have been replaced, but this issue has been found to affect sidmasstranx and sidmasstrany for 3 HadGEM3-GC31-MM simulations too.",
+    "project": "cmip6",
+    "severity": "critical",
+    "status": "new"
+}

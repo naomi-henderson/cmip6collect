@@ -1,0 +1,12 @@
+{
+    "uid": "4aa40e49-b2d4-0b29-a6b1-c80ee8dce11a",
+    "title": "GISS CMIP6 datasets withdraw",
+    "description": "These variables have been put back with no version change.   GISS decided these are valid for analysis.\nplease see the two links \nthe 1st  one is the original remove list \nthe 2nd one is the put tback list",
+    "project": "cmip6",
+    "severity": "low",
+    "status": "wontfix",
+    "urls": [
+        "https://dataserver.nccs.nasa.gov/thredds/fileServer/ying/txt/putback_list.txt",
+        "https://dataserver.nccs.nasa.gov/thredds/fileServer/ying/txt/remove_listn.txt"
+    ]
+}

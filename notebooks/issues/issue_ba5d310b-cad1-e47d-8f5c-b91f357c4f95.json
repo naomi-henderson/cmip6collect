@@ -1,0 +1,8 @@
+{
+    "uid": "ba5d310b-cad1-e47d-8f5c-b91f357c4f95",
+    "title": "Incorrect extension of UKESM1-0-LL piControl datasets",
+    "description": "When extending six datasets from the UKESM1 piControl simulation the procedure followed was incorrect, leading to v20191115 replacing rather than extending the existing version (v20190410). Version v20191115 will be retracted and followed by the publication a new version containing the full time series for these variables.\n\nv2019115 has now been retracted.",
+    "project": "cmip6",
+    "severity": "low",
+    "status": "resolved"
+}

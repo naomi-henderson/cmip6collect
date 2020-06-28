@@ -1,0 +1,8 @@
+{
+    "uid": "c1abc1d6-7e83-9249-8c40-70f49e6a1fb6",
+    "title": "Incorrect experiment id used for UKESM1 piClim-2xNOx and piClim-2xVOC",
+    "description": "The processing for all UKESM1-0-LL datasets for the r1i1p1f4 simulation of the piClim-2xNOx experiment incorrectly used the experiment id piClim-2xVOC and vice versa. In all other respects the datasets are correct. This affects versions 20200406 and 20200410. Affected datasets have been retracted and corrected versions will be published shortly.",
+    "project": "cmip6",
+    "severity": "critical",
+    "status": "new"
+}

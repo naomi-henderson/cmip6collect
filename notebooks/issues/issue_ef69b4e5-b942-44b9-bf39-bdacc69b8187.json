@@ -1,0 +1,8 @@
+{
+    "uid": "ef69b4e5-b942-44b9-bf39-bdacc69b8187",
+    "title": "one year extentions for RFMIP/AerChemMIP piClim experiments",
+    "description": "The piClim-* experiments of RFMIP/AerChemMIP have been extended adding one simulated year (1880).",
+    "project": "cmip6",
+    "severity": "low",
+    "status": "resolved"
+}

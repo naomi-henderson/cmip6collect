@@ -1,0 +1,8 @@
+{
+    "uid": "ad9e4213-f254-e930-a143-030a4b0f8a32",
+    "title": "temporal coverage of NorCPM's historical experiment beyond official period",
+    "description": "NorCPM1\u2019s output has been specifically prepared to contribute to the DCPP MIP. The extension of the historical experiment beyond 2014 uses SSP2-4.5 scenario forcing and is intended to serve as a reference for the decadal prediction experiment dcppA-hindcast and assimilation experiment dcppA-assim. We chose to extend the historical experiment over publishing a separate scenario experiment for convenience of the data user and because we could not afford integrating the entire 21st century with 30 members .\nAcknowledging that applications may have issues with files containing data beyond the official historical period, we aggregated the cmor-ized historical output into the time chunks 1850-2014, 2015-2018 and 2019-2029. We advise users to regard the last two as unofficial and to ignore them if not intended as baseline for dcppA-hindcast/dcppA-assim. Update (2020.02.28): we plan to move all post-2014 data to the experiment historical-ext.",
+    "project": "cmip6",
+    "severity": "low",
+    "status": "onhold"
+}

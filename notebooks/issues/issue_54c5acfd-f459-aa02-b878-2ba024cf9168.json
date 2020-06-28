@@ -1,0 +1,8 @@
+{
+    "uid": "54c5acfd-f459-aa02-b878-2ba024cf9168",
+    "title": "Short datasets submitted for HadGEM3-GC31-LL ScenarioMIP ssp245 r2-r4",
+    "description": "The datasets for the r2i1p1f3, r3i1p1f3 and r4i1p1f3 ssp245 simulations contain only data for 2015-2020 to support urgent DAMIP analyses. Once the source simulations have been completed these datasets will be extended to the full range (2015-2100).",
+    "project": "cmip6",
+    "severity": "low",
+    "status": "new"
+}

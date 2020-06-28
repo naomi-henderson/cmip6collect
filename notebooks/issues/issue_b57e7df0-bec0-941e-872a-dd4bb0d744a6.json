@@ -1,0 +1,8 @@
+{
+    "uid": "b57e7df0-bec0-941e-872a-dd4bb0d744a6",
+    "title": "DMS values are in kmol m^-3",
+    "description": "In all the datasets version prior to v20200206, DMS values are 1000 times lower. DMS is reported in kmol m^-3. This is inconsistent with the units of all other tracers, which are reported as mol m^-3. For yours analysis, it would be good to multiply it by 1000 if considering unit mol m^-3. This issue is fixed for future data version v20200218 and after.",
+    "project": "cmip6",
+    "severity": "medium",
+    "status": "new"
+}

@@ -1,0 +1,8 @@
+{
+    "uid": "c46d3d58-2230-d1bc-b38a-de6040b0674d",
+    "title": "Wrong data: fgco2",
+    "description": "The surface downward CO2 flux (fgco2) is expressed by the mass of carbon dioxide, not carbon.(The unit of fgco2 uploaded is in kgCO2 m-2 s-1.) To express the flux as the mass of carbon (in kgC m-2 s-1), multiply the data by (12/44). The wrong data file will be withdrawn, and the corrected data file will be re-provided later.",
+    "project": "cmip6",
+    "severity": "low",
+    "status": "resolved"
+}

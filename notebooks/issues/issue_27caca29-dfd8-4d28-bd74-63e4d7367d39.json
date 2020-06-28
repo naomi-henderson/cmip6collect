@@ -1,0 +1,8 @@
+{
+    "uid": "27caca29-dfd8-4d28-bd74-63e4d7367d39",
+    "title": "sza diagnostic without solar zenith angle correction",
+    "description": "There is a small correction term to the solar zenith angle that is applied in the model but not included in the sza diagnostic. This correction term has a small effect for large solar zenith angles. It takes the for : RRAE = 0.1277E-02 ; ZCRAE=RRAE*(RRAE+2.0) ; RMU=RRAE/((RMU**2+ZCRAE)**0.5-RMU) ; where RMU is the cosine of the solar zenith angle.",
+    "project": "cmip6",
+    "severity": "low",
+    "status": "wontfix"
+}

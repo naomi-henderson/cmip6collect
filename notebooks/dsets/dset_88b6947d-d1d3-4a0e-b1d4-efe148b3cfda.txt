@@ -1,0 +1,5 @@
+CMIP6.CMIP.MOHC.UKESM1-0-LL.piControl.r1i1p1f2.EdayZ.epfy.gnz#20190827
+CMIP6.CMIP.MOHC.UKESM1-0-LL.piControl.r1i1p1f2.EdayZ.epfz.gnz#20190827
+CMIP6.CMIP.MOHC.UKESM1-0-LL.piControl.r1i1p1f2.Emon.intuaw.gn#20190715
+CMIP6.CMIP.MOHC.UKESM1-0-LL.piControl.r1i1p1f2.Emon.intvaw.gn#20190715
+CMIP6.CMIP.MOHC.UKESM1-0-LL.piControl.r1i1p1f2.day.wap.gn#20190827

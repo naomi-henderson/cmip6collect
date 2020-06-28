@@ -1,0 +1,8 @@
+{
+    "uid": "78d9254e-3722-8d91-99b4-a80b4aeb8faf",
+    "title": "Corrupted dataset in CMIP6.AerChemMIP.NIWA.UKESM1-0-LL.piClim-N2O.r1i1p1f4",
+    "description": "This dataset was corrupted as part of the publication process, leaving several years of data unreadable.",
+    "project": "cmip6",
+    "severity": "critical",
+    "status": "new"
+}

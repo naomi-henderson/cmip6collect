@@ -1,0 +1,7 @@
+activity_id,institution_id,source_id,experiment_id,member_id,table_id,variable_id,grid_label,zstore,date_start,date_stop,time_len,sizeG,date,status,dcpp_init_year
+RFMIP,MPI-M,MPI-ESM1-2-HR,piClim-control,r1i1p1f1,AERmon,od550aer,gn,gs://cmip6/RFMIP/MPI-M/MPI-ESM1-2-HR/piClim-control/r1i1p1f1/AERmon/od550aer/gn/,1849-01-16,1879-12-16,372,0.021,2020-02-23,created,
+RFMIP,MPI-M,MPI-ESM1-2-HR,piClim-control,r1i1p1f1,Amon,rlut,gn,gs://cmip6/RFMIP/MPI-M/MPI-ESM1-2-HR/piClim-control/r1i1p1f1/Amon/rlut/gn/,1849-01-16,1879-12-16,372,0.0144,2020-02-24,created,
+RFMIP,MPI-M,MPI-ESM1-2-HR,piClim-control,r1i1p1f1,Amon,rsdt,gn,gs://cmip6/RFMIP/MPI-M/MPI-ESM1-2-HR/piClim-control/r1i1p1f1/Amon/rsdt/gn/,1849-01-16,1879-12-16,372,0.00506,2020-02-24,created,
+RFMIP,MPI-M,MPI-ESM1-2-HR,piClim-control,r1i1p1f1,Amon,rsut,gn,gs://cmip6/RFMIP/MPI-M/MPI-ESM1-2-HR/piClim-control/r1i1p1f1/Amon/rsut/gn/,1849-01-16,1879-12-16,372,0.0146,2020-02-24,created,
+RFMIP,MPI-M,MPI-ESM1-2-HR,piClim-control,r1i1p1f1,Amon,tauu,gn,gs://cmip6/RFMIP/MPI-M/MPI-ESM1-2-HR/piClim-control/r1i1p1f1/Amon/tauu/gn/,1849-01-16,1879-12-16,372,0.0196,2019-11-02,created,
+RFMIP,MPI-M,MPI-ESM1-2-LR,piClim-control,r1i1p1f1,AERmon,od550aer,gn,gs://cmip6/RFMIP/MPI-M/MPI-ESM1-2-LR/piClim-control/r1i1p1f1/AERmon/od550aer/gn/,1849-01-16,1879-12-16,372,0.021,2020-02-23,created,

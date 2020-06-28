@@ -1,0 +1,8 @@
+{
+    "uid": "e76ac2f0-c75f-968a-931c-57ef8194741b",
+    "title": "Incorrect calculation of COSP diagnostics in HadGEM3 and UKESM1 models (DECK runs only)",
+    "description": "An issue has been found with the calculation of these diagnostics; within the model the in-cloud mixing ratio is internally divided by cloud fraction and then fed to the CALIPSO and Cloudsat simulators. This overestimates the cloud mixing ratio, making COSP to overestimate high-level and mid-level cloud fraction and slightly underestimate low-level cloud fraction (due to larger attenuation above).\n\nThe variables affected clcalipso, clhcalipso, cllcalipso, clmcalipso, cltcalipso (in both CFmon and CFday tables) plus parasolRefl (in Emon and Eday).\n\nUpdate: This issue affects all HadGEM3 and UKESM1 simulations, not just the DECK. Datasets from AerChemMIP, CFMIP, DAMIP, HighResMIP, RFMIP and ScenarioMIP are covered by https://errata.es-doc.org/static/view.html?uid=eccd70f1-16f7-cfb9-9a7d-307ca9ba9861.  \n\nAll affected datasets have been withdrawn. Replacement datasets, only for the HadGEM3-GC31-LL amip r5i1p1f3 simulation, have been published",
+    "project": "cmip6",
+    "severity": "critical",
+    "status": "resolved"
+}

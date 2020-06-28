@@ -1,0 +1,8 @@
+{
+    "uid": "38b6b1e1-c9db-61a3-a8e9-ebf17dfff774",
+    "title": "snc values incorrect",
+    "description": "Some ESM4 snc output was incorrectly calculated. During processing, snc reported as a fraction of land area was re-normalized to the Data Request-specified fraction of grid cell area (by multiplying by land area fraction). As a result of a processing error, some ESM4 output was normalized twice, resulting in incorrect data. Affected data will be withdrawn and republished.",
+    "project": "cmip6",
+    "severity": "critical",
+    "status": "new"
+}

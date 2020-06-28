@@ -1,0 +1,8 @@
+{
+    "uid": "e258bc0e-670a-753b-86b1-0cd68ceff580",
+    "title": "CO2 values are incorrect due to missing scaling factor",
+    "description": "As part of the unit conversion from CESM output to CMIP output a scaling factor was never applied to the co2 variable resulting in incorrect values. The original units were kg CO2 / kg dry air, and as part of the conversion to mol / mol the data should have been multiplied by the ratio of the molecular weight of dry air to the molecular weight of CO2 (28.966/44.0).",
+    "project": "cmip6",
+    "severity": "critical",
+    "status": "resolved"
+}

@@ -1,0 +1,8 @@
+{
+    "uid": "c628a0f9-0f74-942c-9583-dacbcd306469",
+    "title": "Incorrect latitude and longitude coordinate variables",
+    "description": "Due to errors in post-processing, the latitude and longitude coordinate variables were those of the center/tracer grid while the data was on the velocity/corner grid. The faulty datasets will be replaced.",
+    "project": "cmip6",
+    "severity": "high",
+    "status": "new"
+}

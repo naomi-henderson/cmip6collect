@@ -2,6 +2,7 @@ import warnings
 import pandas as pd
 import requests
 import xarray as xr
+import fsspec
 
 def get_version(zstore):
 
@@ -10,7 +11,7 @@ def get_version(zstore):
     query1 = '?type=IS_PART_OF'
     query2 = '?type=VERSION_NUMBER'
 
-    tracking_ids = xr.open_zarr(zstore,consolidated=True).attrs['tracking_id']
+    tracking_ids = xr.open_zarr(fsspec.get_mapper(zstore),consolidated=True).attrs['tracking_id']
 
     versions = []
     datasets = []

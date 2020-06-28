@@ -1,0 +1,8 @@
+{
+    "uid": "f9047837-07fa-2a06-887d-9e9d29068ed1",
+    "title": "Extension of UKESM1-0-LL piControl datasets",
+    "description": "The first datasets published from the UKESM1 piControl simulation covered the first 750 years while later datasets have  cover 1100 years. This issue records the extension of early data sets to cover the same 1100 years as subsequent submissions.",
+    "project": "cmip6",
+    "severity": "low",
+    "status": "new"
+}

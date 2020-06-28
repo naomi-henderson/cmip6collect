@@ -1,0 +1,8 @@
+{
+    "uid": "c36c71da-b998-8339-a107-6b8c1c5d5c9c",
+    "title": "Published under wrong source_id",
+    "description": "Correct source_id  would be MPI-ESM1-2-LR",
+    "project": "cmip6",
+    "severity": "low",
+    "status": "resolved"
+}

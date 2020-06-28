@@ -1,0 +1,4 @@
+CMIP6.CMIP.MOHC.HadGEM3-GC31-MM.historical.r1i1p1f3.Amon.wap.gn#20191207
+CMIP6.CMIP.MOHC.HadGEM3-GC31-MM.historical.r1i1p1f3.day.wap.gn#20191207
+CMIP6.CMIP.MOHC.HadGEM3-GC31-MM.historical.r2i1p1f3.Amon.wap.gn#20191218
+CMIP6.CMIP.MOHC.HadGEM3-GC31-MM.historical.r2i1p1f3.day.wap.gn#20191218

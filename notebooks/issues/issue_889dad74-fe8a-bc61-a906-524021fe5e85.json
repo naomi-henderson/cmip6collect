@@ -1,0 +1,8 @@
+{
+    "uid": "889dad74-fe8a-bc61-a906-524021fe5e85",
+    "title": "Updated sea-surface temperature forcing resulted in rerun of PAMIP Tier 1 experiment 1.3",
+    "description": "The sea-surface temperature (SST) forcing for tier 1 experiment 1.3 (piSST-pdSIC) has been updated in order to be consistent with other PAMIP experiments. After the update the SST for 1.1-1.3 is identical to 1.5-1.2 in the Northern Hemisphere and identical to 1.7-1.2 in the Southern Hemisphere. The SST for 1.3-1.2 is identical to 1.1-1.5 in the Northern Hemisphere and identical to 1.1-1.7 in the Southern Hemisphere. The SST changes are in the Arctic and Antarctic. These changes may impact the calculation for polar sea ice loss effect (1.1-1.3) and remote SST warming effect (1.3-1.2).",
+    "project": "cmip6",
+    "severity": "critical",
+    "status": "resolved"
+}

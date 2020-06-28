@@ -1,0 +1,8 @@
+{
+    "uid": "69f08052-6609-d083-a58b-4b024a1812d2",
+    "title": "GISS Errata No. 6",
+    "description": "The GISS piClim-hist ERF simulations were run with observed 1950 sea surface temperature and sea ice, contrary to the RFMIP-ERF experimental protocol.  We are re-running the simulations using the requested protocol where SST and sea ice are prescribed from a 30-year climatology of the corresponding piControl run.",
+    "project": "cmip6",
+    "severity": "medium",
+    "status": "new"
+}

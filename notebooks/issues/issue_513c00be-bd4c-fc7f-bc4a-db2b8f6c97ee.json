@@ -1,0 +1,8 @@
+{
+    "uid": "513c00be-bd4c-fc7f-bc4a-db2b8f6c97ee",
+    "title": "The values above 3 hPa pressure level in EmonZ/AERmonZ output should not be used.",
+    "description": "The model top is 3 hPa, and thus the values above 3 hPa pressure levels should not be used for your analysis. The values above 3 hPa were mechanically extrapolated to fill the required array of CMOR netcdf files.",
+    "project": "cmip6",
+    "severity": "low",
+    "status": "wontfix"
+}

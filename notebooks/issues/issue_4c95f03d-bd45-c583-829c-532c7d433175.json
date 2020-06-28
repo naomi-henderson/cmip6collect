@@ -1,0 +1,8 @@
+{
+    "uid": "4c95f03d-bd45-c583-829c-532c7d433175",
+    "title": "Wrong depth dimension name in historical member r2",
+    "description": "The \"historical\" member r2i1p1f1 ran with an old version of dr2xml. 3D ocean files have a depth dimension with a wrong name that should be \"olevel\" instead of \"depth*\".",
+    "project": "cmip6",
+    "severity": "low",
+    "status": "resolved"
+}

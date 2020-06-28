@@ -1,0 +1,8 @@
+{
+    "uid": "b6302400-3620-c8f1-999b-d192c0349084",
+    "title": "Wrong \"frequency\" global attribute for some monthly mean datasets",
+    "description": "For models GFDL-AM4 and GFDL-CM4 and experiments amip, piControl, historical, 1pctCO2, abrupt-4xCO2, and ssp585, ssp245, monthly mean datasets in Amon incorrectly identify the frequency as \"monC\" (monthly climatology computed from monthly mean samples) when it should be \"mon\" (monthly mean samples).",
+    "project": "cmip6",
+    "severity": "medium",
+    "status": "wontfix"
+}

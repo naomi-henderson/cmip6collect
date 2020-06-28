@@ -1,0 +1,10 @@
+activity_id,institution_id,source_id,experiment_id,member_id,table_id,variable_id,grid_label,zstore,date_start,date_stop,time_len,sizeG,date,status,dcpp_init_year
+AerChemMIP,NCC,NorESM2-LM,histSST,r1i1p1f1,AERmon,mmrbc,gn,gs://cmip6/AerChemMIP/NCC/NorESM2-LM/histSST/r1i1p1f1/AERmon/mmrbc/gn/,1850-01-16,2014-12-16,1980,2.72,2020-02-24,created,
+AerChemMIP,NCC,NorESM2-LM,histSST,r1i1p1f1,AERmon,mmrdust,gn,gs://cmip6/AerChemMIP/NCC/NorESM2-LM/histSST/r1i1p1f1/AERmon/mmrdust/gn/,1850-01-16,2014-12-16,1980,2.85,2020-02-24,created,
+AerChemMIP,NCC,NorESM2-LM,histSST,r1i1p1f1,AERmon,mmroa,gn,gs://cmip6/AerChemMIP/NCC/NorESM2-LM/histSST/r1i1p1f1/AERmon/mmroa/gn/,1850-01-16,2014-12-16,1980,2.72,2020-02-24,created,
+AerChemMIP,NCC,NorESM2-LM,histSST,r1i1p1f1,AERmon,mmrso4,gn,gs://cmip6/AerChemMIP/NCC/NorESM2-LM/histSST/r1i1p1f1/AERmon/mmrso4/gn/,1850-01-16,2014-12-16,1980,2.7,2020-02-24,created,
+AerChemMIP,NCC,NorESM2-LM,histSST,r1i1p1f1,AERmon,mmrss,gn,gs://cmip6/AerChemMIP/NCC/NorESM2-LM/histSST/r1i1p1f1/AERmon/mmrss/gn/,1850-01-16,2014-12-16,1980,2.82,2020-02-25,created,
+AerChemMIP,NCC,NorESM2-LM,histSST,r1i1p1f1,AERmon,od550aer,gn,gs://cmip6/AerChemMIP/NCC/NorESM2-LM/histSST/r1i1p1f1/AERmon/od550aer/gn/,1850-01-16,2014-12-16,1980,0.0877,2020-02-23,created,
+AerChemMIP,NCC,NorESM2-LM,histSST,r1i1p1f1,Amon,rlut,gn,gs://cmip6/AerChemMIP/NCC/NorESM2-LM/histSST/r1i1p1f1/Amon/rlut/gn/,1850-01-16,2014-12-16,1980,0.0799,2020-02-24,created,
+AerChemMIP,NCC,NorESM2-LM,histSST,r1i1p1f1,Amon,rsdt,gn,gs://cmip6/AerChemMIP/NCC/NorESM2-LM/histSST/r1i1p1f1/Amon/rsdt/gn/,1850-01-16,2014-12-16,1980,0.0556,2020-02-24,created,
+AerChemMIP,NCC,NorESM2-LM,histSST,r1i1p1f1,Amon,rsut,gn,gs://cmip6/AerChemMIP/NCC/NorESM2-LM/histSST/r1i1p1f1/Amon/rsut/gn/,1850-01-16,2014-12-16,1980,0.0798,2020-02-24,created,

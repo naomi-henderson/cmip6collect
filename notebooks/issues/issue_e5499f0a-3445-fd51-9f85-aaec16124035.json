@@ -1,0 +1,8 @@
+{
+    "uid": "e5499f0a-3445-fd51-9f85-aaec16124035",
+    "title": "Short datasets for some 30-year RFMIP experiments",
+    "description": "Some RFMIP experiment datasets were published with less than the intended range of 30 years. These will be republished with a new version.",
+    "project": "cmip6",
+    "severity": "low",
+    "status": "resolved"
+}

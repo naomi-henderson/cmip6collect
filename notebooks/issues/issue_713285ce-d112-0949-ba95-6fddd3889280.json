@@ -1,0 +1,8 @@
+{
+    "uid": "713285ce-d112-0949-ba95-6fddd3889280",
+    "title": "wrong tas variable",
+    "description": "We submitted the wrong tas variable of historical-3rd ensemble member. The correct file will be replaced.",
+    "project": "cmip6",
+    "severity": "critical",
+    "status": "resolved"
+}

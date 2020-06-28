@@ -1,0 +1,8 @@
+{
+    "uid": "bda00988-4c26-c861-b0fc-6f90abc6f807",
+    "title": "Incorrect data in a time range",
+    "description": "Due to post-processing errors, some NetCDF files have a time period containing bad data. The symptom is discontinuous jump in time, then a return to correct time. For example, the time axis for an affected file might be: 1991, 1992, 1960, 1961, 1962, 1996. Note that the data itself is incorrect, not only the time axis. These faulty datasets will be retracted, corrected, and republished.",
+    "project": "cmip6",
+    "severity": "critical",
+    "status": "new"
+}

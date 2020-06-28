@@ -1,0 +1,8 @@
+{
+    "uid": "f457edcd-278e-9711-8534-f6496b9f354c",
+    "title": "Missing data for 2000-01 and 2007-01",
+    "description": "The tas variable is missing data for two time-steps, 2000-01 and 2007-01",
+    "project": "cmip6",
+    "severity": "medium",
+    "status": "new"
+}

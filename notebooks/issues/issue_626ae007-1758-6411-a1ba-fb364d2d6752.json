@@ -1,0 +1,8 @@
+{
+    "uid": "626ae007-1758-6411-a1ba-fb364d2d6752",
+    "title": "Wrong data: cSoil",
+    "description": "The cSoil file wrongly included both soil and litter carbon and thus overestimated the total soil carbon amount. The wrong cSoil file will be withdrawn, and adequate cSoil file will be provided later.",
+    "project": "cmip6",
+    "severity": "critical",
+    "status": "resolved"
+}

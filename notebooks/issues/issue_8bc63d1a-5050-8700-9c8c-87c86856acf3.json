@@ -1,0 +1,8 @@
+{
+    "uid": "8bc63d1a-5050-8700-9c8c-87c86856acf3",
+    "title": "2D latitude and longitude, and incorrect longitude, in Lmon and LImon variables",
+    "description": "A small number of variables from the Lmon and LImon tables didn't have their 2D latitude and longitude coordinates converted into 1D coordinates to be consistent with other EC-Earth variables. This also prevented the longitude grid from being fixed and so longitude values are half a cell out (please see https://errata.es-doc.org/static/view.html?uid=0165ae5a-5ebf-4233-9134-99d6c440c1b8). The affected variables will be withdrawn and replaced.\n\nAll datasets have now been withdrawn and then replaced. The new version is v20200206.",
+    "project": "cmip6",
+    "severity": "high",
+    "status": "resolved"
+}

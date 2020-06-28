@@ -1,0 +1,8 @@
+{
+    "uid": "8fa5880d-208e-d0e1-a0e4-0d0da6668f4b",
+    "title": "Wrong data: cLitter",
+    "description": "The provided cLitter lacked some necessary litter components and thus underestimated the amount. The wrong cLitter file will be withdrawn, and adequate cLitter file will be provided later.",
+    "project": "cmip6",
+    "severity": "critical",
+    "status": "resolved"
+}

@@ -1,0 +1,8 @@
+{
+    "uid": "7f680e48-6bfd-60a1-9e10-0d4acdc0fdb0",
+    "title": "Some sea ice variables in 3D instead of 1D",
+    "description": "Some sea ice variables have been written as a 3D matrix depending on time, x and y coordinates onto the ocean grid. They should be reprocessed in a 1D vector depending on time only.",
+    "project": "cmip6",
+    "severity": "low",
+    "status": "resolved"
+}

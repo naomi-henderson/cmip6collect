@@ -1,0 +1,8 @@
+{
+    "uid": "c3c68bd2-cab4-75e3-a74e-46f15620e01d",
+    "title": "Withdrawal of excessively large files for daily data on model levels",
+    "description": "Due to a minor misconfiguration of our data processing system daily data on model levels in the CFday MIP table has been produced in excessively large files (up to ~170 GB). In order to minimise potential data management and analysis issues for all concerned we have withdrawn these files and will re-publish them in more manageable files in due course.",
+    "project": "cmip6",
+    "severity": "low",
+    "status": "resolved"
+}
