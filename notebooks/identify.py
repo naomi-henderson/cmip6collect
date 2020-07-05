@@ -4,15 +4,18 @@ import requests
 import xarray as xr
 import fsspec
 
-def get_version(zstore):
+def get_version(zstore,method='fsspec'):
 
     client = requests.session()
     baseurl =  'http://hdl.handle.net/api/handles/'
     query1 = '?type=IS_PART_OF'
     query2 = '?type=VERSION_NUMBER'
 
-    tracking_ids = xr.open_zarr(fsspec.get_mapper(zstore),consolidated=True).attrs['tracking_id']
-
+    if method == 'fsspec':
+        tracking_ids = xr.open_zarr(fsspec.get_mapper(zstore),consolidated=True).attrs['tracking_id']
+    else:
+        tracking_ids = xr.open_zarr(zstore,consolidated=True).attrs['tracking_id']
+        
     versions = []
     datasets = []
     for file_tracking_id in tracking_ids.split('\n')[0:1]:
@@ -217,27 +220,32 @@ def needed_newversion(dfm, df_req, dESGF):
                                 continue
  
                             #print(experiment_id,variable_id,source_id,member_id,grid_label)
-                            
-                            if len(df_grid.version.unique()) > 1:
-                               print(df_grid.version.unique())
-                               continue
-                            else:
-                                version1 = df_grid.version.values[0][1:]
-                    
+    
                             zarr_dir = dict(zip(df.keys(),file))
                             zarr_file = zarr_format % zarr_dir 
                             zstore = 'gs://cmip6' + zarr_file 
-                        
+                
+                            eversions = df_grid.version.unique()
+                            #print(df_grid.values)
+                            if len(eversions) > 1:
+                                version1 = sorted(eversions)[-1][1:]
+                                print('picking last version due to multiple esgf API version bug:',eversions,version1)
+                                #continue
+                            else:
+                                version1 = df_grid.version.values[0][1:]
+                            df_grid = df_grid[df_grid.version=='v'+version1]
+
                             df_cloud = dfm[dfm.zstore==zstore]
-                            
                             if len(df_cloud) >= 1:
-                                if len(df_cloud.version.unique()) > 1:
-                                   print(df_cloud.version.unique())
-                                   continue
+                                cversions = df_cloud.version.unique()
+                                if len(cversions) > 1:
+                                    version2 = sorted(cversions)[-1]
+                                    print('skipping due to multiple cloud versions:',zstore,cversions,version2)
+                                    continue
                                 else:
                                     version2 = df_cloud.version.values[0]
 
-                                if version1 == version2:  
+                                if int(version1) == int(version2):  
                                     #print('same version already in cloud')
                                     continue
                                 else:

@@ -231,7 +231,7 @@ def search(server, df_req, local_node=False, verbose=False):
     keys_drop = list(set(keys_all) - set(keys_show))
     return dESGF.drop(keys_drop,1)
 
-def search_new(server, df_req, local_node=False):
+def search_new(server, df_req, local_node=False, verbose=False):
     df_list = []
     for index, row in df_req.iterrows():
         timestamp = row['Timestamp']
@@ -248,7 +248,7 @@ def search_new(server, df_req, local_node=False):
                     print(table_id,variable_id,source_ids,experiment_ids)
                     try:
                         files= esgf_search(server=server, mip_era='CMIP6', variable_id=variable_id,
-                                table_id=table_id, page_size=500, verbose=False, local_node=False)
+                                table_id=table_id, page_size=500, verbose=verbose, local_node=False)
                     except:
                         continue
 
@@ -263,7 +263,7 @@ def search_new(server, df_req, local_node=False):
                         print(table_id,variable_id,source_id,experiment_ids)
                         try:
                             files= esgf_search(server=server, mip_era='CMIP6', variable_id=variable_id,
-                                    table_id=table_id, source_id = source_id, page_size=500, verbose=False, local_node=False)
+                                    table_id=table_id, source_id = source_id, page_size=500, verbose=verbose, local_node=False)
                         except:
                             continue
 
@@ -280,7 +280,7 @@ def search_new(server, df_req, local_node=False):
                         print(table_id,variable_id,source_ids,experiment_id)
                         try:
                             files= esgf_search(server=server, mip_era='CMIP6', variable_id=variable_id,
-                                    table_id=table_id, experiment_id=experiment_id, page_size=500, verbose=False, local_node=False,)
+                                    table_id=table_id, experiment_id=experiment_id, page_size=500, verbose=verbose, local_node=False,)
                         except:
                             continue
     
@@ -295,7 +295,7 @@ def search_new(server, df_req, local_node=False):
                             print(table_id,variable_id,source_id,experiment_id)
                             try:
                                 files= esgf_search(server=server, mip_era='CMIP6', variable_id=variable_id,
-                                        table_id=table_id, experiment_id=experiment_id, source_id = source_id, page_size=500, verbose=False, local_node=False,)
+                                        table_id=table_id, experiment_id=experiment_id, source_id = source_id, page_size=500, verbose=verbose, local_node=False,)
                             except:
                                 continue
     
