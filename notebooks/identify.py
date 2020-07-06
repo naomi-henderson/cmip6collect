@@ -170,8 +170,8 @@ def needed_newversion(dfm, df_req, dESGF):
         member_ids = row['members']
         table_id = row['table']
 
-        if len(member_ids[0]) == 0:
-            member_ids = ['All']
+        #if len(member_ids[0]) == 0:
+        #    member_ids = ['All']
             
         for variable_id in variable_ids:
             if experiment_ids == ['All']:
@@ -192,22 +192,18 @@ def needed_newversion(dfm, df_req, dESGF):
                     if len(df) == 0:
                         continue
 
-                    members = df.member_id.unique()
-           
+                    source_members = df.member_id.unique()
+              
+                    members = list(set(member_ids)&set(source_members))
+                    
                     if len(member_ids) == 1 :
                         first = member_ids[0]
                         if first == 'One':
-                            members = [members[0]]
-                    elif first != 'All':
-                        if len(first) <=3 :
-                                members = members[:int(member_ids[0])]
-                        else:
-                             members = [first]
-                    elif len(member_ids) >= 2 :
-                        members = member_ids
-                       
+                            members = [source_members[0]]
+                        elif first == 'All':
+                            members = source_members
+
                     for member_id in members:
-                        
                         df_member = df[df.member_id==member_id]
                            
                         grid_labels = df_member.grid_label.unique()  
