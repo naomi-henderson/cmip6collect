@@ -85,6 +85,7 @@ CESM2-WACCM,piControl,r1i1p1f1,Oyr,bddtalk,gn,noUse,missing time chunks,2020-03-
 CESM2-WACCM,piControl,r1i1p1f1,Oyr,bddtdife,gn,noUse, trouble with grid,2020-03-05,CESM2-WACCM/piControl/r1i1p1f1/Oyr/bddtdife/gn/noUse
 CESM2-WACCM,piControl,r1i1p1f1,Oyr,bddtdip,gn,noUse,missing time chunks,2020-03-08,CESM2-WACCM/piControl/r1i1p1f1/Oyr/bddtdip/gn/noUse
 CESM2-WACCM,ssp370,r3i1p1f1,day,hfls,gn,noUse, trouble with grid,,CESM2-WACCM/ssp370/r3i1p1f1/day/hfls/gn/noUse
+CESM2-WACCM-FV2,piControl,r1i1p1f1,day,all,gn,noUse, many nans in time grid - overlapping times - skipped times - A TRUE MESS,,CESM2-WACCM-FV2/piControl/r1i1p1f1/day/pr/gn/noUse
 CIESM,piControl,r1i1p1f1,Amon,rlutcs,gr,noUse,missing time chunks,,CIESM/piControl/r1i1p1f1/Amon/rlutcs/gr/noUse
 CNRM-CM6-1,historical,r16i1p1f2,day,va,gr,noUse, open_mfdataset works - to_zarr doesn't,,CNRM-CM6-1/historical/r16i1p1f2/day/va/gr/noUse
 CNRM-CM6-1,historical,r21i1p1f2,Omon,obvfsq,gn,noUse,2 files missing,,CNRM-CM6-1/historical/r21i1p1f2/Omon/obvfsq/gn/noUse

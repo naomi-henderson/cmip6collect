@@ -1,10 +1,50 @@
 import pandas as pd
 import os
 import datetime
+import fsspec
+
+import xarray as xr
+def add_time_info(df,verbose=False):
+    '''add start, stop and nt for all zstores in df'''
+    starts = []; stops = []; nts = []; calendars = []; units = []; ttypes = []
+    dz = df.copy()
+    for index, row in df.iterrows():
+        zstore = row.zstore
+        ds = xr.open_zarr(fsspec.get_mapper(zstore),consolidated=True) 
+        start = 'NA'
+        start = 'NA'
+        nt = '1'
+        if 'time' in ds.coords:
+            ttype = str(type(ds.time.values[0]))
+            #dstime = ds.time.values
+            #start = str(dstime[0])[:10]
+            #stop = str(dstime[-1])[:10]
+            dstime = ds.time.values.astype('str')
+            start = dstime[0][:10]
+            stop = dstime[-1][:10]
+            calendar = ds.time.encoding['calendar']
+            unit = ds.time.encoding['units']
+            nt = len(dstime)
+            if verbose:
+                print(zstore,start,stop,nt)
+        starts += [start]
+        stops += [stop]
+        nts += [nt]
+        calendars += [calendar]
+        units += [unit]
+        ttypes += [ttype]
+
+    dz['start'] = starts
+    dz['stop'] = stops
+    dz['nt'] = nts
+    dz['calendar'] = calendars
+    dz['time_units'] = units
+    dz['time_type'] = ttypes
+    return dz
 
 # define a simple search on keywords
 def search_df(df, verbose= False, **search):
-    "search by keywords - if list, then match exactly, otherwise match as substring"
+    '''search by keywords - if list, then match exactly, otherwise match as substring'''
     keys = ['activity_id','institution_id','source_id','experiment_id','member_id', 'table_id', 'variable_id', 'grid_label']
     d = df
     for skey in search.keys():
@@ -22,6 +62,7 @@ def search_df(df, verbose= False, **search):
             print(key,' = ',list(d[key].unique()))      
     return d
 
+from functools import partial
 def getFolderSize(p):
     prepend = partial(os.path.join, p)
     return sum([(os.path.getsize(f) if os.path.isfile(f) else
@@ -29,6 +70,7 @@ def getFolderSize(p):
 
 def get_zid(gsurl):
     ''' given a GC zarr location, return the dataset_id'''
+    assert gsurl[:10] == 'gs://cmip6'
     return gsurl[11:-1].split('/')
 
 def get_zdict(gsurl):
@@ -67,16 +109,16 @@ def remove_from_catalogs(gsurl,execute=False):
     return
     
 def remove_from_GC_bucket(gsurl,execute=False):
-    ''' 1. delete old version in GC'''
+    '''delete old version in GC'''
     command = '/usr/bin/gsutil -m rm -r '+ gsurl[:-1]
     if execute:
         os.system(command) 
     else:
-        print('# 1.',command)
+        print(command)
     return
 
 def remove_from_GC_listing(gsurl,execute=False):
-    ''' 2. delete entry in ncsv/GC_files_{activity_id}-{institution_id}.csv'''
+    '''delete entry in ncsv/GC_files_{activity_id}-{institution_id}.csv'''
     zdict = get_zdict(gsurl)
     activity_id = zdict['activity_id']
     institution_id = zdict['institution_id']
@@ -90,26 +132,26 @@ def remove_from_GC_listing(gsurl,execute=False):
                 if line.strip("\n") != gsurl + ".zmetadata":
                     f.write(line)
     else:
-        print('# 2.','modifying ',file)
+        print('modifying ',file)
     return
 
 from glob import glob 
 def remove_from_drives(gsurl,execute=False):                
-    ''' 3. delete old local copy(ies)'''
+    '''delete old local copy(ies)'''
     gdirs = glob('/h*/naomi/zarr-minimal'+gsurl[10:])             
     if len(gdirs)==0:
-        print('# 3.','zstore is not on any mounted drives')
+        print('zstore is not on any mounted drives')
     else:        
         for gdir in gdirs:
             command = '/bin/rm -rf '+ gdir
             if execute:
                 os.system(command)
             else:
-                print('# 3.',command)
+                print(command)
     return
 
 def remove_from_shelf(gsurl,execute=False):                
-    ''' 4. delete entry(ies) in shelf-new/h*.csv'''
+    '''delete entry(ies) in shelf-new/h*.csv'''
     file = 'shelf-new/local.csv'
     df_local = pd.read_csv(file, dtype='unicode')
     zpaths = df_local[df_local.zstore.str.contains(gsurl[10:-1])].zstore.values
@@ -130,7 +172,7 @@ def remove_from_shelf(gsurl,execute=False):
         if execute:
             dff.to_csv(file, mode='w+', index=False)
         else:
-            print('# 4.',zpath,f'dff.to_csv({file})')
+            print(zpath,f'dff.to_csv({file})')
 
         if not writeable:
             command = "chmod u-w " + file
@@ -139,7 +181,7 @@ def remove_from_shelf(gsurl,execute=False):
     return 1
 
 def remove_from_local_listings(gsurl,execute=False):                
-    ''' 5. remove from concatenated catalog'''
+    '''remove from concatenated catalog'''
     file = 'shelf-new/local.csv'
     df_local = pd.read_csv(file, dtype='unicode')
     
@@ -148,5 +190,5 @@ def remove_from_local_listings(gsurl,execute=False):
         if execute:
             dff.to_csv(file, mode='w+', index=False)
         else:
-            print('# 5.',f'dff.to_csv({file})')
+            print(f'dff.to_csv({file})')
     return    
