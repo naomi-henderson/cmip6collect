@@ -18,6 +18,13 @@ def set_bnds_as_coords_drop_height(ds):
         ds = ds.drop('height')
     return ds
 
+def convert2gregorian(ds):
+    ds = set_bnds_as_coords(ds)
+    start = str(ds.time.values[0])[:4]
+    ds['time'] = xr.cftime_range(start=start, periods=ds.time.shape[0], freq='MS', calendar='gregorian').shift(15,'D')
+    return ds
+
+import warnings
 def get_ncfiles(zarr,df,skip_sites,skip_string='serendipity'):
     # download any files needed for this zarr store (or abort the attempt)
     okay = True
@@ -115,6 +122,7 @@ def concatenate(zarr,gfiles,codes):
     chunksize_optimal = 5e7
     chunksize = max(int(nt*chunksize_optimal/nc_size),1)
 
+    preprocess = ''
     for code in codes:
         if 'deptht' in code:
             fix_string = '/usr/bin/ncrename -d .deptht\,olevel -v .deptht\,olevel -d .deptht_bounds\,olevel_bounds -v .deptht_bounds\,olevel_bounds '
@@ -125,13 +133,20 @@ def concatenate(zarr,gfiles,codes):
             command = '/bin/rm nctemp/*NorESM2-LM*1230.nc'
             os.system(command)
             gfiles = [file for file in gfiles if ('1231.nc' in file)]
-            
+        if 'fix_time' in code:
+            preprocess = 'convert2gregorian'
 
     try:
         if 'time' in ds.coords:   
-            df7 = xr.open_mfdataset(gfiles, preprocess=set_bnds_as_coords, data_vars='minimal', chunks={'time': chunksize},
-                                    use_cftime=True, combine='nested', concat_dim='time') # combine='nested'
-            
+            if preprocess == 'convert2gregorian':
+                with warnings.catch_warnings():
+                    warnings.filterwarnings()
+                    df7 = xr.open_mfdataset(gfiles, preprocess=convert2gregorian, data_vars='minimal', chunks={'time': chunksize},
+                                        use_cftime=True, combine='nested', concat_dim='time') # combine='nested'
+            else:
+                df7 = xr.open_mfdataset(gfiles, preprocess=set_bnds_as_coords, data_vars='minimal', 
+                                        chunks={'time': chunksize},
+                                        use_cftime=True, combine='nested', concat_dim='time') # combine='nested'
         else: # fixed in time, no time grid
             df7 = xr.open_mfdataset(gfiles, preprocess=set_bnds_as_coords, combine='by_coords', data_vars='minimal')
     except:
@@ -139,9 +154,10 @@ def concatenate(zarr,gfiles,codes):
 
         if 'drop_height' in codes: 
             try:
-                if 'time' in ds.coords:   
-                    df7 = xr.open_mfdataset(gfiles, preprocess=set_bnds_as_coords_drop_height, data_vars='minimal', chunks={'time': chunksize},
-                                        use_cftime=True, combine='nested', concat_dim='time') # combine='nested'
+                if 'time' in ds.coords: 
+                    df7 = xr.open_mfdataset(gfiles, preprocess=set_bnds_as_coords_drop_height, data_vars='minimal',
+                                            chunks={'time': chunksize},
+                                            use_cftime=True, combine='nested', concat_dim='time') # combine='nested'      
                 else: # fixed in time, no time grid
                     df7 = xr.open_mfdataset(gfiles, preprocess=set_bnds_as_coords_drop_height, combine='by_coords', data_vars='minimal')
                     dstr += '\nerror fixed by drop_height'
@@ -169,9 +185,6 @@ def concatenate(zarr,gfiles,codes):
             #print('encoding time as noleap from year = ',year)
         if 'missing' in code:
             del df7[svar].encoding['missing_value']
-        if 'fix_time' in code:
-            df7['time'] = xr.cftime_range(start=df7.time[0].values.tolist(), periods=df7.time.shape[0], freq='D')
-            #print('changing all times to standard day calendar')
 
     #     check time grid to make sure there are no gaps in concatenated data (open_mfdataset checks for mis-ordering)
     if 'time' in ds.coords:
