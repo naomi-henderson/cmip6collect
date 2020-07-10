@@ -136,37 +136,40 @@ def concatenate(zarr,gfiles,codes):
         if 'fix_time' in code:
             preprocess = 'convert2gregorian'
 
-    try:
-        if 'time' in ds.coords:   
-            if preprocess == 'convert2gregorian':
-                with warnings.catch_warnings():
-                    warnings.filterwarnings()
+    with warnings.catch_warnings():
+        warnings.filterwarnings("ignore")
+        try:
+            if 'time' in ds.coords:   
+                if preprocess == 'convert2gregorian':
+                    print('processing convert2gregorian',chunksize,gfiles[0],len(gfiles))
+                    #with warnings.catch_warnings():
+                        #warnings.filterwarnings()
                     df7 = xr.open_mfdataset(gfiles, preprocess=convert2gregorian, data_vars='minimal', chunks={'time': chunksize},
-                                        use_cftime=True, combine='nested', concat_dim='time') # combine='nested'
-            else:
-                df7 = xr.open_mfdataset(gfiles, preprocess=set_bnds_as_coords, data_vars='minimal', 
-                                        chunks={'time': chunksize},
-                                        use_cftime=True, combine='nested', concat_dim='time') # combine='nested'
-        else: # fixed in time, no time grid
-            df7 = xr.open_mfdataset(gfiles, preprocess=set_bnds_as_coords, combine='by_coords', data_vars='minimal')
-    except:
-        dstr += '\nerror in open_mfdataset'
-
-        if 'drop_height' in codes: 
-            try:
-                if 'time' in ds.coords: 
-                    df7 = xr.open_mfdataset(gfiles, preprocess=set_bnds_as_coords_drop_height, data_vars='minimal',
+                                            use_cftime=True, combine='nested', concat_dim='time') # combine='nested'
+                else:
+                    df7 = xr.open_mfdataset(gfiles, preprocess=set_bnds_as_coords, data_vars='minimal', 
                                             chunks={'time': chunksize},
-                                            use_cftime=True, combine='nested', concat_dim='time') # combine='nested'      
-                else: # fixed in time, no time grid
-                    df7 = xr.open_mfdataset(gfiles, preprocess=set_bnds_as_coords_drop_height, combine='by_coords', data_vars='minimal')
-                    dstr += '\nerror fixed by drop_height'
-            except:
-                dstr += '\nerror not fixed by drop_height'
-                return 'failure',ds, dstr                
-        else:
-            dstr += '\nerror not fixable'
-            return 'failure',ds, dstr
+                                            use_cftime=True, combine='nested', concat_dim='time') # combine='nested'
+            else: # fixed in time, no time grid
+                df7 = xr.open_mfdataset(gfiles, preprocess=set_bnds_as_coords, combine='by_coords', data_vars='minimal')
+        except:
+            dstr += '\nerror in open_mfdataset'
+
+            if 'drop_height' in codes: 
+                try:
+                    if 'time' in ds.coords: 
+                        df7 = xr.open_mfdataset(gfiles, preprocess=set_bnds_as_coords_drop_height, data_vars='minimal',
+                                                chunks={'time': chunksize},
+                                                use_cftime=True, combine='nested', concat_dim='time') # combine='nested'      
+                    else: # fixed in time, no time grid
+                        df7 = xr.open_mfdataset(gfiles, preprocess=set_bnds_as_coords_drop_height, combine='by_coords', data_vars='minimal')
+                        dstr += '\nerror fixed by drop_height'
+                except:
+                    dstr += '\nerror not fixed by drop_height'
+                    return 'failure',ds, dstr                
+            else:
+                dstr += '\nerror not fixable'
+                return 'failure',ds, dstr
                 
     for code in codes:
         if 'drop_tb' in code: # to_zarr cannot do chunking with time_bounds/time_bnds which is cftime (an object, not float)
