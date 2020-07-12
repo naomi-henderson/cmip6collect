@@ -345,4 +345,4 @@ UKESM1-0-LL,piControl,r1i1p1f2,CFmon,clisccp,gn,local,NetCDF: Access failure,202
 GFDL-ESM4,historical,r1i1p1f1,Oyr,nh4,gr,local,NetCDF: Access failure,2020-03-08,GFDL-ESM4/historical/r1i1p1f1/Oyr/nh4/gr/local
 MPI-ESM1-2-HR,piControl,r1i1p1f1,Amon,rlutcs,gn,local,I/O failure,2020-03-09,MPI-ESM1-2-HR/piControl/r1i1p1f1/Amon/rlutcs/gn/local
 IPSL-CM6A-LR,historical,r1i1p1f1,Oyr,all,gn,local,NetCDF: Access failure,2020-03-09,IPSL-CM6A-LR/historical/r1i1p1f1/Oyr/expfe/gn/local
-NorCPM1,historical,r5i1p1f1,Amon,all,gn,override,latitudes do not match,,
+NorCPM1,historical,all,Amon,all,gn,override,latitudes do not match,,

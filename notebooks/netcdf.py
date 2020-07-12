@@ -12,8 +12,7 @@ def set_bnds_as_coords(ds):
     return ds
 
 def set_bnds_as_coords_drop_height(ds):
-    new_coords_vars = [var for var in ds.data_vars if 'bnds' in var or 'bounds' in var]
-    ds = ds.set_coords(new_coords_vars)
+    ds = set_bnds_as_coords(ds)
     if 'height' in ds.coords:
         ds = ds.drop('height')
     return ds
@@ -122,7 +121,7 @@ def concatenate(zarr,gfiles,codes):
     chunksize_optimal = 5e7
     chunksize = max(int(nt*chunksize_optimal/nc_size),1)
 
-    preprocess = ''
+    preprocess = set_bnds_as_coords
     join = 'exact'
     for code in codes:
         if 'deptht' in code:
@@ -135,7 +134,9 @@ def concatenate(zarr,gfiles,codes):
             os.system(command)
             gfiles = [file for file in gfiles if ('1231.nc' in file)]
         if 'fix_time' in code:
-            preprocess = 'convert2gregorian'
+            preprocess = convert2gregorian
+        if 'drop_height' in codes:
+            preprocess = set_bnds_as_coords_drop_height
         if 'override' in code:
             join = 'override'
 
@@ -143,36 +144,12 @@ def concatenate(zarr,gfiles,codes):
         warnings.filterwarnings("ignore")
         try:
             if 'time' in ds.coords:   
-                if preprocess == 'convert2gregorian':
-                    print('processing convert2gregorian',chunksize,gfiles[0],len(gfiles))
-                    #with warnings.catch_warnings():
-                        #warnings.filterwarnings()
-                    df7 = xr.open_mfdataset(gfiles, preprocess=convert2gregorian, data_vars='minimal', chunks={'time': chunksize},
-                                            use_cftime=True, join=join, combine='nested', concat_dim='time') # combine='nested'
-                else:
-                    df7 = xr.open_mfdataset(gfiles, preprocess=set_bnds_as_coords, data_vars='minimal', 
-                                            chunks={'time': chunksize}, join=join,
-                                            use_cftime=True, combine='nested', concat_dim='time') # combine='nested'
+                    df7 = xr.open_mfdataset(gfiles, preprocess=preprocess, data_vars='minimal', chunks={'time': chunksize},
+                                            use_cftime=True, join=join, combine='nested', concat_dim='time')
             else: # fixed in time, no time grid
                 df7 = xr.open_mfdataset(gfiles, preprocess=set_bnds_as_coords, combine='by_coords', join=join, data_vars='minimal')
         except:
             dstr += '\nerror in open_mfdataset'
-
-            if 'drop_height' in codes: 
-                try:
-                    if 'time' in ds.coords: 
-                        df7 = xr.open_mfdataset(gfiles, preprocess=set_bnds_as_coords_drop_height, data_vars='minimal',
-                                                chunks={'time': chunksize}, join=join,
-                                                use_cftime=True, combine='nested', concat_dim='time') # combine='nested'      
-                    else: # fixed in time, no time grid
-                        df7 = xr.open_mfdataset(gfiles, preprocess=set_bnds_as_coords_drop_height, combine='by_coords', join=join, data_vars='minimal')
-                        dstr += '\nerror fixed by drop_height'
-                except:
-                    dstr += '\nerror not fixed by drop_height'
-                    return 'failure',ds, dstr                
-            else:
-                dstr += '\nerror not fixable'
-                return 'failure',ds, dstr
                 
     for code in codes:
         if 'drop_tb' in code: # to_zarr cannot do chunking with time_bounds/time_bnds which is cftime (an object, not float)
