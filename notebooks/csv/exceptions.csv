@@ -34,6 +34,8 @@ CESM2,esm-hist,r2i1p1f1,Amon,rsds,gn,noUse,years 1900 - 1949 not available,,CESM
 CESM2,esm-hist,r2i1p1f1,Amon,tauu,gn,noUse,years 1950 - 1999 not available,,CESM2/esm-hist/r2i1p1f1/Amon/tauu/gn/noUse
 CESM2,esm-hist,r2i1p1f1,Oyr,ph,gr,noUse,years 1950-2000 missing,,CESM2/esm-hist/r2i1p1f1/Oyr/ph/gr/noUse
 CESM2,esm-hist,r2i1p1f1,Oyr,talknat,gr,noUse,years 1950-2000 missing,,CESM2/esm-hist/r2i1p1f1/Oyr/talknat/gr/noUse
+CESM2,ssp126,r1i1p1f1,day,tasmax,gn,noUse,unknown
+CESM2,ssp126,r1i1p1f1,day,tasmin,gn,noUse,unknown
 CESM2-FV2,historical,r1i1p1f1,day,wap,gn,noUse,no 19000101-19091231,,CESM2-FV2/historical/r1i1p1f1/day/wap/gn/noUse
 CESM2-FV2,piControl,r1i1p1f1,Lmon,mrsos,gn, noUse, missing chunks of data,,CESM2-FV2/piControl/r1i1p1f1/Lmon/mrsos/gn/ noUse
 CESM2,hist-aer,r1i1p1f1,Amon,ta,gn,noUse,chunks missing,,CESM2/hist-aer/r1i1p1f1/Amon/ta/gn/nUse
@@ -145,12 +147,15 @@ E3SM-1-1,piControl,r1i1p1f1,Lmon,mrsos,gr,noUse, missing decade 2000-2009,,E3SM-
 EC-Earth3,historical,all,Emon,orog,gr,noUse,???  ,,EC-Earth3/historical/all/Emon/orog/gr/noUse
 EC-Earth3,historical,r20i1p1f1,Amon,pr,gr,noUse,some sort of HDF error,,EC-Earth3/historical/r20i1p1f1/Amon/pr/gr/noUse
 EC-Earth3,historical,r20i1p1f1,day,pr,gr,noUse,some sort of HDF error,,EC-Earth3/historical/r20i1p1f1/day/prsn/gr/noUse
-EC-Earth3,historical,r3i1p1f1,Amon,ps,gr,noUse,some sort of HDF error,,EC-Earth3/historical/r3i1p1f1/Amon/ps/gr/noUse
 #EC-Earth3,historical,r3i1p1f1,Amon,rlut,gr,noUse,some sort of HDF error,,EC-Earth3/historical/r3i1p1f1/Amon/ps/gr/noUse
 #EC-Earth3,historical,r24i1p1f1,Amon,hfls,gr,noUse,after 2008 the files do not concatenate,,EC-Earth3/historical/r24i1p1f1/Amon/hfls/gr/noUse
 EC-Earth3,historical,r24i1p1f1,Amon,uas,gr,noUse,after 2008 the files do not concatenate,,EC-Earth3/historical/r24i1p1f1/Amon/uas/gr/noUse
 EC-Earth3,historical,r24i1p1f1,Amon,vas,gr,noUse,after 2008 the files do not concatenate,,EC-Earth3/historical/r24i1p1f1/Amon/vas/gr/noUse
+EC-Earth3,historical,r24i1p1f1,Amon,wap,gr,noUse,
+EC-Earth3,historical,r24i1p1f1,Amon,clt,gr,noUse,longitudes don't match - randomly staggered to half points
+EC-Earth3,historical,r21i1p1f1,Amon,wap,gr,noUse,longitudes don't match - randomly staggered to half points
 EC-Earth3,historical,r2i1p1f1,day,all,gr,noUse,some are on gr and some on gn - e.g. compare snw 1935 with 1936. KeyError: 'lat',,EC-Earth3/historical/r2i1p1f1/day/all/gr/noUse
+EC-Earth3,historical,r3i1p1f1,day,all,gr,noUse, lats inconsistent
 EC-Earth3,historical,r2i1p1f1,LImon,snc,gr,noUse,half of files are gr- the other are still gn,,EC-Earth3/historical/r2i1p1f1/LImon/snc/gr/noUse
 EC-Earth3,historical,r2i1p1f1,LImon,snw,gr,noUse,half of files are gr- the other are still gn,,EC-Earth3/historical/r2i1p1f1/LImon/snw/gr/noUse
 EC-Earth3,historical,r2i1p1f1,Lmon,all,gr,noUse,half of files are gr- the other are still gn,,EC-Earth3/historical/r2i1p1f1/Lmon/all/gr/noUse
@@ -171,6 +176,10 @@ EC-Earth3,historical,r2i1p1f1,Omon,wo,gn,noUse,some of the files are on a differ
 EC-Earth3,historical,r2i1p1f1,SImon,siconca,gr,noUse,half of files are gr- the other are still gn,,EC-Earth3/historical/r2i1p1f1/SImon/siconca/gr/noUse
 EC-Earth3,piControl,r1i1p1f1,Amon,rsutcs,gr,local,NetCDF: I/O failure,,EC-Earth3/piControl/r1i1p1f1/Amon/rsutcs/gr/local
 EC-Earth3,piControl,r2i1p1f1,Amon,all,gr,fix_time, to fix mixed cftime types,,
+EC-Earth3,historical,r3i1p1f1,Amon,ps,gr,noUse, first netcdf file ps_Amon_EC-Earth3_historical_r3i1p1f1_gr_185001-185012.nc is bad
+EC-Earth3,historical,r3i1p1f1,Amon,rlut,gr,noUse, first netcdf file rlut_Amon_EC-Earth3_historical_r3i1p1f1_gr_185001-185012.nc is bad
+EC-Earth3,historical,r3i1p1f1,Amon,evspsbl,gr,noUse, first netcdf file rlut_Amon_EC-Earth3_historical_r3i1p1f1_gr_185001-185012.nc is bad
+EC-Earth3,historical,r3i1p1f1,Amon,all,gr,noUse, looks like they all have this problem
 #EC-Earth3,historical,r3i1p1f1,day,tas,gr,noUse, RuntimeError: NetCDF: HDF error,,
 #EC-Earth3,historical,r15i1p1f1,Amon,tas,gr,noSizeCheck,incorrect expected size,,
 #EC-Earth3,historical,r13i1p1f1,Amon,tas,gr,noSizeCheck,incorrect expected size,,
@@ -335,6 +344,7 @@ TaiESM1,historical,r1i1p1f1,SImon,siconc,gn,local, NetCDF: Access failure,2020-0
 TaiESM1,historical,r1i1p1f1,SImon,sisnconc,gn,local, NetCDF: Access failure,2020-03-05,TaiESM1/historical/r1i1p1f1/SImon/sisnconc/gn/local
 TaiESM1,historical,r1i1p1f1,SImon,sisnthick,gn,local, NetCDF: Access failure,2020-03-05,TaiESM1/historical/r1i1p1f1/SImon/sisnthick/gn/local
 TaiESM1,historical,r1i1p1f1,SImon,sisnthick,gn,local, NetCDF: Access failure,2020-03-05,TaiESM1/historical/r1i1p1f1/SImon/sisnthick/gn/local
+TaiESM1,historical,r1i1p1f1,6hrLev,all,gn,noUse, ALL ZEROS - will not concatenate in time, 
 UKESM1-0-LL,piControl,r1i1p1f2,Omon,agessc,gn,noUse,conflicting values for variable 'vertices_latitude' on objects to be combined,,UKESM1-0-LL/piControl/r1i1p1f2/Omon/agessc/gn/noUse
 UKESM1-0-LL,piControl,r1i1p1f2,Omon,uo,gn,noUse,conflicting values for variable 'vertices_latitude' on objects to be combined,,UKESM1-0-LL/piControl/r1i1p1f2/Omon/uo/gn/noUse
 UKESM1-0-LL,piControl,r1i1p1f2,Omon,vo,gn,noUse,conflicting values for variable 'vertices_latitude' on objects to be combined,,UKESM1-0-LL/piControl/r1i1p1f2/Omon/vo/gn/noUse

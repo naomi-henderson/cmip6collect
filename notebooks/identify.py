@@ -1,7 +1,7 @@
 import warnings
 import pandas as pd
 import requests
-import xarray as xr
+import zarr
 import fsspec
 
 def get_version(zstore,method='fsspec'):
@@ -11,11 +11,15 @@ def get_version(zstore,method='fsspec'):
     query1 = '?type=IS_PART_OF'
     query2 = '?type=VERSION_NUMBER'
 
+    # get the `netcdf_tracking_ids` from the zstore metadata
     if method == 'fsspec':
-        tracking_ids = xr.open_zarr(fsspec.get_mapper(zstore),consolidated=True).attrs['tracking_id']
+        mapper = fsspec.get_mapper(zstore)
     else:
-        tracking_ids = xr.open_zarr(zstore,consolidated=True).attrs['tracking_id']
+        mapper = zstore        
+    group = zarr.open_consolidated(mapper)     
+    tracking_ids = group.attrs['tracking_id']
         
+    # query the dataset handler to obtain `dataset_tracking_id` and `version`
     versions = []
     datasets = []
     for file_tracking_id in tracking_ids.split('\n')[0:1]:
