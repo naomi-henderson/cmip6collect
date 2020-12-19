@@ -1,3 +1,6 @@
+# *** A NEWER VERSION EXISTS AT [cmip6collect2](https://github.com/naomi-henderson/cmip6collect2) ***
+
+
 # The Pangeo CMIP6 Google Cloud Data - New Requests
 
 This `project` repository (not a proper `package` yet) is work-in-progress for developing methods to handle new data requests automatically - at least as much as possible. I am also trying to make a first attempt at setting up a system to crowd-source the data problems/issues and solutions.  
